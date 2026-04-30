@@ -1,0 +1,175 @@
+{
+  "overall": {
+    "deals": 227,
+    "avgDays": 14.3,
+    "medianDays": 6,
+    "minDays": 0,
+    "maxDays": 160
+  },
+  "byAE": [
+    {
+      "ownerId": "81122772",
+      "name": "Owner 81122772",
+      "region": "Unknown",
+      "deals": 1,
+      "avgDays": 0.0,
+      "medianDays": 0,
+      "minDays": 0,
+      "maxDays": 0
+    },
+    {
+      "ownerId": "",
+      "name": "Owner ",
+      "region": "Unknown",
+      "deals": 1,
+      "avgDays": 0.0,
+      "medianDays": 0,
+      "minDays": 0,
+      "maxDays": 0
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "region": "NAMER",
+      "deals": 41,
+      "avgDays": 5.4,
+      "medianDays": 0,
+      "minDays": 0,
+      "maxDays": 42
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "region": "EMEA",
+      "deals": 2,
+      "avgDays": 9.0,
+      "medianDays": 9.0,
+      "minDays": 5,
+      "maxDays": 13
+    },
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "region": "NAMER",
+      "deals": 30,
+      "avgDays": 9.9,
+      "medianDays": 4.5,
+      "minDays": 0,
+      "maxDays": 64
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "region": "NAMER",
+      "deals": 30,
+      "avgDays": 10.1,
+      "medianDays": 2.5,
+      "minDays": 0,
+      "maxDays": 62
+    },
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "region": "NAMER",
+      "deals": 46,
+      "avgDays": 12.3,
+      "medianDays": 7.0,
+      "minDays": 0,
+      "maxDays": 59
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "region": "EMEA",
+      "deals": 15,
+      "avgDays": 13.3,
+      "medianDays": 12,
+      "minDays": 0,
+      "maxDays": 32
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "region": "EMEA",
+      "deals": 11,
+      "avgDays": 19.9,
+      "medianDays": 2,
+      "minDays": 0,
+      "maxDays": 153
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "region": "NAMER",
+      "deals": 25,
+      "avgDays": 20.8,
+      "medianDays": 6,
+      "minDays": 0,
+      "maxDays": 124
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "region": "APAC",
+      "deals": 18,
+      "avgDays": 28.3,
+      "medianDays": 21.0,
+      "minDays": 1,
+      "maxDays": 138
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "region": "NAMER",
+      "deals": 4,
+      "avgDays": 48.5,
+      "medianDays": 31.0,
+      "minDays": 0,
+      "maxDays": 132
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "region": "NAMER",
+      "deals": 3,
+      "avgDays": 68.3,
+      "medianDays": 45,
+      "minDays": 0,
+      "maxDays": 160
+    }
+  ],
+  "byRegion": [
+    {
+      "region": "NAMER",
+      "deals": 179,
+      "avgDays": 12.9,
+      "medianDays": 4,
+      "minDays": 0,
+      "maxDays": 160
+    },
+    {
+      "region": "EMEA",
+      "deals": 28,
+      "avgDays": 15.6,
+      "medianDays": 9.5,
+      "minDays": 0,
+      "maxDays": 153
+    },
+    {
+      "region": "APAC",
+      "deals": 18,
+      "avgDays": 28.3,
+      "medianDays": 21.0,
+      "minDays": 1,
+      "maxDays": 138
+    },
+    {
+      "region": "Unknown",
+      "deals": 2,
+      "avgDays": 0.0,
+      "medianDays": 0.0,
+      "minDays": 0,
+      "maxDays": 0
+    }
+  ]
+}

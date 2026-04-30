@@ -1,0 +1,291 @@
+{
+  "totalS1Deals": 818,
+  "totalS2Deals": 480,
+  "totalS1Mrr": 476249.0,
+  "totalS2Mrr": 300735.0,
+  "conversionPct": 58.7,
+  "byAE": [
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "s1Deals": 117,
+      "s2Deals": 80,
+      "s1Mrr": 75224.0,
+      "s2Mrr": 53557.0,
+      "conversionPct": 68.4
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "s1Deals": 107,
+      "s2Deals": 66,
+      "s1Mrr": 54990.0,
+      "s2Mrr": 33553.0,
+      "conversionPct": 61.7
+    },
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "s1Deals": 94,
+      "s2Deals": 59,
+      "s1Mrr": 45498.0,
+      "s2Mrr": 25997.0,
+      "conversionPct": 62.8
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "s1Deals": 91,
+      "s2Deals": 57,
+      "s1Mrr": 54101.0,
+      "s2Mrr": 35201.0,
+      "conversionPct": 62.6
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "s1Deals": 86,
+      "s2Deals": 54,
+      "s1Mrr": 52834.0,
+      "s2Mrr": 39913.0,
+      "conversionPct": 62.8
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "s1Deals": 79,
+      "s2Deals": 39,
+      "s1Mrr": 35502.0,
+      "s2Mrr": 18133.0,
+      "conversionPct": 49.4
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "s1Deals": 76,
+      "s2Deals": 39,
+      "s1Mrr": 37829.0,
+      "s2Mrr": 17288.0,
+      "conversionPct": 51.3
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "s1Deals": 74,
+      "s2Deals": 33,
+      "s1Mrr": 57940.0,
+      "s2Mrr": 35876.0,
+      "conversionPct": 44.6
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "s1Deals": 33,
+      "s2Deals": 17,
+      "s1Mrr": 15232.0,
+      "s2Mrr": 7332.0,
+      "conversionPct": 51.5
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "s1Deals": 29,
+      "s2Deals": 23,
+      "s1Mrr": 28133.0,
+      "s2Mrr": 25033.0,
+      "conversionPct": 79.3
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "s1Deals": 19,
+      "s2Deals": 11,
+      "s1Mrr": 13337.0,
+      "s2Mrr": 8537.0,
+      "conversionPct": 57.9
+    },
+    {
+      "ownerId": "80946983",
+      "name": "Psrea Singh",
+      "s1Deals": 3,
+      "s2Deals": 0,
+      "s1Mrr": 1283.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "1675515871",
+      "name": "Amanpreet Kaur",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "s1Deals": 1,
+      "s2Deals": 1,
+      "s1Mrr": 100.0,
+      "s2Mrr": 100.0,
+      "conversionPct": 100.0
+    },
+    {
+      "ownerId": "1566222292",
+      "name": "Anand Bhagat",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "634693314",
+      "name": "Megha Patil",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 350.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "1009927245",
+      "name": "Joel Philip",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "80947097",
+      "name": "Suyash Yadav",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "322464634",
+      "name": "Rishi Agarwal",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 371.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    },
+    {
+      "ownerId": "744551695",
+      "name": "Divya Jaiswal",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 350.0,
+      "s2Mrr": 0.0,
+      "conversionPct": 0.0
+    }
+  ],
+  "bySdr": [
+    {
+      "ownerId": "80946983",
+      "name": "Psrea Singh",
+      "role": "SDR",
+      "s1Deals": 128,
+      "s2Deals": 52,
+      "s1Mrr": 62038.0,
+      "s2Mrr": 20542.0,
+      "conversionPct": 40.6
+    },
+    {
+      "ownerId": "322464634",
+      "name": "Rishi Agarwal",
+      "role": "SDR",
+      "s1Deals": 104,
+      "s2Deals": 62,
+      "s1Mrr": 56594.0,
+      "s2Mrr": 36266.0,
+      "conversionPct": 59.6
+    },
+    {
+      "ownerId": "80947097",
+      "name": "Suyash Yadav",
+      "role": "SDR",
+      "s1Deals": 93,
+      "s2Deals": 61,
+      "s1Mrr": 71645.0,
+      "s2Mrr": 50873.0,
+      "conversionPct": 65.6
+    },
+    {
+      "ownerId": "1566222292",
+      "name": "Anand Bhagat",
+      "role": "SDR",
+      "s1Deals": 78,
+      "s2Deals": 43,
+      "s1Mrr": 47029.0,
+      "s2Mrr": 27180.0,
+      "conversionPct": 55.1
+    },
+    {
+      "ownerId": "81219550",
+      "name": "Gajendra Singh",
+      "role": "SDR",
+      "s1Deals": 64,
+      "s2Deals": 43,
+      "s1Mrr": 40840.0,
+      "s2Mrr": 30507.0,
+      "conversionPct": 67.2
+    },
+    {
+      "ownerId": "2004790025",
+      "name": "Anmol Multani",
+      "role": "SDR",
+      "s1Deals": 63,
+      "s2Deals": 35,
+      "s1Mrr": 39142.0,
+      "s2Mrr": 26167.0,
+      "conversionPct": 55.6
+    },
+    {
+      "ownerId": "1078138479",
+      "name": "Aditya Raj",
+      "role": "SDR",
+      "s1Deals": 15,
+      "s2Deals": 9,
+      "s1Mrr": 7090.0,
+      "s2Mrr": 4672.0,
+      "conversionPct": 60.0
+    },
+    {
+      "ownerId": "1391784932",
+      "name": "Yash Dharwala",
+      "role": "BDR",
+      "s1Deals": 13,
+      "s2Deals": 7,
+      "s1Mrr": 7700.0,
+      "s2Mrr": 4800.0,
+      "conversionPct": 53.8
+    },
+    {
+      "ownerId": "163106863",
+      "name": "Rishya Jana",
+      "role": "SDR",
+      "s1Deals": 13,
+      "s2Deals": 5,
+      "s1Mrr": 14259.0,
+      "s2Mrr": 9459.0,
+      "conversionPct": 38.5
+    },
+    {
+      "ownerId": "952001830",
+      "name": "Royston Fritchley",
+      "role": "BDR",
+      "s1Deals": 9,
+      "s2Deals": 7,
+      "s1Mrr": 6393.0,
+      "s2Mrr": 5293.0,
+      "conversionPct": 77.8
+    }
+  ]
+}

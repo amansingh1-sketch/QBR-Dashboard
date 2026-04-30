@@ -1,0 +1,27 @@
+{
+  "totalDeals": 227,
+  "totalMRR": 114740.08,
+  "reasons": [
+    {
+      "reason": "Product Functionality",
+      "deals": 175,
+      "mrr": 85519.0,
+      "pct": 77.1,
+      "mrrPct": 74.5
+    },
+    {
+      "reason": "Pricing & Packaging",
+      "deals": 44,
+      "mrr": 18863.08,
+      "pct": 19.4,
+      "mrrPct": 16.4
+    },
+    {
+      "reason": "Onboarding / Customer Success / superior support services promised",
+      "deals": 8,
+      "mrr": 10358.0,
+      "pct": 3.5,
+      "mrrPct": 9.0
+    }
+  ]
+}

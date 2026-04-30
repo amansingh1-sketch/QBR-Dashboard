@@ -1,65 +1,114 @@
-import Image from "next/image";
+import { Suspense } from "react";
+import { getFiscalQuarterDates } from "@/lib/fiscal";
+import { getS2PipelineData, getS1S2Data, getWinRateData, getBookingsData, getACVData, getSalesCycleData, getWinReasonsData, getLossReasonsData } from "@/lib/data";
+import S2Pipeline from "@/components/S2Pipeline";
+import S1S2 from "@/components/S1S2";
+import WinRate from "@/components/WinRate";
+import Bookings from "@/components/Bookings";
+import ACV from "@/components/ACV";
+import SalesCycle from "@/components/SalesCycle";
+import WinReasons from "@/components/Reasons/WinReasons";
+import LossReasons from "@/components/Reasons/LossReasons";
+import QuarterPicker from "@/components/QuarterPicker";
+import Sidebar from "@/components/Sidebar";
+import type { FiscalQuarter } from "@/lib/types";
 
-export default function Home() {
+interface PageProps {
+  searchParams: Promise<{ q?: string; y?: string; sec?: string }>;
+}
+
+async function S2PipelineSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getS2PipelineData(fq.startDate, fq.endDate);
+  return <S2Pipeline data={data} periodLabel={fq.label} />;
+}
+
+async function S1S2Section({ fq }: { fq: FiscalQuarter }) {
+  const data = await getS1S2Data(fq.startDate, fq.endDate);
+  return <S1S2 data={data} periodLabel={fq.label} />;
+}
+
+async function WinRateSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getWinRateData(fq.startDate, fq.endDate);
+  return <WinRate data={data} periodLabel={fq.label} />;
+}
+
+async function BookingsSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getBookingsData(fq.startDate, fq.endDate);
+  return <Bookings data={data} periodLabel={fq.label} />;
+}
+
+async function ACVSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getACVData(fq.startDate, fq.endDate);
+  return <ACV data={data} periodLabel={fq.label} />;
+}
+
+async function SalesCycleSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getSalesCycleData(fq.startDate, fq.endDate);
+  return <SalesCycle data={data} periodLabel={fq.label} />;
+}
+
+async function WinReasonsSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getWinReasonsData(fq.startDate, fq.endDate);
+  return <WinReasons data={data} periodLabel={fq.label} />;
+}
+
+async function LossReasonsSection({ fq }: { fq: FiscalQuarter }) {
+  const data = await getLossReasonsData(fq.startDate, fq.endDate);
+  return <LossReasons data={data} periodLabel={fq.label} />;
+}
+
+export default async function Home({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const quarter = (parseInt(params.q ?? "1") || 1) as 1 | 2 | 3 | 4;
+  const year = parseInt(params.y ?? "2026") || 2026;
+  const fq = getFiscalQuarterDates(quarter, year);
+  const validSections = ["s2", "s1s2", "winrate", "bookings", "acv", "salescycle", "winreasons", "lossreasons"];
+  const activeSection = (validSections.includes(params.sec ?? "") ? params.sec : "s2") as string;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex min-h-screen bg-gray-50">
+      {/* Left sidebar */}
+      <Suspense fallback={<div className="w-56 flex-shrink-0 border-r border-gray-200 bg-white" />}>
+        <Sidebar />
+      </Suspense>
+
+      {/* Main column */}
+      <div className="flex flex-1 flex-col min-h-screen overflow-hidden">
+        {/* Top bar */}
+        <header className="sticky top-0 z-10 flex items-center justify-between border-b border-gray-200 bg-white px-6 py-3">
+          <h1 className="text-sm font-semibold text-gray-700">
+            JustCall: Quarterly Business Review
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <Suspense fallback={null}>
+            <QuarterPicker current={fq} />
+          </Suspense>
+        </header>
+
+        {/* Scrollable content */}
+        <main className="flex-1 overflow-y-auto px-6 py-8">
+          <div className="mx-auto max-w-6xl">
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center py-24 text-gray-400">
+                  <div className="space-y-3 text-center">
+                    <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-indigo-300 border-t-indigo-600" />
+                    <p className="text-sm">Loading…</p>
+                  </div>
+                </div>
+              }
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+              {activeSection === "s2"       && <S2PipelineSection fq={fq} />}
+              {activeSection === "s1s2"    && <S1S2Section fq={fq} />}
+              {activeSection === "winrate" && <WinRateSection fq={fq} />}
+              {activeSection === "bookings" && <BookingsSection fq={fq} />}
+              {activeSection === "acv"        && <ACVSection fq={fq} />}
+              {activeSection === "salescycle"  && <SalesCycleSection fq={fq} />}
+              {activeSection === "winreasons"  && <WinReasonsSection fq={fq} />}
+              {activeSection === "lossreasons" && <LossReasonsSection fq={fq} />}
+            </Suspense>
+          </div>
+        </main>
+      </div>
     </div>
   );
 }

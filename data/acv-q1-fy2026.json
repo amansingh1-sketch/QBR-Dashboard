@@ -1,0 +1,407 @@
+{
+  "overall": {
+    "deals": 227,
+    "totalMRR": 114740.08,
+    "totalACV": 1376880.96,
+    "avgACV": 6065.55
+  },
+  "100plus": {
+    "deals": 28,
+    "totalMRR": 17368.0,
+    "totalACV": 208416.0,
+    "avgACV": 7443.43
+  },
+  "100minus": {
+    "deals": 193,
+    "totalMRR": 91720.08,
+    "totalACV": 1100640.96,
+    "avgACV": 5702.8
+  },
+  "byAE": [
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "region": "NAMER",
+      "overall": {
+        "deals": 46,
+        "totalMRR": 20243.0,
+        "totalACV": 242916.0,
+        "avgACV": 5280.78
+      },
+      "100plus": {
+        "deals": 3,
+        "totalMRR": 2285.0,
+        "totalACV": 27420.0,
+        "avgACV": 9140.0
+      },
+      "100minus": {
+        "deals": 43,
+        "totalMRR": 17958.0,
+        "totalACV": 215496.0,
+        "avgACV": 5011.53
+      }
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "region": "NAMER",
+      "overall": {
+        "deals": 30,
+        "totalMRR": 20175.0,
+        "totalACV": 242100.0,
+        "avgACV": 8070.0
+      },
+      "100plus": {
+        "deals": 2,
+        "totalMRR": 1482.0,
+        "totalACV": 17784.0,
+        "avgACV": 8892.0
+      },
+      "100minus": {
+        "deals": 28,
+        "totalMRR": 18693.0,
+        "totalACV": 224316.0,
+        "avgACV": 8011.29
+      }
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "region": "NAMER",
+      "overall": {
+        "deals": 41,
+        "totalMRR": 18590.0,
+        "totalACV": 223080.0,
+        "avgACV": 5440.98
+      },
+      "100plus": {
+        "deals": 2,
+        "totalMRR": 530.0,
+        "totalACV": 6360.0,
+        "avgACV": 3180.0
+      },
+      "100minus": {
+        "deals": 39,
+        "totalMRR": 18060.0,
+        "totalACV": 216720.0,
+        "avgACV": 5556.92
+      }
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "region": "NAMER",
+      "overall": {
+        "deals": 25,
+        "totalMRR": 15688.0,
+        "totalACV": 188256.0,
+        "avgACV": 7530.24
+      },
+      "100plus": {
+        "deals": 11,
+        "totalMRR": 6367.0,
+        "totalACV": 76404.0,
+        "avgACV": 6945.82
+      },
+      "100minus": {
+        "deals": 12,
+        "totalMRR": 8811.0,
+        "totalACV": 105732.0,
+        "avgACV": 8811.0
+      }
+    },
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "region": "NAMER",
+      "overall": {
+        "deals": 30,
+        "totalMRR": 12847.0,
+        "totalACV": 154164.0,
+        "avgACV": 5138.8
+      },
+      "100plus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      },
+      "100minus": {
+        "deals": 29,
+        "totalMRR": 12509.0,
+        "totalACV": 150108.0,
+        "avgACV": 5176.14
+      }
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "region": "APAC",
+      "overall": {
+        "deals": 18,
+        "totalMRR": 9566.08,
+        "totalACV": 114792.96,
+        "avgACV": 6377.39
+      },
+      "100plus": {
+        "deals": 2,
+        "totalMRR": 2109.0,
+        "totalACV": 25308.0,
+        "avgACV": 12654.0
+      },
+      "100minus": {
+        "deals": 16,
+        "totalMRR": 7457.08,
+        "totalACV": 89484.96,
+        "avgACV": 5592.81
+      }
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "region": "EMEA",
+      "overall": {
+        "deals": 15,
+        "totalMRR": 5873.0,
+        "totalACV": 70476.0,
+        "avgACV": 4698.4
+      },
+      "100plus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      },
+      "100minus": {
+        "deals": 15,
+        "totalMRR": 5873.0,
+        "totalACV": 70476.0,
+        "avgACV": 4698.4
+      }
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "region": "NAMER",
+      "overall": {
+        "deals": 4,
+        "totalMRR": 4848.0,
+        "totalACV": 58176.0,
+        "avgACV": 14544.0
+      },
+      "100plus": {
+        "deals": 2,
+        "totalMRR": 1823.0,
+        "totalACV": 21876.0,
+        "avgACV": 10938.0
+      },
+      "100minus": {
+        "deals": 1,
+        "totalMRR": 269.0,
+        "totalACV": 3228.0,
+        "avgACV": 3228.0
+      }
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "region": "EMEA",
+      "overall": {
+        "deals": 11,
+        "totalMRR": 4265.0,
+        "totalACV": 51180.0,
+        "avgACV": 4652.73
+      },
+      "100plus": {
+        "deals": 3,
+        "totalMRR": 751.0,
+        "totalACV": 9012.0,
+        "avgACV": 3004.0
+      },
+      "100minus": {
+        "deals": 7,
+        "totalMRR": 1566.0,
+        "totalACV": 18792.0,
+        "avgACV": 2684.57
+      }
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "region": "NAMER",
+      "overall": {
+        "deals": 3,
+        "totalMRR": 2021.0,
+        "totalACV": 24252.0,
+        "avgACV": 8084.0
+      },
+      "100plus": {
+        "deals": 3,
+        "totalMRR": 2021.0,
+        "totalACV": 24252.0,
+        "avgACV": 8084.0
+      },
+      "100minus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      }
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "region": "EMEA",
+      "overall": {
+        "deals": 2,
+        "totalMRR": 309.0,
+        "totalACV": 3708.0,
+        "avgACV": 1854.0
+      },
+      "100plus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      },
+      "100minus": {
+        "deals": 2,
+        "totalMRR": 309.0,
+        "totalACV": 3708.0,
+        "avgACV": 1854.0
+      }
+    },
+    {
+      "ownerId": "",
+      "name": "Owner ",
+      "region": "Unknown",
+      "overall": {
+        "deals": 1,
+        "totalMRR": 215.0,
+        "totalACV": 2580.0,
+        "avgACV": 2580.0
+      },
+      "100plus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      },
+      "100minus": {
+        "deals": 1,
+        "totalMRR": 215.0,
+        "totalACV": 2580.0,
+        "avgACV": 2580.0
+      }
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Owner 81122772",
+      "region": "Unknown",
+      "overall": {
+        "deals": 1,
+        "totalMRR": 100.0,
+        "totalACV": 1200.0,
+        "avgACV": 1200.0
+      },
+      "100plus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      },
+      "100minus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      }
+    }
+  ],
+  "byRegion": [
+    {
+      "region": "NAMER",
+      "overall": {
+        "deals": 179,
+        "totalMRR": 94412.0,
+        "totalACV": 1132944.0,
+        "avgACV": 6329.3
+      },
+      "100plus": {
+        "deals": 23,
+        "totalMRR": 14508.0,
+        "totalACV": 174096.0,
+        "avgACV": 7569.39
+      },
+      "100minus": {
+        "deals": 152,
+        "totalMRR": 76300.0,
+        "totalACV": 915600.0,
+        "avgACV": 6023.68
+      }
+    },
+    {
+      "region": "EMEA",
+      "overall": {
+        "deals": 28,
+        "totalMRR": 10447.0,
+        "totalACV": 125364.0,
+        "avgACV": 4477.29
+      },
+      "100plus": {
+        "deals": 3,
+        "totalMRR": 751.0,
+        "totalACV": 9012.0,
+        "avgACV": 3004.0
+      },
+      "100minus": {
+        "deals": 24,
+        "totalMRR": 7748.0,
+        "totalACV": 92976.0,
+        "avgACV": 3874.0
+      }
+    },
+    {
+      "region": "APAC",
+      "overall": {
+        "deals": 18,
+        "totalMRR": 9566.08,
+        "totalACV": 114792.96,
+        "avgACV": 6377.39
+      },
+      "100plus": {
+        "deals": 2,
+        "totalMRR": 2109.0,
+        "totalACV": 25308.0,
+        "avgACV": 12654.0
+      },
+      "100minus": {
+        "deals": 16,
+        "totalMRR": 7457.08,
+        "totalACV": 89484.96,
+        "avgACV": 5592.81
+      }
+    },
+    {
+      "region": "Unknown",
+      "overall": {
+        "deals": 2,
+        "totalMRR": 315.0,
+        "totalACV": 3780.0,
+        "avgACV": 1890.0
+      },
+      "100plus": {
+        "deals": 0,
+        "totalMRR": 0.0,
+        "totalACV": 0.0,
+        "avgACV": 0
+      },
+      "100minus": {
+        "deals": 1,
+        "totalMRR": 215.0,
+        "totalACV": 2580.0,
+        "avgACV": 2580.0
+      }
+    }
+  ]
+}

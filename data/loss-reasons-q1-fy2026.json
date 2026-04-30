@@ -1,0 +1,153 @@
+{
+  "totalDeals": 502,
+  "totalMRR": 341862.99,
+  "reasons": [
+    {
+      "reason": "No response / no decision",
+      "deals": 156,
+      "mrr": 112037.0,
+      "pct": 31.1,
+      "mrrPct": 32.8
+    },
+    {
+      "reason": "No Show",
+      "deals": 91,
+      "mrr": 54243.0,
+      "pct": 18.1,
+      "mrrPct": 15.9
+    },
+    {
+      "reason": "Pricing & Packaging",
+      "deals": 69,
+      "mrr": 53778.0,
+      "pct": 13.7,
+      "mrrPct": 15.7
+    },
+    {
+      "reason": "Timing not right",
+      "deals": 53,
+      "mrr": 32938.0,
+      "pct": 10.6,
+      "mrrPct": 9.6
+    },
+    {
+      "reason": "Missing feature/Product related issues",
+      "deals": 40,
+      "mrr": 35106.0,
+      "pct": 8.0,
+      "mrrPct": 10.3
+    },
+    {
+      "reason": "Billing / Business Related",
+      "deals": 28,
+      "mrr": 19382.99,
+      "pct": 5.6,
+      "mrrPct": 5.7
+    },
+    {
+      "reason": "ICP misfit",
+      "deals": 12,
+      "mrr": 4844.0,
+      "pct": 2.4,
+      "mrrPct": 1.4
+    },
+    {
+      "reason": "Future Opportunity",
+      "deals": 11,
+      "mrr": 8709.0,
+      "pct": 2.2,
+      "mrrPct": 2.5
+    },
+    {
+      "reason": "Pricing",
+      "deals": 9,
+      "mrr": 3650.0,
+      "pct": 1.8,
+      "mrrPct": 1.1
+    },
+    {
+      "reason": "Junk",
+      "deals": 4,
+      "mrr": 1525.0,
+      "pct": 0.8,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Lost to Competitor",
+      "deals": 4,
+      "mrr": 2296.0,
+      "pct": 0.8,
+      "mrrPct": 0.7
+    },
+    {
+      "reason": "Product misfit",
+      "deals": 4,
+      "mrr": 2100.0,
+      "pct": 0.8,
+      "mrrPct": 0.6
+    },
+    {
+      "reason": "No Decision / Non-Responsive",
+      "deals": 4,
+      "mrr": 2180.0,
+      "pct": 0.8,
+      "mrrPct": 0.6
+    },
+    {
+      "reason": "Support and services related issues",
+      "deals": 3,
+      "mrr": 1345.0,
+      "pct": 0.6,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Inadequate qualification",
+      "deals": 3,
+      "mrr": 1290.0,
+      "pct": 0.6,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Budget Constraint",
+      "deals": 3,
+      "mrr": 800.0,
+      "pct": 0.6,
+      "mrrPct": 0.2
+    },
+    {
+      "reason": "Missing integration",
+      "deals": 2,
+      "mrr": 1200.0,
+      "pct": 0.4,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Qualification",
+      "deals": 2,
+      "mrr": 700.0,
+      "pct": 0.4,
+      "mrrPct": 0.2
+    },
+    {
+      "reason": "Product challenges",
+      "deals": 2,
+      "mrr": 2325.0,
+      "pct": 0.4,
+      "mrrPct": 0.7
+    },
+    {
+      "reason": "No Budget / Lost Funding",
+      "deals": 1,
+      "mrr": 414.0,
+      "pct": 0.2,
+      "mrrPct": 0.1
+    },
+    {
+      "reason": "Unrespsonsive",
+      "deals": 1,
+      "mrr": 1000.0,
+      "pct": 0.2,
+      "mrrPct": 0.3
+    }
+  ]
+}
