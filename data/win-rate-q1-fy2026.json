@@ -2,54 +2,54 @@
   "byCohort": {
     "s2": {
       "overall": {
-        "won": 199,
-        "lost": 170,
-        "total": 369,
-        "winRate": 53.9,
-        "wonMrr": 88560.08,
-        "lostMrr": 118284.0
+        "won": 204,
+        "lost": 0,
+        "total": 204,
+        "winRate": 100.0,
+        "wonMrr": 91225.08,
+        "lostMrr": 0
       },
       "100plus": {
-        "won": 22,
-        "lost": 35,
-        "total": 57,
-        "winRate": 38.6,
-        "wonMrr": 13248.0,
-        "lostMrr": 36356.0
+        "won": 26,
+        "lost": 0,
+        "total": 26,
+        "winRate": 100.0,
+        "wonMrr": 15571.0,
+        "lostMrr": 0
       },
       "100minus": {
-        "won": 177,
-        "lost": 135,
-        "total": 312,
-        "winRate": 56.7,
-        "wonMrr": 75312.08,
-        "lostMrr": 81928.0
+        "won": 178,
+        "lost": 0,
+        "total": 178,
+        "winRate": 100.0,
+        "wonMrr": 75654.08,
+        "lostMrr": 0
       }
     },
     "closeDate": {
       "overall": {
-        "won": 227,
-        "lost": 273,
-        "total": 500,
-        "winRate": 45.4,
-        "wonMrr": 114740.08,
-        "lostMrr": 253550.99
+        "won": 232,
+        "lost": 713,
+        "total": 945,
+        "winRate": 24.6,
+        "wonMrr": 117405.08,
+        "lostMrr": 471684.99
       },
       "100plus": {
-        "won": 28,
-        "lost": 54,
-        "total": 82,
-        "winRate": 34.1,
-        "wonMrr": 17368.0,
-        "lostMrr": 75577.0
+        "won": 31,
+        "lost": 108,
+        "total": 139,
+        "winRate": 22.3,
+        "wonMrr": 19219.0,
+        "lostMrr": 105424.0
       },
       "100minus": {
-        "won": 199,
-        "lost": 219,
-        "total": 418,
-        "winRate": 47.6,
-        "wonMrr": 97372.08,
-        "lostMrr": 177973.99
+        "won": 201,
+        "lost": 605,
+        "total": 806,
+        "winRate": 24.9,
+        "wonMrr": 98186.08,
+        "lostMrr": 366260.99
       }
     }
   },
@@ -58,151 +58,391 @@
       "ownerId": "95970067",
       "name": "Yash Chandra",
       "won": 30,
-      "lost": 50,
-      "total": 80,
-      "winRate": 37.5,
+      "lost": 88,
+      "total": 118,
+      "winRate": 25.4,
       "wonMrr": 12847.0,
-      "lostMrr": 34545.0
+      "lostMrr": 56457.0
     },
     {
       "ownerId": "186570908",
       "name": "Swapnil Dwivedi",
       "won": 41,
-      "lost": 23,
-      "total": 64,
-      "winRate": 64.1,
+      "lost": 59,
+      "total": 100,
+      "winRate": 41.0,
       "wonMrr": 18590.0,
-      "lostMrr": 16385.0
-    },
-    {
-      "ownerId": "2136092292",
-      "name": "Manmeet Saluja",
-      "won": 46,
-      "lost": 10,
-      "total": 56,
-      "winRate": 82.1,
-      "wonMrr": 20243.0,
-      "lostMrr": 10572.0
-    },
-    {
-      "ownerId": "491798563",
-      "name": "Rohit Lakhanpal",
-      "won": 30,
-      "lost": 25,
-      "total": 55,
-      "winRate": 54.5,
-      "wonMrr": 20175.0,
-      "lostMrr": 21153.0
+      "lostMrr": 34258.0
     },
     {
       "ownerId": "714622523",
       "name": "Rohan Verma",
-      "won": 25,
-      "lost": 26,
-      "total": 51,
-      "winRate": 49.0,
-      "wonMrr": 15688.0,
-      "lostMrr": 22261.0
+      "won": 29,
+      "lost": 61,
+      "total": 90,
+      "winRate": 32.2,
+      "wonMrr": 17269.0,
+      "lostMrr": 36095.0
     },
     {
-      "ownerId": "80591062",
-      "name": "Abhijeet Srivastava",
-      "won": 18,
-      "lost": 30,
-      "total": 48,
-      "winRate": 37.5,
-      "wonMrr": 9566.08,
-      "lostMrr": 47581.99
+      "ownerId": "2136092292",
+      "name": "Unknown (2136092292)",
+      "won": 46,
+      "lost": 44,
+      "total": 90,
+      "winRate": 51.1,
+      "wonMrr": 20243.0,
+      "lostMrr": 30134.0
     },
     {
       "ownerId": "227811766",
       "name": "Sneha Agarwal",
       "won": 11,
-      "lost": 36,
-      "total": 47,
-      "winRate": 23.4,
+      "lost": 76,
+      "total": 87,
+      "winRate": 12.6,
       "wonMrr": 4265.0,
-      "lostMrr": 30428.0
+      "lostMrr": 47322.0
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "won": 30,
+      "lost": 56,
+      "total": 86,
+      "winRate": 34.9,
+      "wonMrr": 20175.0,
+      "lostMrr": 38283.0
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "won": 18,
+      "lost": 64,
+      "total": 82,
+      "winRate": 22.0,
+      "wonMrr": 9566.08,
+      "lostMrr": 65672.99
     },
     {
       "ownerId": "191671239",
       "name": "Rishabh Bhushan",
       "won": 15,
-      "lost": 27,
-      "total": 42,
-      "winRate": 35.7,
+      "lost": 66,
+      "total": 81,
+      "winRate": 18.5,
       "wonMrr": 5873.0,
-      "lostMrr": 15338.0
+      "lostMrr": 39400.0
     },
     {
       "ownerId": "491086913",
       "name": "Erin Dean",
-      "won": 4,
-      "lost": 23,
-      "total": 27,
-      "winRate": 14.8,
-      "wonMrr": 4848.0,
-      "lostMrr": 21340.0
+      "won": 5,
+      "lost": 29,
+      "total": 34,
+      "winRate": 14.7,
+      "wonMrr": 5932.0,
+      "lostMrr": 24240.0
     },
     {
       "ownerId": "162335834",
       "name": "Ankit Shukla",
       "won": 2,
-      "lost": 11,
-      "total": 13,
-      "winRate": 15.4,
+      "lost": 24,
+      "total": 26,
+      "winRate": 7.7,
       "wonMrr": 309.0,
-      "lostMrr": 5797.0
+      "lostMrr": 12397.0
+    },
+    {
+      "ownerId": "1009927245",
+      "name": "Unknown (1009927245)",
+      "won": 0,
+      "lost": 18,
+      "total": 18,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 3444.0
     },
     {
       "ownerId": "1647719282",
-      "name": "Rory Costello",
+      "name": "Unknown (1647719282)",
       "won": 3,
-      "lost": 7,
-      "total": 10,
-      "winRate": 30.0,
+      "lost": 15,
+      "total": 18,
+      "winRate": 16.7,
       "wonMrr": 2021.0,
-      "lostMrr": 4350.0
+      "lostMrr": 9050.0
     },
     {
-      "ownerId": "1261252981",
-      "name": "Unknown (1261252981)",
+      "ownerId": "322464634",
+      "name": "Rishi Agarwal",
       "won": 0,
-      "lost": 4,
-      "total": 4,
+      "lost": 13,
+      "total": 13,
       "winRate": 0.0,
-      "wonMrr": 0.0,
-      "lostMrr": 6800.0
+      "wonMrr": 0,
+      "lostMrr": 7571.0
     },
     {
-      "ownerId": "81122772",
-      "name": "Unknown (81122772)",
-      "won": 1,
-      "lost": 0,
-      "total": 1,
-      "winRate": 100.0,
-      "wonMrr": 100.0,
+      "ownerId": "80946983",
+      "name": "Psrea Singh",
+      "won": 0,
+      "lost": 11,
+      "total": 11,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 5827.0
+    },
+    {
+      "ownerId": "542398241",
+      "name": "Narayan RL",
+      "won": 0,
+      "lost": 10,
+      "total": 10,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 4497.0
+    },
+    {
+      "ownerId": "80947097",
+      "name": "Suyash Yadav",
+      "won": 0,
+      "lost": 10,
+      "total": 10,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 6000.0
+    },
+    {
+      "ownerId": "235569089",
+      "name": "Jeffry Infant",
+      "won": 0,
+      "lost": 9,
+      "total": 9,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 5400.0
+    },
+    {
+      "ownerId": "634693314",
+      "name": "Megha Patil",
+      "won": 0,
+      "lost": 8,
+      "total": 8,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 1838.0
+    },
+    {
+      "ownerId": "96825892",
+      "name": "Katie Thompson",
+      "won": 0,
+      "lost": 7,
+      "total": 7,
+      "winRate": 0.0,
+      "wonMrr": 0,
       "lostMrr": 0.0
     },
     {
-      "ownerId": "unknown",
-      "name": "Unknown (unknown)",
+      "ownerId": "1261252981",
+      "name": "Anthony Brown",
+      "won": 0,
+      "lost": 7,
+      "total": 7,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 8600.0
+    },
+    {
+      "ownerId": "1463621460",
+      "name": "Unknown (1463621460)",
+      "won": 0,
+      "lost": 6,
+      "total": 6,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 2793.0
+    },
+    {
+      "ownerId": "1566222292",
+      "name": "Rishav Singh",
+      "won": 0,
+      "lost": 6,
+      "total": 6,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 3600.0
+    },
+    {
+      "ownerId": "1078138479",
+      "name": "Amanpreet Singh",
+      "won": 0,
+      "lost": 5,
+      "total": 5,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 3000.0
+    },
+    {
+      "ownerId": "81219550",
+      "name": "Gajendra Singh",
+      "won": 0,
+      "lost": 3,
+      "total": 3,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 1800.0
+    },
+    {
+      "ownerId": "756458871",
+      "name": "Unknown (756458871)",
+      "won": 0,
+      "lost": 3,
+      "total": 3,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 1300.0
+    },
+    {
+      "ownerId": "1509457322",
+      "name": "Unknown (1509457322)",
+      "won": 0,
+      "lost": 2,
+      "total": 2,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 1200.0
+    },
+    {
+      "ownerId": "80258263",
+      "name": "Vedant Bhatia",
+      "won": 0,
+      "lost": 2,
+      "total": 2,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 1098.0
+    },
+    {
+      "ownerId": "2004790025",
+      "name": "Komal Rawat",
+      "won": 0,
+      "lost": 2,
+      "total": 2,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 1200.0
+    },
+    {
+      "ownerId": "",
+      "name": "Unknown",
       "won": 1,
       "lost": 0,
       "total": 1,
       "winRate": 100.0,
       "wonMrr": 215.0,
-      "lostMrr": 0.0
+      "lostMrr": 0
     },
     {
-      "ownerId": "66211660",
-      "name": "Unknown (66211660)",
+      "ownerId": "744551695",
+      "name": "Unknown (744551695)",
       "won": 0,
       "lost": 1,
       "total": 1,
       "winRate": 0.0,
-      "wonMrr": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 350.0
+    },
+    {
+      "ownerId": "756446321",
+      "name": "Unknown (756446321)",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 600.0
+    },
+    {
+      "ownerId": "265183267",
+      "name": "Manpreet Singh",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 600.0
+    },
+    {
+      "ownerId": "2082746366",
+      "name": "Unknown (2082746366)",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 0.0
+    },
+    {
+      "ownerId": "160141687",
+      "name": "Mohit Singhal",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 600.0
+    },
+    {
+      "ownerId": "24198523",
+      "name": "Akhil Ambati",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 58.0
+    },
+    {
+      "ownerId": "66211660",
+      "name": "Jordan Verity",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
       "lostMrr": 17000.0
+    },
+    {
+      "ownerId": "1894079495",
+      "name": "Unknown (1894079495)",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 0.0
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "won": 1,
+      "lost": 0,
+      "total": 1,
+      "winRate": 100.0,
+      "wonMrr": 100.0,
+      "lostMrr": 0
+    },
+    {
+      "ownerId": "317226540",
+      "name": "Arshaq Ahmed Ali",
+      "won": 0,
+      "lost": 1,
+      "total": 1,
+      "winRate": 0.0,
+      "wonMrr": 0,
+      "lostMrr": 0.0
     }
   ]
 }

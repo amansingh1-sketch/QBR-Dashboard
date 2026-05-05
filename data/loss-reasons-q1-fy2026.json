@@ -1,69 +1,76 @@
 {
-  "totalDeals": 502,
-  "totalMRR": 341862.99,
+  "totalDeals": 501,
+  "totalMRR": 364573.99,
   "reasons": [
     {
       "reason": "No response / no decision",
-      "deals": 156,
-      "mrr": 112037.0,
-      "pct": 31.1,
-      "mrrPct": 32.8
+      "deals": 152,
+      "mrr": 129213.0,
+      "pct": 30.3,
+      "mrrPct": 35.4
     },
     {
       "reason": "No Show",
-      "deals": 91,
-      "mrr": 54243.0,
-      "pct": 18.1,
-      "mrrPct": 15.9
+      "deals": 92,
+      "mrr": 54843.0,
+      "pct": 18.4,
+      "mrrPct": 15.0
     },
     {
       "reason": "Pricing & Packaging",
-      "deals": 69,
-      "mrr": 53778.0,
-      "pct": 13.7,
-      "mrrPct": 15.7
+      "deals": 70,
+      "mrr": 54378.0,
+      "pct": 14.0,
+      "mrrPct": 14.9
     },
     {
       "reason": "Timing not right",
-      "deals": 53,
-      "mrr": 32938.0,
-      "pct": 10.6,
-      "mrrPct": 9.6
+      "deals": 54,
+      "mrr": 36142.0,
+      "pct": 10.8,
+      "mrrPct": 9.9
     },
     {
       "reason": "Missing feature/Product related issues",
-      "deals": 40,
-      "mrr": 35106.0,
-      "pct": 8.0,
-      "mrrPct": 10.3
+      "deals": 39,
+      "mrr": 34729.0,
+      "pct": 7.8,
+      "mrrPct": 9.5
     },
     {
       "reason": "Billing / Business Related",
-      "deals": 28,
-      "mrr": 19382.99,
-      "pct": 5.6,
-      "mrrPct": 5.7
+      "deals": 27,
+      "mrr": 18844.99,
+      "pct": 5.4,
+      "mrrPct": 5.2
     },
     {
       "reason": "ICP misfit",
       "deals": 12,
       "mrr": 4844.0,
       "pct": 2.4,
-      "mrrPct": 1.4
+      "mrrPct": 1.3
     },
     {
       "reason": "Future Opportunity",
       "deals": 11,
-      "mrr": 8709.0,
+      "mrr": 9609.0,
       "pct": 2.2,
-      "mrrPct": 2.5
+      "mrrPct": 2.6
     },
     {
       "reason": "Pricing",
       "deals": 9,
       "mrr": 3650.0,
       "pct": 1.8,
-      "mrrPct": 1.1
+      "mrrPct": 1.0
+    },
+    {
+      "reason": "Support and services related issues",
+      "deals": 5,
+      "mrr": 2254.0,
+      "pct": 1.0,
+      "mrrPct": 0.6
     },
     {
       "reason": "Junk",
@@ -75,7 +82,7 @@
     {
       "reason": "Lost to Competitor",
       "deals": 4,
-      "mrr": 2296.0,
+      "mrr": 2533.0,
       "pct": 0.8,
       "mrrPct": 0.7
     },
@@ -92,13 +99,6 @@
       "mrr": 2180.0,
       "pct": 0.8,
       "mrrPct": 0.6
-    },
-    {
-      "reason": "Support and services related issues",
-      "deals": 3,
-      "mrr": 1345.0,
-      "pct": 0.6,
-      "mrrPct": 0.4
     },
     {
       "reason": "Inadequate qualification",
@@ -119,7 +119,7 @@
       "deals": 2,
       "mrr": 1200.0,
       "pct": 0.4,
-      "mrrPct": 0.4
+      "mrrPct": 0.3
     },
     {
       "reason": "Qualification",
@@ -133,7 +133,7 @@
       "deals": 2,
       "mrr": 2325.0,
       "pct": 0.4,
-      "mrrPct": 0.7
+      "mrrPct": 0.6
     },
     {
       "reason": "No Budget / Lost Funding",
