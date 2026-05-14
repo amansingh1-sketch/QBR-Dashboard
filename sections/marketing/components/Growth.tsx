@@ -26,6 +26,7 @@ const AD_SPEND_CHANNELS = [
 
 function fmtCurrency(value: number | null): string {
   if (value === null) return "—";
+  if (Math.abs(value) >= 1_000_000) return `$${(value / 1_000_000).toFixed(2)}M`;
   if (Math.abs(value) >= 1000) return `$${value.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
   return `$${value.toFixed(2)}`;
 }
