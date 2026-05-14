@@ -1,0 +1,728 @@
+{
+  "totalDeals": 232,
+  "totalMRR": 117405.08,
+  "reasons": [
+    {
+      "reason": "Sales Dialer Functionality",
+      "deals": 50,
+      "mrr": 29184,
+      "pct": 21.6,
+      "mrrPct": 24.9
+    },
+    {
+      "reason": "Integrations Available",
+      "deals": 49,
+      "mrr": 20714,
+      "pct": 21.1,
+      "mrrPct": 17.6
+    },
+    {
+      "reason": "Subscription pricing",
+      "deals": 31,
+      "mrr": 13076.08,
+      "pct": 13.4,
+      "mrrPct": 11.1
+    },
+    {
+      "reason": "Ease of Use / Time to Value",
+      "deals": 22,
+      "mrr": 10271,
+      "pct": 9.5,
+      "mrrPct": 8.7
+    },
+    {
+      "reason": "AI Functionality",
+      "deals": 14,
+      "mrr": 11942,
+      "pct": 6,
+      "mrrPct": 10.2
+    },
+    {
+      "reason": "Product Performance or Design (please fill details)",
+      "deals": 10,
+      "mrr": 5361,
+      "pct": 4.3,
+      "mrrPct": 4.6
+    },
+    {
+      "reason": "Voice or SMS Quality",
+      "deals": 10,
+      "mrr": 3029,
+      "pct": 4.3,
+      "mrrPct": 2.6
+    },
+    {
+      "reason": "Other",
+      "deals": 9,
+      "mrr": 6039,
+      "pct": 3.9,
+      "mrrPct": 5.1
+    },
+    {
+      "reason": "Call Routing",
+      "deals": 9,
+      "mrr": 3108,
+      "pct": 3.9,
+      "mrrPct": 2.6
+    },
+    {
+      "reason": "Promotional Offer/Custom Billing",
+      "deals": 9,
+      "mrr": 4476,
+      "pct": 3.9,
+      "mrrPct": 3.8
+    },
+    {
+      "reason": "Superior Support Services",
+      "deals": 6,
+      "mrr": 3948,
+      "pct": 2.6,
+      "mrrPct": 3.4
+    },
+    {
+      "reason": "SMS Functionality",
+      "deals": 3,
+      "mrr": 444,
+      "pct": 1.3,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Usage pricing (Call/SMS/Phone numbers)",
+      "deals": 3,
+      "mrr": 641,
+      "pct": 1.3,
+      "mrrPct": 0.5
+    },
+    {
+      "reason": "Team Management",
+      "deals": 2,
+      "mrr": 605,
+      "pct": 0.9,
+      "mrrPct": 0.5
+    },
+    {
+      "reason": "Phone Number Selection",
+      "deals": 2,
+      "mrr": 1091,
+      "pct": 0.9,
+      "mrrPct": 0.9
+    },
+    {
+      "reason": "Integration Depth",
+      "deals": 1,
+      "mrr": 1130,
+      "pct": 0.4,
+      "mrrPct": 1
+    },
+    {
+      "reason": "SMS Automation Workflows",
+      "deals": 1,
+      "mrr": 472,
+      "pct": 0.4,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Onboarding",
+      "deals": 1,
+      "mrr": 1874,
+      "pct": 0.4,
+      "mrrPct": 1.6
+    }
+  ],
+  "byAE": [
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "totalDeals": 46,
+      "totalMRR": 20243,
+      "reasons": [
+        {
+          "reason": "Integrations Available",
+          "deals": 18,
+          "mrr": 9241,
+          "pct": 39.1,
+          "mrrPct": 45.7
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 17,
+          "mrr": 8136,
+          "pct": 37,
+          "mrrPct": 40.2
+        },
+        {
+          "reason": "Voice or SMS Quality",
+          "deals": 6,
+          "mrr": 1035,
+          "pct": 13,
+          "mrrPct": 5.1
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 2,
+          "mrr": 908,
+          "pct": 4.3,
+          "mrrPct": 4.5
+        },
+        {
+          "reason": "SMS Functionality",
+          "deals": 1,
+          "mrr": 168,
+          "pct": 2.2,
+          "mrrPct": 0.8
+        },
+        {
+          "reason": "SMS Automation Workflows",
+          "deals": 1,
+          "mrr": 472,
+          "pct": 2.2,
+          "mrrPct": 2.3
+        },
+        {
+          "reason": "Call Routing",
+          "deals": 1,
+          "mrr": 283,
+          "pct": 2.2,
+          "mrrPct": 1.4
+        }
+      ]
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "totalDeals": 41,
+      "totalMRR": 18590,
+      "reasons": [
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 14,
+          "mrr": 6770,
+          "pct": 34.1,
+          "mrrPct": 36.4
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 8,
+          "mrr": 3456,
+          "pct": 19.5,
+          "mrrPct": 18.6
+        },
+        {
+          "reason": "Integrations Available",
+          "deals": 4,
+          "mrr": 955,
+          "pct": 9.8,
+          "mrrPct": 5.1
+        },
+        {
+          "reason": "Subscription pricing",
+          "deals": 4,
+          "mrr": 1213,
+          "pct": 9.8,
+          "mrrPct": 6.5
+        },
+        {
+          "reason": "Promotional Offer/Custom Billing",
+          "deals": 4,
+          "mrr": 1913,
+          "pct": 9.8,
+          "mrrPct": 10.3
+        },
+        {
+          "reason": "Superior Support Services",
+          "deals": 4,
+          "mrr": 2418,
+          "pct": 9.8,
+          "mrrPct": 13
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 2,
+          "mrr": 735,
+          "pct": 4.9,
+          "mrrPct": 4
+        },
+        {
+          "reason": "Integration Depth",
+          "deals": 1,
+          "mrr": 1130,
+          "pct": 2.4,
+          "mrrPct": 6.1
+        }
+      ]
+    },
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "totalDeals": 30,
+      "totalMRR": 12847,
+      "reasons": [
+        {
+          "reason": "Integrations Available",
+          "deals": 10,
+          "mrr": 2508,
+          "pct": 33.3,
+          "mrrPct": 19.5
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 7,
+          "mrr": 4697,
+          "pct": 23.3,
+          "mrrPct": 36.6
+        },
+        {
+          "reason": "Promotional Offer/Custom Billing",
+          "deals": 3,
+          "mrr": 2039,
+          "pct": 10,
+          "mrrPct": 15.9
+        },
+        {
+          "reason": "Call Routing",
+          "deals": 2,
+          "mrr": 749,
+          "pct": 6.7,
+          "mrrPct": 5.8
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 2,
+          "mrr": 820,
+          "pct": 6.7,
+          "mrrPct": 6.4
+        },
+        {
+          "reason": "SMS Functionality",
+          "deals": 2,
+          "mrr": 276,
+          "pct": 6.7,
+          "mrrPct": 2.1
+        },
+        {
+          "reason": "Product Performance or Design (please fill details)",
+          "deals": 2,
+          "mrr": 1317,
+          "pct": 6.7,
+          "mrrPct": 10.3
+        },
+        {
+          "reason": "Subscription pricing",
+          "deals": 1,
+          "mrr": 234,
+          "pct": 3.3,
+          "mrrPct": 1.8
+        },
+        {
+          "reason": "Phone Number Selection",
+          "deals": 1,
+          "mrr": 207,
+          "pct": 3.3,
+          "mrrPct": 1.6
+        }
+      ]
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "totalDeals": 30,
+      "totalMRR": 20175,
+      "reasons": [
+        {
+          "reason": "Subscription pricing",
+          "deals": 16,
+          "mrr": 5290,
+          "pct": 53.3,
+          "mrrPct": 26.2
+        },
+        {
+          "reason": "Other",
+          "deals": 5,
+          "mrr": 4079,
+          "pct": 16.7,
+          "mrrPct": 20.2
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 4,
+          "mrr": 4882,
+          "pct": 13.3,
+          "mrrPct": 24.2
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 2,
+          "mrr": 5271,
+          "pct": 6.7,
+          "mrrPct": 26.1
+        },
+        {
+          "reason": "Usage pricing (Call/SMS/Phone numbers)",
+          "deals": 2,
+          "mrr": 327,
+          "pct": 6.7,
+          "mrrPct": 1.6
+        },
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 1,
+          "mrr": 326,
+          "pct": 3.3,
+          "mrrPct": 1.6
+        }
+      ]
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "totalDeals": 29,
+      "totalMRR": 17269,
+      "reasons": [
+        {
+          "reason": "Integrations Available",
+          "deals": 9,
+          "mrr": 4846,
+          "pct": 31,
+          "mrrPct": 28.1
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 6,
+          "mrr": 2970,
+          "pct": 20.7,
+          "mrrPct": 17.2
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 4,
+          "mrr": 2522,
+          "pct": 13.8,
+          "mrrPct": 14.6
+        },
+        {
+          "reason": "Call Routing",
+          "deals": 3,
+          "mrr": 1371,
+          "pct": 10.3,
+          "mrrPct": 7.9
+        },
+        {
+          "reason": "Voice or SMS Quality",
+          "deals": 2,
+          "mrr": 1655,
+          "pct": 6.9,
+          "mrrPct": 9.6
+        },
+        {
+          "reason": "Superior Support Services",
+          "deals": 1,
+          "mrr": 366,
+          "pct": 3.4,
+          "mrrPct": 2.1
+        },
+        {
+          "reason": "Subscription pricing",
+          "deals": 1,
+          "mrr": 1956,
+          "pct": 3.4,
+          "mrrPct": 11.3
+        },
+        {
+          "reason": "Usage pricing (Call/SMS/Phone numbers)",
+          "deals": 1,
+          "mrr": 314,
+          "pct": 3.4,
+          "mrrPct": 1.8
+        },
+        {
+          "reason": "Product Performance or Design (please fill details)",
+          "deals": 1,
+          "mrr": 385,
+          "pct": 3.4,
+          "mrrPct": 2.2
+        },
+        {
+          "reason": "Phone Number Selection",
+          "deals": 1,
+          "mrr": 884,
+          "pct": 3.4,
+          "mrrPct": 5.1
+        }
+      ]
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "totalDeals": 18,
+      "totalMRR": 9566.08,
+      "reasons": [
+        {
+          "reason": "Subscription pricing",
+          "deals": 4,
+          "mrr": 3693.08,
+          "pct": 22.2,
+          "mrrPct": 38.6
+        },
+        {
+          "reason": "Integrations Available",
+          "deals": 4,
+          "mrr": 1259,
+          "pct": 22.2,
+          "mrrPct": 13.2
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 3,
+          "mrr": 1152,
+          "pct": 16.7,
+          "mrrPct": 12
+        },
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 2,
+          "mrr": 628,
+          "pct": 11.1,
+          "mrrPct": 6.6
+        },
+        {
+          "reason": "Team Management",
+          "deals": 2,
+          "mrr": 605,
+          "pct": 11.1,
+          "mrrPct": 6.3
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 1,
+          "mrr": 1601,
+          "pct": 5.6,
+          "mrrPct": 16.7
+        },
+        {
+          "reason": "Call Routing",
+          "deals": 1,
+          "mrr": 436,
+          "pct": 5.6,
+          "mrrPct": 4.6
+        },
+        {
+          "reason": "Voice or SMS Quality",
+          "deals": 1,
+          "mrr": 192,
+          "pct": 5.6,
+          "mrrPct": 2
+        }
+      ]
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "totalDeals": 15,
+      "totalMRR": 5873,
+      "reasons": [
+        {
+          "reason": "Subscription pricing",
+          "deals": 5,
+          "mrr": 690,
+          "pct": 33.3,
+          "mrrPct": 11.7
+        },
+        {
+          "reason": "Other",
+          "deals": 4,
+          "mrr": 1960,
+          "pct": 26.7,
+          "mrrPct": 33.4
+        },
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 2,
+          "mrr": 540,
+          "pct": 13.3,
+          "mrrPct": 9.2
+        },
+        {
+          "reason": "Promotional Offer/Custom Billing",
+          "deals": 1,
+          "mrr": 424,
+          "pct": 6.7,
+          "mrrPct": 7.2
+        },
+        {
+          "reason": "AI Functionality",
+          "deals": 1,
+          "mrr": 85,
+          "pct": 6.7,
+          "mrrPct": 1.4
+        },
+        {
+          "reason": "Integrations Available",
+          "deals": 1,
+          "mrr": 300,
+          "pct": 6.7,
+          "mrrPct": 5.1
+        },
+        {
+          "reason": "Onboarding",
+          "deals": 1,
+          "mrr": 1874,
+          "pct": 6.7,
+          "mrrPct": 31.9
+        }
+      ]
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "totalDeals": 11,
+      "totalMRR": 4265,
+      "reasons": [
+        {
+          "reason": "Product Performance or Design (please fill details)",
+          "deals": 6,
+          "mrr": 3022,
+          "pct": 54.5,
+          "mrrPct": 70.9
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 2,
+          "mrr": 549,
+          "pct": 18.2,
+          "mrrPct": 12.9
+        },
+        {
+          "reason": "Call Routing",
+          "deals": 1,
+          "mrr": 49,
+          "pct": 9.1,
+          "mrrPct": 1.1
+        },
+        {
+          "reason": "Integrations Available",
+          "deals": 1,
+          "mrr": 252,
+          "pct": 9.1,
+          "mrrPct": 5.9
+        },
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 1,
+          "mrr": 393,
+          "pct": 9.1,
+          "mrrPct": 9.2
+        }
+      ]
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "totalDeals": 5,
+      "totalMRR": 5932,
+      "reasons": [
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 2,
+          "mrr": 3180,
+          "pct": 40,
+          "mrrPct": 53.6
+        },
+        {
+          "reason": "Integrations Available",
+          "deals": 2,
+          "mrr": 1353,
+          "pct": 40,
+          "mrrPct": 22.8
+        },
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 1,
+          "mrr": 1399,
+          "pct": 20,
+          "mrrPct": 23.6
+        }
+      ]
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "totalDeals": 3,
+      "totalMRR": 2021,
+      "reasons": [
+        {
+          "reason": "Superior Support Services",
+          "deals": 1,
+          "mrr": 1164,
+          "pct": 33.3,
+          "mrrPct": 57.6
+        },
+        {
+          "reason": "Call Routing",
+          "deals": 1,
+          "mrr": 220,
+          "pct": 33.3,
+          "mrrPct": 10.9
+        },
+        {
+          "reason": "Product Performance or Design (please fill details)",
+          "deals": 1,
+          "mrr": 637,
+          "pct": 33.3,
+          "mrrPct": 31.5
+        }
+      ]
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "totalDeals": 2,
+      "totalMRR": 309,
+      "reasons": [
+        {
+          "reason": "Voice or SMS Quality",
+          "deals": 1,
+          "mrr": 147,
+          "pct": 50,
+          "mrrPct": 47.6
+        },
+        {
+          "reason": "Sales Dialer Functionality",
+          "deals": 1,
+          "mrr": 162,
+          "pct": 50,
+          "mrrPct": 52.4
+        }
+      ]
+    },
+    {
+      "ownerId": "",
+      "name": "Unknown",
+      "totalDeals": 1,
+      "totalMRR": 215,
+      "reasons": [
+        {
+          "reason": "Ease of Use / Time to Value",
+          "deals": 1,
+          "mrr": 215,
+          "pct": 100,
+          "mrrPct": 100
+        }
+      ]
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "totalDeals": 1,
+      "totalMRR": 100,
+      "reasons": [
+        {
+          "reason": "Promotional Offer/Custom Billing",
+          "deals": 1,
+          "mrr": 100,
+          "pct": 100,
+          "mrrPct": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "periodLabel": "Q1 FY2027",
+  "table": {
+    "title": "Ad Spends",
+    "subtitle": "Monthly paid media spend by channel (USD).",
+    "groupHeader": "Channel",
+    "rows": [
+      {
+        "group": "GAds",
+        "metric": "Spend (USD)",
+        "nov": 393203,
+        "dec": 358912,
+        "jan": 365999,
+        "q4Total": 1118114,
+        "feb": 377783,
+        "mar": 453545,
+        "apr": 454037,
+        "q1Total": 1285365
+      },
+      {
+        "group": "Meta",
+        "metric": "Spend (USD)",
+        "nov": 2103,
+        "dec": 7025,
+        "jan": 1573,
+        "q4Total": 10701,
+        "feb": 4573,
+        "mar": 45267,
+        "apr": 77590,
+        "q1Total": 127431
+      },
+      {
+        "group": "LinkedIn",
+        "metric": "Spend (USD)",
+        "nov": 25202,
+        "dec": 31536,
+        "jan": 22129,
+        "q4Total": 78867,
+        "feb": 32761,
+        "mar": 78400,
+        "apr": 29192,
+        "q1Total": 140353
+      }
+    ]
+  }
+}

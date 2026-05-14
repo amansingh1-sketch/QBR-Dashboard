@@ -1,0 +1,421 @@
+{
+  "totalDeals": 502,
+  "totalMRR": 314130.08,
+  "avgDealSize": 625.76,
+  "byDealType": {
+    "land": {
+      "deals": 426,
+      "mrr": 282218.08
+    },
+    "expandH": {
+      "deals": 29,
+      "mrr": 13759
+    },
+    "expandV": {
+      "deals": 47,
+      "mrr": 18153
+    }
+  },
+  "byRegion": [
+    {
+      "region": "NAMER",
+      "deals": 366,
+      "mrr": 230169,
+      "land": {
+        "deals": 304,
+        "mrr": 202755
+      },
+      "expandH": {
+        "deals": 20,
+        "mrr": 12073
+      },
+      "expandV": {
+        "deals": 42,
+        "mrr": 15341
+      }
+    },
+    {
+      "region": "EMEA",
+      "deals": 98,
+      "mrr": 43994,
+      "land": {
+        "deals": 85,
+        "mrr": 39711
+      },
+      "expandH": {
+        "deals": 8,
+        "mrr": 1471
+      },
+      "expandV": {
+        "deals": 5,
+        "mrr": 2812
+      }
+    },
+    {
+      "region": "APAC",
+      "deals": 36,
+      "mrr": 39652.08,
+      "land": {
+        "deals": 36,
+        "mrr": 39652.08
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "region": "Unknown",
+      "deals": 2,
+      "mrr": 315,
+      "land": {
+        "deals": 1,
+        "mrr": 100
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 215
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    }
+  ],
+  "byRole": [
+    {
+      "role": "SDR",
+      "deals": 321,
+      "mrr": 213284,
+      "land": {
+        "deals": 321,
+        "mrr": 213284
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "role": "BDR",
+      "deals": 17,
+      "mrr": 11393,
+      "land": {
+        "deals": 17,
+        "mrr": 11393
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "role": "PS",
+      "deals": 58,
+      "mrr": 28887.08,
+      "land": {
+        "deals": 58,
+        "mrr": 28887.08
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "role": "AE",
+      "deals": 106,
+      "mrr": 60566,
+      "land": {
+        "deals": 30,
+        "mrr": 28654
+      },
+      "expandH": {
+        "deals": 29,
+        "mrr": 13759
+      },
+      "expandV": {
+        "deals": 47,
+        "mrr": 18153
+      }
+    }
+  ],
+  "bySdrBdr": [
+    {
+      "ownerId": "80947097",
+      "name": "Suyash Yadav",
+      "role": "SDR",
+      "deals": 66,
+      "mrr": 54727,
+      "land": {
+        "deals": 66,
+        "mrr": 54727
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "322464634",
+      "name": "Rishi Agarwal",
+      "role": "SDR",
+      "deals": 64,
+      "mrr": 37157,
+      "land": {
+        "deals": 64,
+        "mrr": 37157
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "81219550",
+      "name": "Gajendra Singh",
+      "role": "SDR",
+      "deals": 43,
+      "mrr": 30507,
+      "land": {
+        "deals": 43,
+        "mrr": 30507
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "1566222292",
+      "name": "Anand Bhagat",
+      "role": "SDR",
+      "deals": 45,
+      "mrr": 28013,
+      "land": {
+        "deals": 45,
+        "mrr": 28013
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "2004790025",
+      "name": "Anmol Multani",
+      "role": "SDR",
+      "deals": 36,
+      "mrr": 26767,
+      "land": {
+        "deals": 36,
+        "mrr": 26767
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "80946983",
+      "name": "Psrea Singh",
+      "role": "SDR",
+      "deals": 52,
+      "mrr": 20783,
+      "land": {
+        "deals": 52,
+        "mrr": 20783
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "163106863",
+      "name": "Rishya Jana",
+      "role": "SDR",
+      "deals": 5,
+      "mrr": 9859,
+      "land": {
+        "deals": 5,
+        "mrr": 9859
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "1391784932",
+      "name": "Yash Dharwala",
+      "role": "BDR",
+      "deals": 10,
+      "mrr": 6100,
+      "land": {
+        "deals": 10,
+        "mrr": 6100
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "952001830",
+      "name": "Royston Fritchley",
+      "role": "BDR",
+      "deals": 7,
+      "mrr": 5293,
+      "land": {
+        "deals": 7,
+        "mrr": 5293
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "1078138479",
+      "name": "Aditya Raj",
+      "role": "SDR",
+      "deals": 9,
+      "mrr": 4672,
+      "land": {
+        "deals": 9,
+        "mrr": 4672
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    }
+  ],
+  "byOppSource": [
+    {
+      "source": "Marketing",
+      "deals": 385,
+      "mrr": 249293,
+      "land": {
+        "deals": 384,
+        "mrr": 249078
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 215
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "source": "Unknown",
+      "deals": 75,
+      "mrr": 31697,
+      "land": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandH": {
+        "deals": 28,
+        "mrr": 13544
+      },
+      "expandV": {
+        "deals": 47,
+        "mrr": 18153
+      }
+    },
+    {
+      "source": "Sales",
+      "deals": 15,
+      "mrr": 19131,
+      "land": {
+        "deals": 15,
+        "mrr": 19131
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "source": "Partnerships",
+      "deals": 27,
+      "mrr": 14009.08,
+      "land": {
+        "deals": 27,
+        "mrr": 14009.08
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    }
+  ]
+}

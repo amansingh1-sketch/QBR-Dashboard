@@ -1,0 +1,299 @@
+{
+  "periodLabel": "Q1 FY2027",
+  "website": {
+    "title": "Website",
+    "groupHeader": "Page",
+    "rows": [
+      {
+        "group": "/product",
+        "metric": "Visitors",
+        "nov": 13621,
+        "dec": 15798,
+        "jan": 31713,
+        "q4Total": 61132,
+        "feb": 14838,
+        "mar": 14760,
+        "apr": 14269,
+        "q1Total": 43867
+      },
+      {
+        "group": "/product",
+        "metric": "Engagement Rate",
+        "nov": 57.29,
+        "dec": 59.44,
+        "jan": 40.03,
+        "q4Total": 52.25,
+        "feb": 54.34,
+        "mar": 60.77,
+        "apr": 59.34,
+        "q1Total": 58.15
+      },
+      {
+        "group": "/product",
+        "metric": "# of transitions to signup page",
+        "nov": 1997,
+        "dec": 2425,
+        "jan": 3629,
+        "q4Total": 8051,
+        "feb": 2045,
+        "mar": 1862,
+        "apr": 1697,
+        "q1Total": 5604
+      },
+      {
+        "group": "/product",
+        "metric": "# of transitions to demo page",
+        "nov": 574,
+        "dec": 758,
+        "jan": 1118,
+        "q4Total": 2450,
+        "feb": 638,
+        "mar": 809,
+        "apr": 858,
+        "q1Total": 2305
+      },
+      {
+        "group": "/team",
+        "metric": "Visitors",
+        "nov": 7685,
+        "dec": 12674,
+        "jan": 6756,
+        "q4Total": 27115,
+        "feb": 13151,
+        "mar": 14630,
+        "apr": 6237,
+        "q1Total": 34018
+      },
+      {
+        "group": "/team",
+        "metric": "Engagement Rate",
+        "nov": 85.65,
+        "dec": 88.32,
+        "jan": 82.75,
+        "q4Total": 85.57,
+        "feb": 88.57,
+        "mar": 91.27,
+        "apr": 87.77,
+        "q1Total": 89.21
+      },
+      {
+        "group": "/team",
+        "metric": "# of transitions to signup page",
+        "nov": 278,
+        "dec": 379,
+        "jan": 405,
+        "q4Total": 1062,
+        "feb": 347,
+        "mar": 369,
+        "apr": 380,
+        "q1Total": 1096
+      },
+      {
+        "group": "/team",
+        "metric": "# of transitions to demo page",
+        "nov": 111,
+        "dec": 140,
+        "jan": 174,
+        "q4Total": 425,
+        "feb": 136,
+        "mar": 162,
+        "apr": 163,
+        "q1Total": 461
+      },
+      {
+        "group": "/solution",
+        "metric": "Visitors",
+        "nov": 6642,
+        "dec": 7900,
+        "jan": 6459,
+        "q4Total": 21001,
+        "feb": 7730,
+        "mar": 10279,
+        "apr": 6199,
+        "q1Total": 24208
+      },
+      {
+        "group": "/solution",
+        "metric": "Engagement Rate",
+        "nov": 42.40,
+        "dec": 41.93,
+        "jan": 52.94,
+        "q4Total": 45.75,
+        "feb": 43.71,
+        "mar": 39.38,
+        "apr": 46.26,
+        "q1Total": 43.12
+      },
+      {
+        "group": "/solution",
+        "metric": "# of transitions to signup page",
+        "nov": 683,
+        "dec": 882,
+        "jan": 911,
+        "q4Total": 2476,
+        "feb": 851,
+        "mar": 836,
+        "apr": 629,
+        "q1Total": 2316
+      },
+      {
+        "group": "/solution",
+        "metric": "# of transitions to demo page",
+        "nov": 338,
+        "dec": 424,
+        "jan": 277,
+        "q4Total": 1039,
+        "feb": 529,
+        "mar": 888,
+        "apr": 669,
+        "q1Total": 2086
+      },
+      {
+        "group": "/industry",
+        "metric": "Visitors",
+        "nov": 473,
+        "dec": 494,
+        "jan": 568,
+        "q4Total": 1535,
+        "feb": 2253,
+        "mar": 5961,
+        "apr": 666,
+        "q1Total": 8880
+      },
+      {
+        "group": "/industry",
+        "metric": "Engagement Rate",
+        "nov": 67.16,
+        "dec": 67.33,
+        "jan": 68.14,
+        "q4Total": 67.54,
+        "feb": 36.37,
+        "mar": 26.64,
+        "apr": 50.52,
+        "q1Total": 37.84
+      },
+      {
+        "group": "/industry",
+        "metric": "# of transitions to signup page",
+        "nov": 43,
+        "dec": 47,
+        "jan": 75,
+        "q4Total": 165,
+        "feb": 78,
+        "mar": 85,
+        "apr": 50,
+        "q1Total": 213
+      },
+      {
+        "group": "/industry",
+        "metric": "# of transitions to demo page",
+        "nov": 25,
+        "dec": 37,
+        "jan": 39,
+        "q4Total": 101,
+        "feb": 83,
+        "mar": 182,
+        "apr": 45,
+        "q1Total": 310
+      }
+    ]
+  },
+  "inApp": {
+    "title": "Product / In-App",
+    "rows": [
+      {
+        "metric": "Activation Rate",
+        "nov": 23.66,
+        "dec": 24.45,
+        "jan": 23.86,
+        "q4Total": 23.99,
+        "feb": 25.63,
+        "mar": 26.48,
+        "apr": 27.71,
+        "q1Total": 26.61
+      },
+      {
+        "metric": "Onboarding Completion Rate",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "metric": "Trial to Conversion Rate",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      }
+    ]
+  },
+  "sales": {
+    "title": "Sales",
+    "rows": [
+      {
+        "metric": "Seller Confidence Survey",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "metric": "Deal Velocity",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "metric": "Win Rate",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "metric": "ACV",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "metric": "AIVA Attach Rate",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      }
+    ]
+  }
+}

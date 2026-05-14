@@ -1,0 +1,1380 @@
+{
+  "byCohort": {
+    "s2": {
+      "overall": {
+        "won": 206,
+        "lost": 176,
+        "open": 120,
+        "total": 502,
+        "winRate": 41,
+        "wonMrr": 92201.08,
+        "lostMrr": 121337,
+        "wonByDealType": {
+          "land": {
+            "deals": 146,
+            "mrr": 67722.08
+          },
+          "expandH": {
+            "deals": 24,
+            "mrr": 10679
+          },
+          "expandV": {
+            "deals": 36,
+            "mrr": 13800
+          }
+        },
+        "lostByDealType": {
+          "land": {
+            "deals": 169,
+            "mrr": 119450
+          },
+          "expandH": {
+            "deals": 2,
+            "mrr": 550
+          },
+          "expandV": {
+            "deals": 5,
+            "mrr": 1337
+          }
+        }
+      },
+      "100plus": {
+        "won": 26,
+        "lost": 37,
+        "open": 28,
+        "total": 91,
+        "winRate": 28.6,
+        "wonMrr": 15571,
+        "lostMrr": 37321,
+        "wonByDealType": {
+          "land": {
+            "deals": 9,
+            "mrr": 6153
+          },
+          "expandH": {
+            "deals": 4,
+            "mrr": 3445
+          },
+          "expandV": {
+            "deals": 13,
+            "mrr": 5973
+          }
+        },
+        "lostByDealType": {
+          "land": {
+            "deals": 35,
+            "mrr": 36621
+          },
+          "expandH": {
+            "deals": 1,
+            "mrr": 400
+          },
+          "expandV": {
+            "deals": 1,
+            "mrr": 300
+          }
+        }
+      },
+      "100minus": {
+        "won": 180,
+        "lost": 139,
+        "open": 92,
+        "total": 411,
+        "winRate": 43.8,
+        "wonMrr": 76630.08,
+        "lostMrr": 84016,
+        "wonByDealType": {
+          "land": {
+            "deals": 137,
+            "mrr": 61569.08
+          },
+          "expandH": {
+            "deals": 20,
+            "mrr": 7234
+          },
+          "expandV": {
+            "deals": 23,
+            "mrr": 7827
+          }
+        },
+        "lostByDealType": {
+          "land": {
+            "deals": 134,
+            "mrr": 82829
+          },
+          "expandH": {
+            "deals": 1,
+            "mrr": 150
+          },
+          "expandV": {
+            "deals": 4,
+            "mrr": 1037
+          }
+        }
+      }
+    },
+    "closeDate": {
+      "overall": {
+        "won": 232,
+        "lost": 275,
+        "open": 5,
+        "total": 507,
+        "winRate": 45.8,
+        "wonMrr": 117405.08,
+        "lostMrr": 254663.99,
+        "wonByDealType": {
+          "land": {
+            "deals": 169,
+            "mrr": 89348.08
+          },
+          "expandH": {
+            "deals": 25,
+            "mrr": 13435
+          },
+          "expandV": {
+            "deals": 38,
+            "mrr": 14622
+          }
+        },
+        "lostByDealType": {
+          "land": {
+            "deals": 263,
+            "mrr": 250098.99
+          },
+          "expandH": {
+            "deals": 5,
+            "mrr": 2278
+          },
+          "expandV": {
+            "deals": 7,
+            "mrr": 2287
+          }
+        }
+      },
+      "100plus": {
+        "won": 32,
+        "lost": 55,
+        "open": 0,
+        "total": 87,
+        "winRate": 36.8,
+        "wonMrr": 19691,
+        "lostMrr": 75942,
+        "wonByDealType": {
+          "land": {
+            "deals": 14,
+            "mrr": 9817
+          },
+          "expandH": {
+            "deals": 4,
+            "mrr": 3445
+          },
+          "expandV": {
+            "deals": 14,
+            "mrr": 6429
+          }
+        },
+        "lostByDealType": {
+          "land": {
+            "deals": 52,
+            "mrr": 74692
+          },
+          "expandH": {
+            "deals": 2,
+            "mrr": 950
+          },
+          "expandV": {
+            "deals": 1,
+            "mrr": 300
+          }
+        }
+      },
+      "100minus": {
+        "won": 200,
+        "lost": 220,
+        "open": 5,
+        "total": 420,
+        "winRate": 47.6,
+        "wonMrr": 97714.08,
+        "lostMrr": 178721.99,
+        "wonByDealType": {
+          "land": {
+            "deals": 155,
+            "mrr": 79531.08
+          },
+          "expandH": {
+            "deals": 21,
+            "mrr": 9990
+          },
+          "expandV": {
+            "deals": 24,
+            "mrr": 8193
+          }
+        },
+        "lostByDealType": {
+          "land": {
+            "deals": 211,
+            "mrr": 175406.99
+          },
+          "expandH": {
+            "deals": 3,
+            "mrr": 1328
+          },
+          "expandV": {
+            "deals": 6,
+            "mrr": 1987
+          }
+        }
+      }
+    }
+  },
+  "byAE_s2": [
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "region": "NAMER",
+      "won": 27,
+      "lost": 42,
+      "open": 12,
+      "total": 81,
+      "winRate": 33.3,
+      "wonMrr": 12053,
+      "lostMrr": 29433,
+      "wonByDealType": {
+        "land": {
+          "deals": 21,
+          "mrr": 10948
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 234
+        },
+        "expandV": {
+          "deals": 5,
+          "mrr": 871
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 41,
+          "mrr": 28933
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 500
+        }
+      },
+      "s1Deals": 117,
+      "s1ToS2Pct": 68.4
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "region": "NAMER",
+      "won": 40,
+      "lost": 16,
+      "open": 14,
+      "total": 70,
+      "winRate": 57.1,
+      "wonMrr": 17460,
+      "lostMrr": 11816,
+      "wonByDealType": {
+        "land": {
+          "deals": 29,
+          "mrr": 13316
+        },
+        "expandH": {
+          "deals": 9,
+          "mrr": 3504
+        },
+        "expandV": {
+          "deals": 2,
+          "mrr": 640
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 16,
+          "mrr": 11816
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 107,
+      "s1ToS2Pct": 61.7
+    },
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "region": "NAMER",
+      "won": 42,
+      "lost": 3,
+      "open": 17,
+      "total": 62,
+      "winRate": 67.7,
+      "wonMrr": 18115,
+      "lostMrr": 1065,
+      "wonByDealType": {
+        "land": {
+          "deals": 30,
+          "mrr": 12207
+        },
+        "expandH": {
+          "deals": 3,
+          "mrr": 2422
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 3486
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 3,
+          "mrr": 1065
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 93,
+      "s1ToS2Pct": 63.4
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "region": "NAMER",
+      "won": 28,
+      "lost": 19,
+      "open": 12,
+      "total": 59,
+      "winRate": 47.5,
+      "wonMrr": 15167,
+      "lostMrr": 12095,
+      "wonByDealType": {
+        "land": {
+          "deals": 17,
+          "mrr": 10726
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 190
+        },
+        "expandV": {
+          "deals": 10,
+          "mrr": 4251
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 18,
+          "mrr": 11995
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 100
+        }
+      },
+      "s1Deals": 92,
+      "s1ToS2Pct": 64.1
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "region": "NAMER",
+      "won": 22,
+      "lost": 17,
+      "open": 17,
+      "total": 56,
+      "winRate": 39.3,
+      "wonMrr": 10749,
+      "lostMrr": 15272,
+      "wonByDealType": {
+        "land": {
+          "deals": 13,
+          "mrr": 6231
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 2769
+        },
+        "expandV": {
+          "deals": 7,
+          "mrr": 1749
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 16,
+          "mrr": 14972
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 300
+        }
+      },
+      "s1Deals": 86,
+      "s1ToS2Pct": 62.8
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "region": "EMEA",
+      "won": 9,
+      "lost": 24,
+      "open": 7,
+      "total": 40,
+      "winRate": 22.5,
+      "wonMrr": 2110,
+      "lostMrr": 12424,
+      "wonByDealType": {
+        "land": {
+          "deals": 3,
+          "mrr": 982
+        },
+        "expandH": {
+          "deals": 5,
+          "mrr": 836
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 292
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 23,
+          "mrr": 12325
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 99
+        }
+      },
+      "s1Deals": 79,
+      "s1ToS2Pct": 49.4
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "region": "EMEA",
+      "won": 14,
+      "lost": 20,
+      "open": 6,
+      "total": 40,
+      "winRate": 35,
+      "wonMrr": 5119,
+      "lostMrr": 9388,
+      "wonByDealType": {
+        "land": {
+          "deals": 12,
+          "mrr": 3160
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 85
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 1874
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 17,
+          "mrr": 8500
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 550
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 338
+        }
+      },
+      "s1Deals": 76,
+      "s1ToS2Pct": 52.6
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "region": "APAC",
+      "won": 15,
+      "lost": 8,
+      "open": 13,
+      "total": 36,
+      "winRate": 41.7,
+      "wonMrr": 6991.08,
+      "lostMrr": 12257,
+      "wonByDealType": {
+        "land": {
+          "deals": 15,
+          "mrr": 6991.08
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 8,
+          "mrr": 12257
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 74,
+      "s1ToS2Pct": 47.3
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "region": "NAMER",
+      "won": 4,
+      "lost": 11,
+      "open": 10,
+      "total": 25,
+      "winRate": 16,
+      "wonMrr": 3176,
+      "lostMrr": 8540,
+      "wonByDealType": {
+        "land": {
+          "deals": 3,
+          "mrr": 2752
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 424
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 11,
+          "mrr": 8540
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 29,
+      "s1ToS2Pct": 79.3
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "region": "EMEA",
+      "won": 2,
+      "lost": 11,
+      "open": 5,
+      "total": 18,
+      "winRate": 11.1,
+      "wonMrr": 309,
+      "lostMrr": 5797,
+      "wonByDealType": {
+        "land": {
+          "deals": 2,
+          "mrr": 309
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 11,
+          "mrr": 5797
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 34,
+      "s1ToS2Pct": 52.9
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "region": "NAMER",
+      "won": 1,
+      "lost": 5,
+      "open": 7,
+      "total": 13,
+      "winRate": 7.7,
+      "wonMrr": 637,
+      "lostMrr": 3250,
+      "wonByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 637
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 5,
+          "mrr": 3250
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 19,
+      "s1ToS2Pct": 63.2
+    },
+    {
+      "ownerId": "",
+      "name": "Unknown",
+      "region": "Unknown",
+      "won": 1,
+      "lost": 0,
+      "open": 0,
+      "total": 1,
+      "winRate": 100,
+      "wonMrr": 215,
+      "lostMrr": 0,
+      "wonByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 215
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 2,
+      "s1ToS2Pct": 50
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "region": "Unknown",
+      "won": 1,
+      "lost": 0,
+      "open": 0,
+      "total": 1,
+      "winRate": 100,
+      "wonMrr": 100,
+      "lostMrr": 0,
+      "wonByDealType": {
+        "land": {
+          "deals": 1,
+          "mrr": 100
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s1Deals": 1,
+      "s1ToS2Pct": 100
+    }
+  ],
+  "byAE_closeDate": [
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "region": "NAMER",
+      "won": 30,
+      "lost": 50,
+      "open": 0,
+      "total": 80,
+      "winRate": 37.5,
+      "wonMrr": 12847,
+      "lostMrr": 34545,
+      "wonByDealType": {
+        "land": {
+          "deals": 24,
+          "mrr": 11742
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 234
+        },
+        "expandV": {
+          "deals": 5,
+          "mrr": 871
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 49,
+          "mrr": 34045
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 500
+        }
+      }
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "region": "NAMER",
+      "won": 41,
+      "lost": 23,
+      "open": 4,
+      "total": 64,
+      "winRate": 64.1,
+      "wonMrr": 18590,
+      "lostMrr": 16385,
+      "wonByDealType": {
+        "land": {
+          "deals": 30,
+          "mrr": 14446
+        },
+        "expandH": {
+          "deals": 9,
+          "mrr": 3504
+        },
+        "expandV": {
+          "deals": 2,
+          "mrr": 640
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 22,
+          "mrr": 15785
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 600
+        }
+      }
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "region": "NAMER",
+      "won": 29,
+      "lost": 28,
+      "open": 1,
+      "total": 57,
+      "winRate": 50.9,
+      "wonMrr": 17269,
+      "lostMrr": 23374,
+      "wonByDealType": {
+        "land": {
+          "deals": 18,
+          "mrr": 11929
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 2769
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 2571
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 25,
+          "mrr": 22346
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 728
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 300
+        }
+      }
+    },
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "region": "NAMER",
+      "won": 46,
+      "lost": 10,
+      "open": 0,
+      "total": 56,
+      "winRate": 82.1,
+      "wonMrr": 20243,
+      "lostMrr": 10572,
+      "wonByDealType": {
+        "land": {
+          "deals": 34,
+          "mrr": 14335
+        },
+        "expandH": {
+          "deals": 3,
+          "mrr": 2422
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 3486
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 9,
+          "mrr": 10222
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 350
+        }
+      }
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "region": "NAMER",
+      "won": 30,
+      "lost": 25,
+      "open": 0,
+      "total": 55,
+      "winRate": 54.5,
+      "wonMrr": 20175,
+      "lostMrr": 21153,
+      "wonByDealType": {
+        "land": {
+          "deals": 19,
+          "mrr": 15734
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 190
+        },
+        "expandV": {
+          "deals": 10,
+          "mrr": 4251
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 24,
+          "mrr": 21053
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 100
+        }
+      }
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "region": "APAC",
+      "won": 18,
+      "lost": 30,
+      "open": 0,
+      "total": 48,
+      "winRate": 37.5,
+      "wonMrr": 9566.08,
+      "lostMrr": 47581.99,
+      "wonByDealType": {
+        "land": {
+          "deals": 18,
+          "mrr": 9566.08
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 29,
+          "mrr": 46581.99
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 1000
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "region": "EMEA",
+      "won": 11,
+      "lost": 36,
+      "open": 0,
+      "total": 47,
+      "winRate": 23.4,
+      "wonMrr": 4265,
+      "lostMrr": 30428,
+      "wonByDealType": {
+        "land": {
+          "deals": 5,
+          "mrr": 3137
+        },
+        "expandH": {
+          "deals": 5,
+          "mrr": 836
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 292
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 35,
+          "mrr": 30329
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 99
+        }
+      }
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "region": "EMEA",
+      "won": 15,
+      "lost": 27,
+      "open": 0,
+      "total": 42,
+      "winRate": 35.7,
+      "wonMrr": 5873,
+      "lostMrr": 15338,
+      "wonByDealType": {
+        "land": {
+          "deals": 13,
+          "mrr": 3914
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 85
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 1874
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 24,
+          "mrr": 14450
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 550
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 338
+        }
+      }
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "region": "NAMER",
+      "won": 5,
+      "lost": 23,
+      "open": 0,
+      "total": 28,
+      "winRate": 17.9,
+      "wonMrr": 5932,
+      "lostMrr": 21340,
+      "wonByDealType": {
+        "land": {
+          "deals": 3,
+          "mrr": 2752
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 3180
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 23,
+          "mrr": 21340
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "region": "EMEA",
+      "won": 2,
+      "lost": 11,
+      "open": 0,
+      "total": 13,
+      "winRate": 15.4,
+      "wonMrr": 309,
+      "lostMrr": 5797,
+      "wonByDealType": {
+        "land": {
+          "deals": 2,
+          "mrr": 309
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 11,
+          "mrr": 5797
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "region": "NAMER",
+      "won": 3,
+      "lost": 7,
+      "open": 0,
+      "total": 10,
+      "winRate": 30,
+      "wonMrr": 2021,
+      "lostMrr": 4350,
+      "wonByDealType": {
+        "land": {
+          "deals": 2,
+          "mrr": 1384
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 637
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 7,
+          "mrr": 4350
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1261252981",
+      "name": "Anthony Brown",
+      "region": "Unknown",
+      "won": 0,
+      "lost": 4,
+      "open": 0,
+      "total": 4,
+      "winRate": 0,
+      "wonMrr": 0,
+      "lostMrr": 6800,
+      "wonByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 4,
+          "mrr": 6800
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "66211660",
+      "name": "Jordan Verity",
+      "region": "Unknown",
+      "won": 0,
+      "lost": 1,
+      "open": 0,
+      "total": 1,
+      "winRate": 0,
+      "wonMrr": 0,
+      "lostMrr": 17000,
+      "wonByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 1,
+          "mrr": 17000
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "",
+      "name": "Unknown",
+      "region": "Unknown",
+      "won": 1,
+      "lost": 0,
+      "open": 0,
+      "total": 1,
+      "winRate": 100,
+      "wonMrr": 215,
+      "lostMrr": 0,
+      "wonByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 215
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "region": "Unknown",
+      "won": 1,
+      "lost": 0,
+      "open": 0,
+      "total": 1,
+      "winRate": 100,
+      "wonMrr": 100,
+      "lostMrr": 0,
+      "wonByDealType": {
+        "land": {
+          "deals": 1,
+          "mrr": 100
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "lostByDealType": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    }
+  ]
+}

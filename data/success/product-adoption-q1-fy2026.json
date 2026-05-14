@@ -1,0 +1,375 @@
+{
+  "months": [
+    "Feb 2026",
+    "Mar 2026",
+    "Apr 2026"
+  ],
+  "cohorts": {
+    "new": [
+      {
+        "module_group": null,
+        "metric": "New Customer base",
+        "values": [
+          343,
+          725,
+          1050
+        ],
+        "is_customer_base": true
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Overall Voice Non-Zero users",
+        "values": [
+          298,
+          635,
+          909
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Inbound Voice Non-Zero users",
+        "values": [
+          243,
+          553,
+          790
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Outbound Voice Non-Zero users",
+        "values": [
+          273,
+          566,
+          826
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Overall SMS Non-Zero users",
+        "values": [
+          162,
+          390,
+          561
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Inbound SMS Non-Zero users",
+        "values": [
+          148,
+          370,
+          540
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Outbound SMS Non-Zero users",
+        "values": [
+          71,
+          144,
+          235
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "IVR Module",
+        "metric": "IVR Non-Zero users",
+        "values": [
+          13,
+          30,
+          49
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Overall Sales Dialer Non-Zero users",
+        "values": [
+          54,
+          122,
+          189
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Inbound Sales Dialer Non-Zero users",
+        "values": [
+          50,
+          103,
+          160
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Outbound Sales Dialer Non-Zero users",
+        "values": [
+          53,
+          118,
+          185
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Integrations",
+        "metric": "Integrations Non-Zero users",
+        "values": [
+          186,
+          383,
+          555
+        ],
+        "is_customer_base": false
+      }
+    ],
+    "existing": [
+      {
+        "module_group": null,
+        "metric": "Existing Customer base",
+        "values": [
+          4689,
+          4431,
+          4214
+        ],
+        "is_customer_base": true
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Overall Voice Non-Zero users",
+        "values": [
+          4035,
+          3865,
+          3667
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Inbound Voice Non-Zero users",
+        "values": [
+          3902,
+          3728,
+          3561
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Outbound Voice Non-Zero users",
+        "values": [
+          3102,
+          2993,
+          2837
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Overall SMS Non-Zero users",
+        "values": [
+          3007,
+          2957,
+          2826
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Inbound SMS Non-Zero users",
+        "values": [
+          2944,
+          2901,
+          2769
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Outbound SMS Non-Zero users",
+        "values": [
+          1987,
+          1966,
+          1905
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "IVR Module",
+        "metric": "IVR Non-Zero users",
+        "values": [
+          471,
+          462,
+          465
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Overall Sales Dialer Non-Zero users",
+        "values": [
+          249,
+          209,
+          189
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Inbound Sales Dialer Non-Zero users",
+        "values": [
+          227,
+          187,
+          169
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Outbound Sales Dialer Non-Zero users",
+        "values": [
+          191,
+          157,
+          136
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Integrations",
+        "metric": "Integrations Non-Zero users",
+        "values": [
+          2987,
+          2838,
+          2717
+        ],
+        "is_customer_base": false
+      }
+    ],
+    "total": [
+      {
+        "module_group": null,
+        "metric": "Total Customer base",
+        "values": [
+          5032,
+          5156,
+          5264
+        ],
+        "is_customer_base": true
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Overall Voice Non-Zero users",
+        "values": [
+          4333,
+          4500,
+          4576
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Inbound Voice Non-Zero users",
+        "values": [
+          4145,
+          4281,
+          4351
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Voice Module",
+        "metric": "Outbound Voice Non-Zero users",
+        "values": [
+          3375,
+          3559,
+          3663
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Overall SMS Non-Zero users",
+        "values": [
+          3169,
+          3347,
+          3387
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Inbound SMS Non-Zero users",
+        "values": [
+          3092,
+          3271,
+          3309
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "SMS Module",
+        "metric": "Outbound SMS Non-Zero users",
+        "values": [
+          2058,
+          2110,
+          2140
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "IVR Module",
+        "metric": "IVR Non-Zero users",
+        "values": [
+          484,
+          492,
+          514
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Overall Sales Dialer Non-Zero users",
+        "values": [
+          303,
+          331,
+          378
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Inbound Sales Dialer Non-Zero users",
+        "values": [
+          277,
+          290,
+          329
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Sales Dialer Module",
+        "metric": "Outbound Sales Dialer Non-Zero users",
+        "values": [
+          244,
+          275,
+          321
+        ],
+        "is_customer_base": false
+      },
+      {
+        "module_group": "Integrations",
+        "metric": "Integrations Non-Zero users",
+        "values": [
+          3173,
+          3221,
+          3272
+        ],
+        "is_customer_base": false
+      }
+    ]
+  }
+}

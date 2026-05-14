@@ -1,0 +1,197 @@
+{
+  "all": {
+    "createdInQ1": {
+      "total": 405,
+      "totalAmount": 314102.0,
+      "byStage": [
+        {
+          "stage": "CS Identified Lead",
+          "deals": 219,
+          "amount": 103793.0
+        },
+        {
+          "stage": "Closed Won",
+          "deals": 107,
+          "amount": 134233.0
+        },
+        {
+          "stage": "Deal Qualification",
+          "deals": 38,
+          "amount": 32316.0
+        },
+        {
+          "stage": "Closed Lost",
+          "deals": 24,
+          "amount": 27045.0
+        },
+        {
+          "stage": "Proposal",
+          "deals": 9,
+          "amount": 8717.0
+        },
+        {
+          "stage": "Demo",
+          "deals": 8,
+          "amount": 7998.0
+        }
+      ]
+    },
+    "closedInQ1": {
+      "total": 356,
+      "totalAmount": 348500.2,
+      "byStage": [
+        {
+          "stage": "CS Identified Lead",
+          "deals": 154,
+          "amount": 48111.0
+        },
+        {
+          "stage": "Closed Won",
+          "deals": 111,
+          "amount": 142491.0
+        },
+        {
+          "stage": "Closed Lost",
+          "deals": 74,
+          "amount": 147158.2
+        },
+        {
+          "stage": "Deal Qualification",
+          "deals": 10,
+          "amount": 5722.0
+        },
+        {
+          "stage": "Demo",
+          "deals": 5,
+          "amount": 4325.0
+        },
+        {
+          "stage": "Proposal",
+          "deals": 2,
+          "amount": 693.0
+        }
+      ]
+    },
+    "openIntoQ2": {
+      "total": 174,
+      "totalAmount": 125354.0,
+      "byStage": [
+        {
+          "stage": "CS Identified Lead",
+          "deals": 117,
+          "amount": 72050.0
+        },
+        {
+          "stage": "Deal Qualification",
+          "deals": 37,
+          "amount": 29596.0
+        },
+        {
+          "stage": "Proposal",
+          "deals": 11,
+          "amount": 12210.0
+        },
+        {
+          "stage": "Demo",
+          "deals": 9,
+          "amount": 11498.0
+        }
+      ]
+    }
+  },
+  "aiva": {
+    "createdInQ1": {
+      "total": 131,
+      "totalAmount": 85393.0,
+      "byStage": [
+        {
+          "stage": "CS Identified Lead",
+          "deals": 64,
+          "amount": 23709.0
+        },
+        {
+          "stage": "Closed Won",
+          "deals": 29,
+          "amount": 30661.0
+        },
+        {
+          "stage": "Deal Qualification",
+          "deals": 19,
+          "amount": 8716.0
+        },
+        {
+          "stage": "Closed Lost",
+          "deals": 10,
+          "amount": 11238.0
+        },
+        {
+          "stage": "Demo",
+          "deals": 6,
+          "amount": 5498.0
+        },
+        {
+          "stage": "Proposal",
+          "deals": 3,
+          "amount": 5571.0
+        }
+      ]
+    },
+    "closedInQ1": {
+      "total": 122,
+      "totalAmount": 67953.0,
+      "byStage": [
+        {
+          "stage": "CS Identified Lead",
+          "deals": 54,
+          "amount": 18216.0
+        },
+        {
+          "stage": "Closed Lost",
+          "deals": 36,
+          "amount": 18218.0
+        },
+        {
+          "stage": "Closed Won",
+          "deals": 28,
+          "amount": 29670.0
+        },
+        {
+          "stage": "Deal Qualification",
+          "deals": 2,
+          "amount": 799.0
+        },
+        {
+          "stage": "Demo",
+          "deals": 2,
+          "amount": 1050.0
+        }
+      ]
+    },
+    "openIntoQ2": {
+      "total": 61,
+      "totalAmount": 41493.0,
+      "byStage": [
+        {
+          "stage": "CS Identified Lead",
+          "deals": 29,
+          "amount": 15106.0
+        },
+        {
+          "stage": "Deal Qualification",
+          "deals": 20,
+          "amount": 8435.0
+        },
+        {
+          "stage": "Demo",
+          "deals": 8,
+          "amount": 9498.0
+        },
+        {
+          "stage": "Proposal",
+          "deals": 4,
+          "amount": 8454.0
+        }
+      ]
+    }
+  }
+}

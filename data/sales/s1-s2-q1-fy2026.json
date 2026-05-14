@@ -1,0 +1,1196 @@
+{
+  "totalS1Deals": 819,
+  "totalS2Deals": 487,
+  "totalS1Mrr": 476950,
+  "totalS2Mrr": 304936,
+  "conversionPct": 59.5,
+  "s1ByDealType": {
+    "land": {
+      "deals": 736,
+      "mrr": 442238
+    },
+    "expandH": {
+      "deals": 33,
+      "mrr": 16033
+    },
+    "expandV": {
+      "deals": 50,
+      "mrr": 18679
+    }
+  },
+  "s2ByDealType": {
+    "land": {
+      "deals": 411,
+      "mrr": 273024
+    },
+    "expandH": {
+      "deals": 29,
+      "mrr": 13759
+    },
+    "expandV": {
+      "deals": 47,
+      "mrr": 18153
+    }
+  },
+  "byAE": [
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "s1Deals": 117,
+      "s2Deals": 80,
+      "s1Mrr": 75224,
+      "s2Mrr": 53557,
+      "conversionPct": 68.4,
+      "s1": {
+        "land": {
+          "deals": 105,
+          "mrr": 70850
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 234
+        },
+        "expandV": {
+          "deals": 11,
+          "mrr": 4140
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 69,
+          "mrr": 49445
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 234
+        },
+        "expandV": {
+          "deals": 10,
+          "mrr": 3878
+        }
+      }
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "s1Deals": 107,
+      "s2Deals": 66,
+      "s1Mrr": 54990,
+      "s2Mrr": 33553,
+      "conversionPct": 61.7,
+      "s1": {
+        "land": {
+          "deals": 94,
+          "mrr": 49632
+        },
+        "expandH": {
+          "deals": 11,
+          "mrr": 4718
+        },
+        "expandV": {
+          "deals": 2,
+          "mrr": 640
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 54,
+          "mrr": 29109
+        },
+        "expandH": {
+          "deals": 10,
+          "mrr": 3804
+        },
+        "expandV": {
+          "deals": 2,
+          "mrr": 640
+        }
+      }
+    },
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "s1Deals": 93,
+      "s2Deals": 59,
+      "s1Mrr": 44884,
+      "s2Mrr": 25983,
+      "conversionPct": 63.4,
+      "s1": {
+        "land": {
+          "deals": 81,
+          "mrr": 38976
+        },
+        "expandH": {
+          "deals": 3,
+          "mrr": 2422
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 3486
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 47,
+          "mrr": 20075
+        },
+        "expandH": {
+          "deals": 3,
+          "mrr": 2422
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 3486
+        }
+      }
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "s1Deals": 92,
+      "s2Deals": 59,
+      "s1Mrr": 54651,
+      "s2Mrr": 36351,
+      "conversionPct": 64.1,
+      "s1": {
+        "land": {
+          "deals": 80,
+          "mrr": 50110
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 190
+        },
+        "expandV": {
+          "deals": 11,
+          "mrr": 4351
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 47,
+          "mrr": 31810
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 190
+        },
+        "expandV": {
+          "deals": 11,
+          "mrr": 4351
+        }
+      }
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "s1Deals": 86,
+      "s2Deals": 54,
+      "s1Mrr": 52493,
+      "s2Mrr": 39572,
+      "conversionPct": 62.8,
+      "s1": {
+        "land": {
+          "deals": 73,
+          "mrr": 45145
+        },
+        "expandH": {
+          "deals": 4,
+          "mrr": 4999
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 2349
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 41,
+          "mrr": 32224
+        },
+        "expandH": {
+          "deals": 4,
+          "mrr": 4999
+        },
+        "expandV": {
+          "deals": 9,
+          "mrr": 2349
+        }
+      }
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "s1Deals": 79,
+      "s2Deals": 39,
+      "s1Mrr": 35502,
+      "s2Mrr": 18133,
+      "conversionPct": 49.4,
+      "s1": {
+        "land": {
+          "deals": 71,
+          "mrr": 34066
+        },
+        "expandH": {
+          "deals": 5,
+          "mrr": 836
+        },
+        "expandV": {
+          "deals": 3,
+          "mrr": 600
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 31,
+          "mrr": 16697
+        },
+        "expandH": {
+          "deals": 5,
+          "mrr": 836
+        },
+        "expandV": {
+          "deals": 3,
+          "mrr": 600
+        }
+      }
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "s1Deals": 76,
+      "s2Deals": 40,
+      "s1Mrr": 37770,
+      "s2Mrr": 17829,
+      "conversionPct": 52.6,
+      "s1": {
+        "land": {
+          "deals": 69,
+          "mrr": 34659
+        },
+        "expandH": {
+          "deals": 3,
+          "mrr": 635
+        },
+        "expandV": {
+          "deals": 4,
+          "mrr": 2476
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 35,
+          "mrr": 14982
+        },
+        "expandH": {
+          "deals": 3,
+          "mrr": 635
+        },
+        "expandV": {
+          "deals": 2,
+          "mrr": 2212
+        }
+      }
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "s1Deals": 74,
+      "s2Deals": 35,
+      "s1Mrr": 59021,
+      "s2Mrr": 38057,
+      "conversionPct": 47.3,
+      "s1": {
+        "land": {
+          "deals": 72,
+          "mrr": 58221
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 800
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 35,
+          "mrr": 38057
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "s1Deals": 34,
+      "s2Deals": 18,
+      "s1Mrr": 15532,
+      "s2Mrr": 7632,
+      "conversionPct": 52.9,
+      "s1": {
+        "land": {
+          "deals": 34,
+          "mrr": 15532
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 18,
+          "mrr": 7632
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "s1Deals": 29,
+      "s2Deals": 23,
+      "s1Mrr": 28117,
+      "s2Mrr": 25017,
+      "conversionPct": 79.3,
+      "s1": {
+        "land": {
+          "deals": 28,
+          "mrr": 27693
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 424
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 22,
+          "mrr": 24593
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 424
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "s1Deals": 19,
+      "s2Deals": 12,
+      "s1Mrr": 13137,
+      "s2Mrr": 8937,
+      "conversionPct": 63.2,
+      "s1": {
+        "land": {
+          "deals": 18,
+          "mrr": 12500
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 637
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 11,
+          "mrr": 8300
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 1,
+          "mrr": 637
+        }
+      }
+    },
+    {
+      "ownerId": "80946983",
+      "name": "Psrea Singh",
+      "s1Deals": 3,
+      "s2Deals": 0,
+      "s1Mrr": 1283,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 3,
+          "mrr": 1283
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "",
+      "name": "Unknown",
+      "s1Deals": 2,
+      "s2Deals": 1,
+      "s1Mrr": 775,
+      "s2Mrr": 215,
+      "conversionPct": 50,
+      "s1": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 2,
+          "mrr": 775
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 1,
+          "mrr": 215
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "744551695",
+      "name": "Unknown (744551695)",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 350,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 350
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "322464634",
+      "name": "Rishi Agarwal",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 371,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 371
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "80947097",
+      "name": "Suyash Yadav",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 600
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1009927245",
+      "name": "Joel Philip",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 600
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "634693314",
+      "name": "Megha Patil",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 350,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 350
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1566222292",
+      "name": "Anand Bhagat",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 600
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "s1Deals": 1,
+      "s2Deals": 1,
+      "s1Mrr": 100,
+      "s2Mrr": 100,
+      "conversionPct": 100,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 100
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 1,
+          "mrr": 100
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1675515871",
+      "name": "Unknown (1675515871)",
+      "s1Deals": 1,
+      "s2Deals": 0,
+      "s1Mrr": 600,
+      "s2Mrr": 0,
+      "conversionPct": 0,
+      "s1": {
+        "land": {
+          "deals": 1,
+          "mrr": 600
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    }
+  ],
+  "bySdr": [
+    {
+      "ownerId": "80946983",
+      "name": "Psrea Singh",
+      "role": "SDR",
+      "s1Deals": 128,
+      "s2Deals": 52,
+      "s1Mrr": 62279,
+      "s2Mrr": 20783,
+      "conversionPct": 40.6,
+      "s1": {
+        "land": {
+          "deals": 128,
+          "mrr": 62279
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 52,
+          "mrr": 20783
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "322464634",
+      "name": "Rishi Agarwal",
+      "role": "SDR",
+      "s1Deals": 105,
+      "s2Deals": 63,
+      "s1Mrr": 57185,
+      "s2Mrr": 36857,
+      "conversionPct": 60,
+      "s1": {
+        "land": {
+          "deals": 105,
+          "mrr": 57185
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 63,
+          "mrr": 36857
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "80947097",
+      "name": "Suyash Yadav",
+      "role": "SDR",
+      "s1Deals": 93,
+      "s2Deals": 63,
+      "s1Mrr": 71379,
+      "s2Mrr": 51807,
+      "conversionPct": 67.7,
+      "s1": {
+        "land": {
+          "deals": 93,
+          "mrr": 71379
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 63,
+          "mrr": 51807
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1566222292",
+      "name": "Anand Bhagat",
+      "role": "SDR",
+      "s1Deals": 78,
+      "s2Deals": 43,
+      "s1Mrr": 47024,
+      "s2Mrr": 27175,
+      "conversionPct": 55.1,
+      "s1": {
+        "land": {
+          "deals": 78,
+          "mrr": 47024
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 43,
+          "mrr": 27175
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "81219550",
+      "name": "Gajendra Singh",
+      "role": "SDR",
+      "s1Deals": 64,
+      "s2Deals": 43,
+      "s1Mrr": 40840,
+      "s2Mrr": 30507,
+      "conversionPct": 67.2,
+      "s1": {
+        "land": {
+          "deals": 64,
+          "mrr": 40840
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 43,
+          "mrr": 30507
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "2004790025",
+      "name": "Anmol Multani",
+      "role": "SDR",
+      "s1Deals": 63,
+      "s2Deals": 36,
+      "s1Mrr": 39142,
+      "s2Mrr": 26767,
+      "conversionPct": 57.1,
+      "s1": {
+        "land": {
+          "deals": 63,
+          "mrr": 39142
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 36,
+          "mrr": 26767
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1078138479",
+      "name": "Aditya Raj",
+      "role": "SDR",
+      "s1Deals": 15,
+      "s2Deals": 9,
+      "s1Mrr": 7090,
+      "s2Mrr": 4672,
+      "conversionPct": 60,
+      "s1": {
+        "land": {
+          "deals": 15,
+          "mrr": 7090
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 9,
+          "mrr": 4672
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "1391784932",
+      "name": "Yash Dharwala",
+      "role": "BDR",
+      "s1Deals": 13,
+      "s2Deals": 9,
+      "s1Mrr": 7100,
+      "s2Mrr": 5400,
+      "conversionPct": 69.2,
+      "s1": {
+        "land": {
+          "deals": 13,
+          "mrr": 7100
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 9,
+          "mrr": 5400
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "163106863",
+      "name": "Rishya Jana",
+      "role": "SDR",
+      "s1Deals": 13,
+      "s2Deals": 5,
+      "s1Mrr": 14659,
+      "s2Mrr": 9859,
+      "conversionPct": 38.5,
+      "s1": {
+        "land": {
+          "deals": 13,
+          "mrr": 14659
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 5,
+          "mrr": 9859
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    },
+    {
+      "ownerId": "952001830",
+      "name": "Royston Fritchley",
+      "role": "BDR",
+      "s1Deals": 9,
+      "s2Deals": 7,
+      "s1Mrr": 6393,
+      "s2Mrr": 5293,
+      "conversionPct": 77.8,
+      "s1": {
+        "land": {
+          "deals": 9,
+          "mrr": 6393
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      },
+      "s2": {
+        "land": {
+          "deals": 7,
+          "mrr": 5293
+        },
+        "expandH": {
+          "deals": 0,
+          "mrr": 0
+        },
+        "expandV": {
+          "deals": 0,
+          "mrr": 0
+        }
+      }
+    }
+  ]
+}

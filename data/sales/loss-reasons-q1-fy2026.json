@@ -1,0 +1,735 @@
+{
+  "totalDeals": 275,
+  "totalMRR": 254663.99,
+  "reasons": [
+    {
+      "reason": "No response / no decision",
+      "deals": 112,
+      "mrr": 110426,
+      "pct": 40.7,
+      "mrrPct": 43.4
+    },
+    {
+      "reason": "Others",
+      "deals": 40,
+      "mrr": 31981,
+      "pct": 14.5,
+      "mrrPct": 12.6
+    },
+    {
+      "reason": "Timing not right",
+      "deals": 31,
+      "mrr": 22634,
+      "pct": 11.3,
+      "mrrPct": 8.9
+    },
+    {
+      "reason": "Pricing & Packaging",
+      "deals": 29,
+      "mrr": 32343,
+      "pct": 10.5,
+      "mrrPct": 12.7
+    },
+    {
+      "reason": "Missing feature/Product related issues",
+      "deals": 19,
+      "mrr": 22242,
+      "pct": 6.9,
+      "mrrPct": 8.7
+    },
+    {
+      "reason": "Billing/ Payement / Business Related",
+      "deals": 16,
+      "mrr": 12980,
+      "pct": 5.8,
+      "mrrPct": 5.1
+    },
+    {
+      "reason": "Future Opportunity",
+      "deals": 8,
+      "mrr": 8309,
+      "pct": 2.9,
+      "mrrPct": 3.3
+    },
+    {
+      "reason": "Billing/Business related",
+      "deals": 4,
+      "mrr": 2735.99,
+      "pct": 1.5,
+      "mrrPct": 1.1
+    },
+    {
+      "reason": "Lost to Competitor",
+      "deals": 3,
+      "mrr": 1857,
+      "pct": 1.1,
+      "mrrPct": 0.7
+    },
+    {
+      "reason": "No Show",
+      "deals": 3,
+      "mrr": 1800,
+      "pct": 1.1,
+      "mrrPct": 0.7
+    },
+    {
+      "reason": "Other",
+      "deals": 2,
+      "mrr": 2606,
+      "pct": 0.7,
+      "mrrPct": 1
+    },
+    {
+      "reason": "Support and services related issues",
+      "deals": 2,
+      "mrr": 993,
+      "pct": 0.7,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Junk",
+      "deals": 1,
+      "mrr": 600,
+      "pct": 0.4,
+      "mrrPct": 0.2
+    },
+    {
+      "reason": "Product misfit",
+      "deals": 1,
+      "mrr": 600,
+      "pct": 0.4,
+      "mrrPct": 0.2
+    },
+    {
+      "reason": "Unrespsonsive",
+      "deals": 1,
+      "mrr": 1000,
+      "pct": 0.4,
+      "mrrPct": 0.4
+    },
+    {
+      "reason": "Pricing",
+      "deals": 1,
+      "mrr": 400,
+      "pct": 0.4,
+      "mrrPct": 0.2
+    },
+    {
+      "reason": "No Decision / Non-Responsive",
+      "deals": 1,
+      "mrr": 650,
+      "pct": 0.4,
+      "mrrPct": 0.3
+    },
+    {
+      "reason": "ICP misfit",
+      "deals": 1,
+      "mrr": 507,
+      "pct": 0.4,
+      "mrrPct": 0.2
+    }
+  ],
+  "byAE": [
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "totalDeals": 50,
+      "totalMRR": 34545,
+      "reasons": [
+        {
+          "reason": "Billing/ Payement / Business Related",
+          "deals": 15,
+          "mrr": 12730,
+          "pct": 30,
+          "mrrPct": 36.9
+        },
+        {
+          "reason": "No response / no decision",
+          "deals": 11,
+          "mrr": 8432,
+          "pct": 22,
+          "mrrPct": 24.4
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 9,
+          "mrr": 3918,
+          "pct": 18,
+          "mrrPct": 11.3
+        },
+        {
+          "reason": "Pricing & Packaging",
+          "deals": 7,
+          "mrr": 4428,
+          "pct": 14,
+          "mrrPct": 12.8
+        },
+        {
+          "reason": "Billing/Business related",
+          "deals": 3,
+          "mrr": 2236,
+          "pct": 6,
+          "mrrPct": 6.5
+        },
+        {
+          "reason": "Future Opportunity",
+          "deals": 1,
+          "mrr": 152,
+          "pct": 2,
+          "mrrPct": 0.4
+        },
+        {
+          "reason": "No Decision / Non-Responsive",
+          "deals": 1,
+          "mrr": 650,
+          "pct": 2,
+          "mrrPct": 1.9
+        },
+        {
+          "reason": "Lost to Competitor",
+          "deals": 1,
+          "mrr": 420,
+          "pct": 2,
+          "mrrPct": 1.2
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 1,
+          "mrr": 1072,
+          "pct": 2,
+          "mrrPct": 3.1
+        },
+        {
+          "reason": "ICP misfit",
+          "deals": 1,
+          "mrr": 507,
+          "pct": 2,
+          "mrrPct": 1.5
+        }
+      ]
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "totalDeals": 36,
+      "totalMRR": 30428,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 14,
+          "mrr": 13360,
+          "pct": 38.9,
+          "mrrPct": 43.9
+        },
+        {
+          "reason": "Pricing & Packaging",
+          "deals": 8,
+          "mrr": 3705,
+          "pct": 22.2,
+          "mrrPct": 12.2
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 6,
+          "mrr": 8672,
+          "pct": 16.7,
+          "mrrPct": 28.5
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 3,
+          "mrr": 1145,
+          "pct": 8.3,
+          "mrrPct": 3.8
+        },
+        {
+          "reason": "Others",
+          "deals": 3,
+          "mrr": 2701,
+          "pct": 8.3,
+          "mrrPct": 8.9
+        },
+        {
+          "reason": "No Show",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 2.8,
+          "mrrPct": 2
+        },
+        {
+          "reason": "Support and services related issues",
+          "deals": 1,
+          "mrr": 245,
+          "pct": 2.8,
+          "mrrPct": 0.8
+        }
+      ]
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "totalDeals": 30,
+      "totalMRR": 47581.99,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 7,
+          "mrr": 12930,
+          "pct": 23.3,
+          "mrrPct": 27.2
+        },
+        {
+          "reason": "Pricing & Packaging",
+          "deals": 5,
+          "mrr": 17555,
+          "pct": 16.7,
+          "mrrPct": 36.9
+        },
+        {
+          "reason": "Future Opportunity",
+          "deals": 5,
+          "mrr": 5657,
+          "pct": 16.7,
+          "mrrPct": 11.9
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 3,
+          "mrr": 4539,
+          "pct": 10,
+          "mrrPct": 9.5
+        },
+        {
+          "reason": "Others",
+          "deals": 2,
+          "mrr": 1008,
+          "pct": 6.7,
+          "mrrPct": 2.1
+        },
+        {
+          "reason": "Lost to Competitor",
+          "deals": 1,
+          "mrr": 837,
+          "pct": 3.3,
+          "mrrPct": 1.8
+        },
+        {
+          "reason": "Junk",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 3.3,
+          "mrrPct": 1.3
+        },
+        {
+          "reason": "Billing/Business related",
+          "deals": 1,
+          "mrr": 499.99,
+          "pct": 3.3,
+          "mrrPct": 1.1
+        },
+        {
+          "reason": "Product misfit",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 3.3,
+          "mrrPct": 1.3
+        },
+        {
+          "reason": "Other",
+          "deals": 1,
+          "mrr": 2006,
+          "pct": 3.3,
+          "mrrPct": 4.2
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 1,
+          "mrr": 500,
+          "pct": 3.3,
+          "mrrPct": 1.1
+        },
+        {
+          "reason": "No Show",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 3.3,
+          "mrrPct": 1.3
+        },
+        {
+          "reason": "Billing/ Payement / Business Related",
+          "deals": 1,
+          "mrr": 250,
+          "pct": 3.3,
+          "mrrPct": 0.5
+        }
+      ]
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "totalDeals": 28,
+      "totalMRR": 23374,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 11,
+          "mrr": 8072,
+          "pct": 39.3,
+          "mrrPct": 34.5
+        },
+        {
+          "reason": "Pricing & Packaging",
+          "deals": 7,
+          "mrr": 4941,
+          "pct": 25,
+          "mrrPct": 21.1
+        },
+        {
+          "reason": "Others",
+          "deals": 3,
+          "mrr": 1022,
+          "pct": 10.7,
+          "mrrPct": 4.4
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 3,
+          "mrr": 1503,
+          "pct": 10.7,
+          "mrrPct": 6.4
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 3,
+          "mrr": 7088,
+          "pct": 10.7,
+          "mrrPct": 30.3
+        },
+        {
+          "reason": "Support and services related issues",
+          "deals": 1,
+          "mrr": 748,
+          "pct": 3.6,
+          "mrrPct": 3.2
+        }
+      ]
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "totalDeals": 27,
+      "totalMRR": 15338,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 14,
+          "mrr": 8300,
+          "pct": 51.9,
+          "mrrPct": 54.1
+        },
+        {
+          "reason": "Others",
+          "deals": 12,
+          "mrr": 6838,
+          "pct": 44.4,
+          "mrrPct": 44.6
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 1,
+          "mrr": 200,
+          "pct": 3.7,
+          "mrrPct": 1.3
+        }
+      ]
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "totalDeals": 25,
+      "totalMRR": 21153,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 16,
+          "mrr": 12824,
+          "pct": 64,
+          "mrrPct": 60.6
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 4,
+          "mrr": 4115,
+          "pct": 16,
+          "mrrPct": 19.5
+        },
+        {
+          "reason": "Others",
+          "deals": 2,
+          "mrr": 1750,
+          "pct": 8,
+          "mrrPct": 8.3
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 2,
+          "mrr": 2000,
+          "pct": 8,
+          "mrrPct": 9.5
+        },
+        {
+          "reason": "Pricing & Packaging",
+          "deals": 1,
+          "mrr": 464,
+          "pct": 4,
+          "mrrPct": 2.2
+        }
+      ]
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "totalDeals": 23,
+      "totalMRR": 21340,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 8,
+          "mrr": 6200,
+          "pct": 34.8,
+          "mrrPct": 29.1
+        },
+        {
+          "reason": "Others",
+          "deals": 6,
+          "mrr": 6100,
+          "pct": 26.1,
+          "mrrPct": 28.6
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 3,
+          "mrr": 3290,
+          "pct": 13,
+          "mrrPct": 15.4
+        },
+        {
+          "reason": "Future Opportunity",
+          "deals": 2,
+          "mrr": 2500,
+          "pct": 8.7,
+          "mrrPct": 11.7
+        },
+        {
+          "reason": "Unrespsonsive",
+          "deals": 1,
+          "mrr": 1000,
+          "pct": 4.3,
+          "mrrPct": 4.7
+        },
+        {
+          "reason": "Pricing",
+          "deals": 1,
+          "mrr": 400,
+          "pct": 4.3,
+          "mrrPct": 1.9
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 4.3,
+          "mrrPct": 2.8
+        },
+        {
+          "reason": "Pricing & Packaging",
+          "deals": 1,
+          "mrr": 1250,
+          "pct": 4.3,
+          "mrrPct": 5.9
+        }
+      ]
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "totalDeals": 23,
+      "totalMRR": 16385,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 15,
+          "mrr": 9342,
+          "pct": 65.2,
+          "mrrPct": 57
+        },
+        {
+          "reason": "Others",
+          "deals": 5,
+          "mrr": 3642,
+          "pct": 21.7,
+          "mrrPct": 22.2
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 2,
+          "mrr": 2591,
+          "pct": 8.7,
+          "mrrPct": 15.8
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 1,
+          "mrr": 810,
+          "pct": 4.3,
+          "mrrPct": 4.9
+        }
+      ]
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "totalDeals": 11,
+      "totalMRR": 5797,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 6,
+          "mrr": 3597,
+          "pct": 54.5,
+          "mrrPct": 62
+        },
+        {
+          "reason": "Others",
+          "deals": 2,
+          "mrr": 1200,
+          "pct": 18.2,
+          "mrrPct": 20.7
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 2,
+          "mrr": 700,
+          "pct": 18.2,
+          "mrrPct": 12.1
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 1,
+          "mrr": 300,
+          "pct": 9.1,
+          "mrrPct": 5.2
+        }
+      ]
+    },
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "totalDeals": 10,
+      "totalMRR": 10572,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 6,
+          "mrr": 9019,
+          "pct": 60,
+          "mrrPct": 85.3
+        },
+        {
+          "reason": "Timing not right",
+          "deals": 3,
+          "mrr": 1233,
+          "pct": 30,
+          "mrrPct": 11.7
+        },
+        {
+          "reason": "Others",
+          "deals": 1,
+          "mrr": 320,
+          "pct": 10,
+          "mrrPct": 3
+        }
+      ]
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "totalDeals": 7,
+      "totalMRR": 4350,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 3,
+          "mrr": 1350,
+          "pct": 42.9,
+          "mrrPct": 31
+        },
+        {
+          "reason": "Lost to Competitor",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 14.3,
+          "mrrPct": 13.8
+        },
+        {
+          "reason": "Others",
+          "deals": 1,
+          "mrr": 1200,
+          "pct": 14.3,
+          "mrrPct": 27.6
+        },
+        {
+          "reason": "Missing feature/Product related issues",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 14.3,
+          "mrrPct": 13.8
+        },
+        {
+          "reason": "No Show",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 14.3,
+          "mrrPct": 13.8
+        }
+      ]
+    },
+    {
+      "ownerId": "1261252981",
+      "name": "Anthony Brown",
+      "totalDeals": 4,
+      "totalMRR": 6800,
+      "reasons": [
+        {
+          "reason": "Others",
+          "deals": 3,
+          "mrr": 6200,
+          "pct": 75,
+          "mrrPct": 91.2
+        },
+        {
+          "reason": "Other",
+          "deals": 1,
+          "mrr": 600,
+          "pct": 25,
+          "mrrPct": 8.8
+        }
+      ]
+    },
+    {
+      "ownerId": "66211660",
+      "name": "Jordan Verity",
+      "totalDeals": 1,
+      "totalMRR": 17000,
+      "reasons": [
+        {
+          "reason": "No response / no decision",
+          "deals": 1,
+          "mrr": 17000,
+          "pct": 100,
+          "mrrPct": 100
+        }
+      ]
+    }
+  ]
+}

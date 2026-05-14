@@ -1,104 +1,118 @@
 "use client";
 
-import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-
-const SALES_SECTIONS = [
-  { id: "s2",          label: "S2 Pipeline" },
-  { id: "s1s2",        label: "S1→S2%" },
-  { id: "winrate",     label: "Win Rate" },
-  { id: "bookings",    label: "Bookings" },
-  { id: "acv",         label: "ACV" },
-  { id: "salescycle",  label: "Sales Cycle" },
-  { id: "winreasons",  label: "Win Reasons" },
-  { id: "lossreasons", label: "Loss Reasons" },
-] as const;
-
-const SALES_IDS = new Set(SALES_SECTIONS.map((s) => s.id));
-
-const OTHER_TEAMS = [
-  "Customer Success",
-  "Marketing",
-  "Product",
-  "RevOps",
-  "Data & Analytics",
-];
+import { ChevronRight } from "lucide-react";
+import { useState } from "react";
+import { SECTIONS } from "@/sections/registry";
+import { useSidebar } from "./SidebarContext";
 
 export default function Sidebar() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const activeSection = searchParams.get("sec") ?? "s2";
+  const activeTab = searchParams.get("sec") ?? "s2";
+  const { collapsed } = useSidebar();
 
-  // Sales is expanded only if a Sales section is active
-  const [salesOpen, setSalesOpen] = useState(SALES_IDS.has(activeSection as any));
+  const activeSectionId = SECTIONS.find((s) => s.tabs.some((t) => t.id === activeTab))?.id ?? "sales";
+  const [openSection, setOpenSection] = useState<string>(activeSectionId);
 
-  function navigate(sec: string) {
+  function navigate(tabId: string) {
     const params = new URLSearchParams(searchParams.toString());
-    params.set("sec", sec);
+    params.set("sec", tabId);
     router.push(`?${params.toString()}`);
   }
 
   return (
-    <aside className="flex w-56 flex-shrink-0 flex-col border-r border-gray-200 bg-white sticky top-0 h-screen overflow-y-auto">
+    <aside
+      className={`flex flex-shrink-0 flex-col border-r border-slate-800 bg-slate-900 sticky top-0 h-screen overflow-y-auto transition-[width] duration-200 ${
+        collapsed ? "w-16" : "w-56"
+      }`}
+    >
       {/* Brand */}
-      <div className="border-b border-gray-100 px-5 py-5">
-        <p className="text-sm font-bold uppercase tracking-widest text-indigo-600">QBR Dashboard</p>
+      <div className={`flex items-center border-b border-slate-800 ${collapsed ? "justify-center px-2 py-4" : "px-4 py-4"}`}>
+        <span className="text-sm font-bold uppercase tracking-widest text-white">
+          {collapsed ? "QBR" : "QBR Dashboard"}
+        </span>
       </div>
 
-      {/* Navigation */}
-      <nav className="flex-1 px-3 py-4">
-        {/* Sales — collapsible */}
-        <div className="mb-4">
-          <button
-            onClick={() => setSalesOpen((o) => !o)}
-            className="mb-1 flex w-full items-center justify-between rounded-lg bg-indigo-50 px-3 py-2"
-          >
-            <div className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-indigo-500" />
-              <span className="text-sm font-semibold text-indigo-700">Sales</span>
-            </div>
-            <svg
-              className={`h-3.5 w-3.5 text-indigo-400 transition-transform ${salesOpen ? "rotate-90" : ""}`}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+      <nav className="flex-1 px-2 py-4">
+        {!collapsed && (
+          <p className="mb-2 px-2 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+            Departments
+          </p>
+        )}
 
-          {salesOpen && (
-            <div className="ml-3 space-y-0.5 border-l border-gray-100 pl-3">
-              {SALES_SECTIONS.map(({ id, label }) => (
-                <button
-                  key={id}
-                  onClick={() => navigate(id)}
-                  className={`w-full rounded-md px-2 py-1.5 text-left text-sm transition-colors ${
-                    activeSection === id
-                      ? "bg-indigo-50 font-semibold text-indigo-600"
-                      : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+        <div className="space-y-1">
+          {SECTIONS.map((section) => {
+            const Icon = section.icon;
+            const isOpen = openSection === section.id;
+            const isActiveSection = section.id === activeSectionId;
+
+            if (!section.enabled) {
+              return (
+                <div
+                  key={section.id}
+                  className={`flex cursor-not-allowed items-center gap-2 rounded-md px-2 py-2 text-slate-500 ${
+                    collapsed ? "justify-center" : ""
                   }`}
+                  title={`${section.label} — coming soon`}
                 >
-                  {label}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
+                  <Icon size={18} />
+                  {!collapsed && <span className="text-sm">{section.label}</span>}
+                </div>
+              );
+            }
 
-        {/* Other teams */}
-        <div className="border-t border-gray-100 pt-3 space-y-0.5">
-          {OTHER_TEAMS.map((team) => (
-            <div
-              key={team}
-              className="flex cursor-not-allowed items-center gap-2 rounded-lg px-3 py-2"
-              title="Coming soon"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-gray-200" />
-              <span className="text-sm text-gray-400">{team}</span>
-            </div>
-          ))}
+            return (
+              <div key={section.id}>
+                <button
+                  onClick={() => {
+                    if (collapsed) {
+                      // In collapsed mode, click jumps to first tab of section.
+                      const first = section.tabs[0];
+                      if (first) navigate(first.id);
+                    } else {
+                      setOpenSection(isOpen ? "" : section.id);
+                    }
+                  }}
+                  title={collapsed ? section.label : undefined}
+                  className={`flex w-full items-center gap-2 rounded-md px-2 py-2 transition-colors ${
+                    isActiveSection
+                      ? "bg-teal-500/20 text-teal-300"
+                      : "text-slate-200 hover:bg-slate-800"
+                  } ${collapsed ? "justify-center" : ""}`}
+                >
+                  <Icon size={18} className="flex-shrink-0" />
+                  {!collapsed && (
+                    <>
+                      <span className="flex-1 text-left text-sm font-semibold">{section.label}</span>
+                      <ChevronRight
+                        size={14}
+                        className={`transition-transform ${isOpen ? "rotate-90" : ""} text-slate-400`}
+                      />
+                    </>
+                  )}
+                </button>
+
+                {!collapsed && isOpen && (
+                  <div className="ml-3 mt-1 space-y-0.5 border-l border-slate-700 pl-3">
+                    {section.tabs.map((t) => (
+                      <button
+                        key={t.id}
+                        onClick={() => navigate(t.id)}
+                        className={`w-full rounded-md px-2 py-1.5 text-left text-sm transition-colors ${
+                          activeTab === t.id
+                            ? "bg-teal-500/15 font-semibold text-teal-200"
+                            : "text-slate-400 hover:bg-slate-800 hover:text-slate-100"
+                        }`}
+                      >
+                        {t.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </nav>
     </aside>

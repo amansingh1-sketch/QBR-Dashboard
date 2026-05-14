@@ -1,0 +1,231 @@
+{
+  "periodLabel": "Q1 FY2027",
+  "social": {
+    "title": "Social Metrics",
+    "groupHeader": "Channel / Platform",
+    "rows": [
+      {
+        "group": "LinkedIn",
+        "metric": "Channel Growth",
+        "nov": 190,
+        "dec": 175,
+        "jan": 128,
+        "q4Total": 493,
+        "feb": 164,
+        "mar": 158,
+        "apr": 128,
+        "q1Total": 450
+      },
+      {
+        "group": "LinkedIn",
+        "metric": "Impressions",
+        "nov": 19942,
+        "dec": 14624,
+        "jan": 13274,
+        "q4Total": 47840,
+        "feb": 10011,
+        "mar": 11274,
+        "apr": 8337,
+        "q1Total": 29622
+      },
+      {
+        "group": "LinkedIn",
+        "metric": "Comments",
+        "nov": 30,
+        "dec": 20,
+        "jan": 17,
+        "q4Total": 67,
+        "feb": 25,
+        "mar": 4,
+        "apr": 16,
+        "q1Total": 45
+      },
+      {
+        "group": "LinkedIn",
+        "metric": "Mentions",
+        "nov": null,
+        "dec": null,
+        "jan": null,
+        "q4Total": 0,
+        "feb": null,
+        "mar": 7,
+        "apr": 43,
+        "q1Total": 50
+      },
+      {
+        "group": "Instagram",
+        "metric": "Channel Growth",
+        "nov": 20,
+        "dec": 28,
+        "jan": 13,
+        "q4Total": 61,
+        "feb": 50,
+        "mar": 354,
+        "apr": 336,
+        "q1Total": 740
+      },
+      {
+        "group": "Instagram",
+        "metric": "Impressions",
+        "nov": 4536,
+        "dec": 9722,
+        "jan": 4741,
+        "q4Total": 18999,
+        "feb": 5269,
+        "mar": 8921,
+        "apr": 9262,
+        "q1Total": 23452
+      },
+      {
+        "group": "Instagram",
+        "metric": "Comments",
+        "nov": 2,
+        "dec": 0,
+        "jan": 2,
+        "q4Total": 4,
+        "feb": 3,
+        "mar": 2,
+        "apr": 3,
+        "q1Total": 8
+      },
+      {
+        "group": "Instagram",
+        "metric": "Mentions",
+        "nov": null,
+        "dec": null,
+        "jan": null,
+        "q4Total": 0,
+        "feb": null,
+        "mar": null,
+        "apr": null,
+        "q1Total": 0
+      },
+      {
+        "group": "YouTube",
+        "metric": "Views (Organic)",
+        "nov": 2261,
+        "dec": 5648,
+        "jan": 2828,
+        "q4Total": 10737,
+        "feb": 4679,
+        "mar": 34561,
+        "apr": 38536,
+        "q1Total": 77776
+      },
+      {
+        "group": "YouTube",
+        "metric": "Impressions",
+        "nov": 19235,
+        "dec": 21456,
+        "jan": 23527,
+        "q4Total": 64218,
+        "feb": 20457,
+        "mar": 27185,
+        "apr": 42607,
+        "q1Total": 90249
+      },
+      {
+        "group": "YouTube",
+        "metric": "Subscribers",
+        "nov": 12,
+        "dec": 18,
+        "jan": 11,
+        "q4Total": 41,
+        "feb": 17,
+        "mar": 24,
+        "apr": 21,
+        "q1Total": 62
+      },
+      {
+        "group": "YouTube",
+        "metric": "Shares",
+        "nov": 24,
+        "dec": 61,
+        "jan": 22,
+        "q4Total": 107,
+        "feb": 25,
+        "mar": 31,
+        "apr": 107,
+        "q1Total": 163
+      }
+    ]
+  },
+  "reputation": {
+    "title": "Online Reputation",
+    "groupHeader": "Channel / Platform",
+    "rows": [
+      {
+        "group": "G2",
+        "metric": "Positive Reviews",
+        "nov": 11,
+        "dec": 101,
+        "jan": 56,
+        "q4Total": 168,
+        "feb": 4,
+        "mar": 7,
+        "apr": 11,
+        "q1Total": 22
+      },
+      {
+        "group": "G2",
+        "metric": "Negative Reviews",
+        "nov": 0,
+        "dec": 4,
+        "jan": 5,
+        "q4Total": 9,
+        "feb": 2,
+        "mar": 1,
+        "apr": 2,
+        "q1Total": 5
+      },
+      {
+        "group": "TrustRadius",
+        "metric": "Positive Reviews",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "group": "TrustRadius",
+        "metric": "Negative Reviews",
+        "nov": 0,
+        "dec": 0,
+        "jan": 0,
+        "q4Total": 0,
+        "feb": 0,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 0
+      },
+      {
+        "group": "Capterra",
+        "metric": "Positive Reviews",
+        "nov": 1,
+        "dec": 1,
+        "jan": 0,
+        "q4Total": 2,
+        "feb": 1,
+        "mar": 0,
+        "apr": 0,
+        "q1Total": 1
+      },
+      {
+        "group": "Capterra",
+        "metric": "Negative Reviews",
+        "nov": 1,
+        "dec": 0,
+        "jan": 1,
+        "q4Total": 2,
+        "feb": 1,
+        "mar": 0,
+        "apr": 1,
+        "q1Total": 2
+      }
+    ]
+  }
+}

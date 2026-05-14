@@ -1,0 +1,484 @@
+{
+  "totalDeals": 232,
+  "totalMRR": 117405.08,
+  "totalACV": 1408860.96,
+  "avgDealSize": 506.06,
+  "totalMrrQuota": 171000,
+  "totalMrrQuotaPct": 68.7,
+  "totalAcvQuota": 2052000,
+  "totalAcvQuotaPct": 68.7,
+  "byRegion": [
+    {
+      "region": "NAMER",
+      "deals": 184,
+      "mrr": 97077,
+      "land": {
+        "deals": 130,
+        "mrr": 72322
+      },
+      "expandH": {
+        "deals": 18,
+        "mrr": 12299
+      },
+      "expandV": {
+        "deals": 36,
+        "mrr": 12456
+      }
+    },
+    {
+      "region": "EMEA",
+      "deals": 28,
+      "mrr": 10447,
+      "land": {
+        "deals": 20,
+        "mrr": 7360
+      },
+      "expandH": {
+        "deals": 6,
+        "mrr": 921
+      },
+      "expandV": {
+        "deals": 2,
+        "mrr": 2166
+      }
+    },
+    {
+      "region": "APAC",
+      "deals": 18,
+      "mrr": 9566.08,
+      "land": {
+        "deals": 18,
+        "mrr": 9566.08
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "region": "Unknown",
+      "deals": 2,
+      "mrr": 315,
+      "land": {
+        "deals": 1,
+        "mrr": 100
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 215
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    }
+  ],
+  "byAE": [
+    {
+      "ownerId": "2136092292",
+      "name": "Manmeet Saluja",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 46,
+      "mrr": 20243,
+      "mrrQuota": 15600,
+      "mrrQuotaPct": 129.8,
+      "acvQuota": 187200,
+      "acvQuotaPct": 129.8,
+      "land": {
+        "deals": 34,
+        "mrr": 14335
+      },
+      "expandH": {
+        "deals": 3,
+        "mrr": 2422
+      },
+      "expandV": {
+        "deals": 9,
+        "mrr": 3486
+      }
+    },
+    {
+      "ownerId": "491798563",
+      "name": "Rohit Lakhanpal",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 30,
+      "mrr": 20175,
+      "mrrQuota": 17400,
+      "mrrQuotaPct": 115.9,
+      "acvQuota": 208800,
+      "acvQuotaPct": 115.9,
+      "land": {
+        "deals": 19,
+        "mrr": 15734
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 190
+      },
+      "expandV": {
+        "deals": 10,
+        "mrr": 4251
+      }
+    },
+    {
+      "ownerId": "186570908",
+      "name": "Swapnil Dwivedi",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 41,
+      "mrr": 18590,
+      "mrrQuota": 15600,
+      "mrrQuotaPct": 119.2,
+      "acvQuota": 187200,
+      "acvQuotaPct": 119.2,
+      "land": {
+        "deals": 30,
+        "mrr": 14446
+      },
+      "expandH": {
+        "deals": 9,
+        "mrr": 3504
+      },
+      "expandV": {
+        "deals": 2,
+        "mrr": 640
+      }
+    },
+    {
+      "ownerId": "714622523",
+      "name": "Rohan Verma",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 29,
+      "mrr": 17269,
+      "mrrQuota": 15600,
+      "mrrQuotaPct": 110.7,
+      "acvQuota": 187200,
+      "acvQuotaPct": 110.7,
+      "land": {
+        "deals": 18,
+        "mrr": 11929
+      },
+      "expandH": {
+        "deals": 2,
+        "mrr": 2769
+      },
+      "expandV": {
+        "deals": 9,
+        "mrr": 2571
+      }
+    },
+    {
+      "ownerId": "95970067",
+      "name": "Yash Chandra",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 30,
+      "mrr": 12847,
+      "mrrQuota": 17400,
+      "mrrQuotaPct": 73.8,
+      "acvQuota": 208800,
+      "acvQuotaPct": 73.8,
+      "land": {
+        "deals": 24,
+        "mrr": 11742
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 234
+      },
+      "expandV": {
+        "deals": 5,
+        "mrr": 871
+      }
+    },
+    {
+      "ownerId": "80591062",
+      "name": "Abhijeet Srivastava",
+      "region": "APAC",
+      "isActive": true,
+      "deals": 18,
+      "mrr": 9566.08,
+      "mrrQuota": 15600,
+      "mrrQuotaPct": 61.3,
+      "acvQuota": 187200,
+      "acvQuotaPct": 61.3,
+      "land": {
+        "deals": 18,
+        "mrr": 9566.08
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "491086913",
+      "name": "Erin Dean",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 5,
+      "mrr": 5932,
+      "mrrQuota": 19800,
+      "mrrQuotaPct": 30,
+      "acvQuota": 237600,
+      "acvQuotaPct": 30,
+      "land": {
+        "deals": 3,
+        "mrr": 2752
+      },
+      "expandH": {
+        "deals": 2,
+        "mrr": 3180
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "191671239",
+      "name": "Rishabh Bhushan",
+      "region": "EMEA",
+      "isActive": true,
+      "deals": 15,
+      "mrr": 5873,
+      "mrrQuota": 10400,
+      "mrrQuotaPct": 56.5,
+      "acvQuota": 124800,
+      "acvQuotaPct": 56.5,
+      "land": {
+        "deals": 13,
+        "mrr": 3914
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 85
+      },
+      "expandV": {
+        "deals": 1,
+        "mrr": 1874
+      }
+    },
+    {
+      "ownerId": "227811766",
+      "name": "Sneha Agarwal",
+      "region": "EMEA",
+      "isActive": true,
+      "deals": 11,
+      "mrr": 4265,
+      "mrrQuota": 17400,
+      "mrrQuotaPct": 24.5,
+      "acvQuota": 208800,
+      "acvQuotaPct": 24.5,
+      "land": {
+        "deals": 5,
+        "mrr": 3137
+      },
+      "expandH": {
+        "deals": 5,
+        "mrr": 836
+      },
+      "expandV": {
+        "deals": 1,
+        "mrr": 292
+      }
+    },
+    {
+      "ownerId": "1647719282",
+      "name": "Rory Costello",
+      "region": "NAMER",
+      "isActive": true,
+      "deals": 3,
+      "mrr": 2021,
+      "mrrQuota": 21000,
+      "mrrQuotaPct": 9.6,
+      "acvQuota": 252000,
+      "acvQuotaPct": 9.6,
+      "land": {
+        "deals": 2,
+        "mrr": 1384
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 1,
+        "mrr": 637
+      }
+    },
+    {
+      "ownerId": "162335834",
+      "name": "Ankit Shukla",
+      "region": "EMEA",
+      "isActive": true,
+      "deals": 2,
+      "mrr": 309,
+      "mrrQuota": 5200,
+      "mrrQuotaPct": 5.9,
+      "acvQuota": 62400,
+      "acvQuotaPct": 5.9,
+      "land": {
+        "deals": 2,
+        "mrr": 309
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "",
+      "name": "Unknown",
+      "region": "Unknown",
+      "isActive": false,
+      "deals": 1,
+      "mrr": 215,
+      "mrrQuota": 0,
+      "mrrQuotaPct": 0,
+      "acvQuota": 0,
+      "acvQuotaPct": 0,
+      "land": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 215
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "ownerId": "81122772",
+      "name": "Aashna Arora",
+      "region": "Unknown",
+      "isActive": false,
+      "deals": 1,
+      "mrr": 100,
+      "mrrQuota": 0,
+      "mrrQuotaPct": 0,
+      "acvQuota": 0,
+      "acvQuotaPct": 0,
+      "land": {
+        "deals": 1,
+        "mrr": 100
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    }
+  ],
+  "bySource": [
+    {
+      "source": "Marketing",
+      "deals": 150,
+      "mrr": 76761,
+      "land": {
+        "deals": 149,
+        "mrr": 76546
+      },
+      "expandH": {
+        "deals": 1,
+        "mrr": 215
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "source": "Unknown",
+      "deals": 63,
+      "mrr": 28058,
+      "land": {
+        "deals": 1,
+        "mrr": 216
+      },
+      "expandH": {
+        "deals": 24,
+        "mrr": 13220
+      },
+      "expandV": {
+        "deals": 38,
+        "mrr": 14622
+      }
+    },
+    {
+      "source": "Partnerships",
+      "deals": 16,
+      "mrr": 10036.08,
+      "land": {
+        "deals": 16,
+        "mrr": 10036.08
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    },
+    {
+      "source": "Sales",
+      "deals": 3,
+      "mrr": 2550,
+      "land": {
+        "deals": 3,
+        "mrr": 2550
+      },
+      "expandH": {
+        "deals": 0,
+        "mrr": 0
+      },
+      "expandV": {
+        "deals": 0,
+        "mrr": 0
+      }
+    }
+  ],
+  "bySubType": [
+    {
+      "type": "Annual",
+      "deals": 135,
+      "mrr": 78143.08,
+      "pct": 66.6
+    },
+    {
+      "type": "Monthly",
+      "deals": 86,
+      "mrr": 28062,
+      "pct": 23.9
+    },
+    {
+      "type": "Multiyear",
+      "deals": 11,
+      "mrr": 11200,
+      "pct": 9.5
+    }
+  ]
+}
