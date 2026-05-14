@@ -194,7 +194,7 @@ export default function NetExpansionsV2({ data }: { data: MrrChangeData }) {
     <section className="space-y-6">
       <div>
         <h2 className="text-lg font-bold text-gray-900">Net Expansions</h2>
-        <p className="text-sm text-gray-500">MRR movement Feb–May 2026 — preview (Option A: KPI strip + waterfall + condensed table).</p>
+        <p className="text-sm text-gray-500">MRR movement Q1 FY2026 (Feb–Apr 2026).</p>
       </div>
 
       {/* Toggles */}
@@ -232,7 +232,7 @@ export default function NetExpansionsV2({ data }: { data: MrrChangeData }) {
         <StatCard
           label="Net Expansion (Q1)"
           value={fmtSigned(q1Net)}
-          sub="Feb + Mar + Apr"
+          sub="Q1 FY2026: Feb + Mar + Apr"
           accent={q1Net >= 0 ? "emerald" : "indigo"}
         />
         <StatCard
