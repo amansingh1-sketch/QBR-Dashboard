@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { fmtMRR } from "@/lib/shared/format";
 import type { MrrChangeData, MrrChangeSegment, MrrChangeTable } from "../../types";
 
 type Segment = "total" | "scaled" | "strategic";
@@ -27,6 +26,13 @@ const ROW_DEFS: { key: keyof MrrChangeTable; label: string; isPct?: boolean; isN
   { key: "downgrade_pct", label: "Downgrade as % of start", isPct: true },
   { key: "churn_pct", label: "Churn as % of start", isPct: true },
 ];
+
+function fmtK(n: number): string {
+  if (!isFinite(n)) return "$0K";
+  const sign = n < 0 ? "-" : "";
+  const k = Math.abs(n) / 1000;
+  return `${sign}$${k >= 1000 ? Math.round(k).toLocaleString() : k.toFixed(1)}K`;
+}
 
 function fmtPct(v: number | null | undefined) {
   if (v == null) return "";
@@ -93,7 +99,7 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
                 <td className={`px-4 py-2 ${cls}`}>{rd.label}</td>
                 {vals.map((v, j) => (
                   <td key={j} className={`px-4 py-2 text-right ${cls}`}>
-                    {v == null ? "" : rd.isPct ? fmtPct(v) : fmtMRR(v)}
+                    {v == null ? "" : rd.isPct ? fmtPct(v) : fmtK(v)}
                   </td>
                 ))}
               </tr>
@@ -117,7 +123,7 @@ export default function NetExpansions({ data }: Props) {
     <section className="space-y-5">
       <div>
         <h2 className="text-lg font-bold text-gray-900">Net Expansions</h2>
-        <p className="text-sm text-gray-500">MRR change by month — Feb to May 2026.</p>
+        <p className="text-sm text-gray-500">MRR change by month — Q1 FY2026 (Feb–Apr 2026).</p>
       </div>
 
       {/* Segment switcher */}
