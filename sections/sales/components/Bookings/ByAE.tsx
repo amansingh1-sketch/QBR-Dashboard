@@ -9,8 +9,8 @@ import { applyDealTypeFilter, type DealTypeKey } from "@/sections/sales/componen
 import type { BookingsAERow } from "@/sections/sales/types";
 
 const REGION_COLOR: Record<string, string> = {
-  NAMER: "#6366f1",
-  EMEA:  "#10b981",
+  NAMER: "#6B8CAE",
+  EMEA:  "#5B9B8E",
   APAC:  "#f59e0b",
 };
 
@@ -23,7 +23,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
       <p className="text-xs text-gray-400 mb-1">{region}</p>
-      <p className="text-indigo-600">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
+      <p className="text-slate-700">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
       <p className="text-gray-600">Deals: <span className="font-bold">{fmtNumber(deals)}</span></p>
     </div>
   );
@@ -109,7 +109,7 @@ export default function ByAE({ data, selectedTypes }: { data: BookingsAERow[]; s
                     </span>
                   </td>
                   <td className="px-4 py-2.5 text-right text-gray-600">{fmtNumber(row.deals)}</td>
-                  <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(row.mrr)}</td>
+                  <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(row.mrr)}</td>
                   {showQuota && (
                     <td className="px-4 py-2.5 text-right text-gray-500">
                       {row.mrrQuota > 0 ? fmtMRR(row.mrrQuota) : <span className="text-gray-300">—</span>}
@@ -121,11 +121,11 @@ export default function ByAE({ data, selectedTypes }: { data: BookingsAERow[]; s
                         <div className="flex items-center justify-end gap-2">
                           <div className="h-1.5 w-14 overflow-hidden rounded-full bg-gray-100">
                             <div
-                              className={`h-full rounded-full ${row.mrrQuotaPct >= 100 ? "bg-emerald-500" : row.mrrQuotaPct >= 70 ? "bg-amber-400" : "bg-red-400"}`}
+                              className={`h-full rounded-full ${row.mrrQuotaPct >= 100 ? "bg-teal-500" : row.mrrQuotaPct >= 70 ? "bg-amber-500" : "bg-red-500"}`}
                               style={{ width: `${Math.min(row.mrrQuotaPct, 100)}%` }}
                             />
                           </div>
-                          <span className={`w-12 text-xs font-semibold ${row.mrrQuotaPct >= 100 ? "text-emerald-600" : row.mrrQuotaPct >= 70 ? "text-amber-600" : "text-red-500"}`}>
+                          <span className={`w-12 text-xs font-semibold ${row.mrrQuotaPct >= 100 ? "text-teal-700" : row.mrrQuotaPct >= 70 ? "text-amber-700" : "text-red-600"}`}>
                             {row.mrrQuotaPct}%
                           </span>
                         </div>

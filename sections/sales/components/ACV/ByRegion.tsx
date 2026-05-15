@@ -9,7 +9,7 @@ import type { ACVRegionRow } from "@/sections/sales/types";
 
 type Cohort = "overall" | "100plus" | "100minus";
 
-const COLORS = ["#6366f1", "#8b5cf6", "#06b6d4", "#f59e0b", "#10b981"];
+const COLORS = ["#6B8CAE", "#8B7FA8", "#06b6d4", "#f59e0b", "#5B9B8E"];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null;
@@ -72,7 +72,7 @@ export default function ByRegion({ data, cohort }: { data: ACVRegionRow[]; cohor
                 <tr key={row.region} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                   <td className="px-4 py-2 font-medium text-gray-800">{row.region}</td>
                   <td className="px-4 py-2 text-right text-gray-600">{fmtNumber(row.deals)}</td>
-                  <td className="px-4 py-2 text-right font-semibold text-indigo-600">{fmtMRR(row.totalACV)}</td>
+                  <td className="px-4 py-2 text-right font-semibold text-slate-700">{fmtMRR(row.totalACV)}</td>
                   <td className="px-4 py-2 text-right text-gray-600">{fmtMRR(row.avgACV)}</td>
                   <td className="px-4 py-2 text-right">
                     <div className="flex items-center justify-end gap-2">

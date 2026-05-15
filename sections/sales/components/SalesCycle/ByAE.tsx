@@ -9,8 +9,8 @@ import type { SalesCycleAERow } from "@/sections/sales/types";
 import ThresholdLegend from "@/lib/shared/ui/ThresholdLegend";
 
 const REGION_COLOR: Record<string, string> = {
-  NAMER: "#6366f1",
-  EMEA:  "#10b981",
+  NAMER: "#6B8CAE",
+  EMEA:  "#5B9B8E",
   APAC:  "#f59e0b",
 };
 
@@ -21,7 +21,7 @@ const CustomTooltip = ({ active, payload }: any) => {
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{d?.fullName}</p>
       <p className="text-xs text-gray-400 mb-1">{d?.region}</p>
-      <p className="text-indigo-600">Avg: <span className="font-bold">{d?.avgDays} days</span></p>
+      <p className="text-slate-700">Avg: <span className="font-bold">{d?.avgDays} days</span></p>
       <p className="text-gray-600">Median: <span className="font-bold">{d?.medianDays} days</span></p>
       <p className="text-gray-600">Deals: <span className="font-bold">{fmtNumber(d?.deals ?? 0)}</span></p>
       <p className="text-gray-500 text-xs">Range: {d?.minDays}–{d?.maxDays} days</p>
@@ -117,7 +117,7 @@ export default function ByAE({ data, overallMedian }: { data: SalesCycleAERow[];
                     {row.avgDays}d
                   </td>
                   <td className="px-4 py-2.5 text-center">
-                    <span className={`font-semibold ${isAboveMedian ? "text-amber-600" : "text-emerald-600"}`}>
+                    <span className={`font-semibold ${isAboveMedian ? "text-amber-700" : "text-teal-700"}`}>
                       {row.medianDays}d
                     </span>
                   </td>

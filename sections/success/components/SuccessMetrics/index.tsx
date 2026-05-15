@@ -102,15 +102,15 @@ export default function SuccessMetrics({ data }: Props) {
               <XAxis dataKey="month" tick={{ fontSize: 12, fill: "#64748b" }} />
               <YAxis tick={{ fontSize: 11, fill: "#64748b" }} width={36} />
               <Tooltip />
-              <Bar dataKey="Plan Upgrades"    fill="#6366f1" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="Monthly→Annual"   fill="#10b981" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="AIVA Activations" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Plan Upgrades"    fill="#6B8CAE" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Monthly→Annual"   fill="#5B9B8E" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="AIVA Activations" fill="#8B7FA8" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
           <div className="mt-3 flex flex-wrap gap-4 text-xs text-gray-600">
-            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-indigo-500" />Plan Upgrades</div>
-            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-emerald-500" />Monthly→Annual</div>
-            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-violet-500" />AIVA Activations</div>
+            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-slate-500" />Plan Upgrades</div>
+            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-teal-500" />Monthly→Annual</div>
+            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-indigo-300" />AIVA Activations</div>
           </div>
         </div>
       )}
@@ -122,9 +122,9 @@ export default function SuccessMetrics({ data }: Props) {
             <tr>
               <th className="px-4 py-2 text-left font-medium text-gray-500">Metric</th>
               {t.months.map((m) => (
-                <th key={m} className="px-4 py-2 text-right font-medium text-gray-500">{fmtLabel(m)}</th>
+                <th key={m} className="px-4 py-2 text-center font-medium text-gray-500">{fmtLabel(m)}</th>
               ))}
-              <th className="px-4 py-2 text-right font-medium text-gray-500">{isMTD ? "MTD Total" : "Period Total"}</th>
+              <th className="px-4 py-2 text-center font-medium text-gray-500">{isMTD ? "MTD Total" : "Period Total"}</th>
             </tr>
           </thead>
           <tbody>
@@ -135,9 +135,9 @@ export default function SuccessMetrics({ data }: Props) {
                 <tr key={rd.key} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                   <td className="px-4 py-2 font-medium text-gray-800">{rd.label}</td>
                   {vals.map((v, j) => (
-                    <td key={j} className="px-4 py-2 text-right text-gray-600">{fmtNumber(v ?? 0)}</td>
+                    <td key={j} className="px-4 py-2 text-center text-gray-600">{fmtNumber(v ?? 0)}</td>
                   ))}
-                  <td className="px-4 py-2 text-right font-semibold text-indigo-600">{fmtNumber(total)}</td>
+                  <td className="px-4 py-2 text-center font-semibold text-slate-700">{fmtNumber(total)}</td>
                 </tr>
               );
             })}

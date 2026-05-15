@@ -29,7 +29,7 @@ export default async function Home({ searchParams }: PageProps) {
 
   return (
     <SidebarProvider>
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen bg-slate-50">
         <Suspense fallback={<div className="w-56 flex-shrink-0 bg-slate-900" />}>
           <Sidebar />
         </Suspense>
@@ -37,7 +37,7 @@ export default async function Home({ searchParams }: PageProps) {
         <div className="flex flex-1 flex-col min-h-screen overflow-hidden">
           <TopBar fq={fq} />
 
-          <main className="flex-1 overflow-y-auto px-6 py-8">
+          <main className="flex-1 overflow-y-auto px-8 py-7">
             <div className="mx-auto max-w-6xl">
               <Suspense
                 fallback={

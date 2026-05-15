@@ -73,26 +73,26 @@ export default function Bookings({ data, periodLabel }: BookingsProps) {
 
       {/* KPI summary cards */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div className="rounded-xl border-l-4 border-indigo-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-slate-300 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Closed Won Deals</p>
           <p className="mt-1 text-2xl font-bold text-gray-900">{fmtNumber(totalDeals)}</p>
           <p className="text-xs text-gray-500">New Business · All deal types</p>
         </div>
-        <div className="rounded-xl border-l-4 border-emerald-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-teal-300 bg-white px-4 py-3 shadow-sm">
           <div className="flex items-baseline justify-between">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Total MRR Booked</p>
             {showQuota && mrrQuota > 0 && (
-              <span className={`text-xs font-semibold ${mrrPct >= 100 ? "text-emerald-600" : mrrPct >= 70 ? "text-amber-600" : "text-red-500"}`}>
+              <span className={`text-xs font-semibold ${mrrPct >= 100 ? "text-teal-700" : mrrPct >= 70 ? "text-amber-700" : "text-red-600"}`}>
                 {mrrPct}%
               </span>
             )}
           </div>
-          <p className="mt-1 text-2xl font-bold text-gray-900">{fmtMRR(totalMRR)}</p>
+          <p className="mt-1 text-2xl font-bold text-slate-800">{fmtMRR(totalMRR)}</p>
           {showQuota && mrrQuota > 0 ? (
             <>
               <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
                 <div
-                  className={`h-full rounded-full ${mrrPct >= 100 ? "bg-emerald-500" : mrrPct >= 70 ? "bg-amber-400" : "bg-red-400"}`}
+                  className={`h-full rounded-full ${mrrPct >= 100 ? "bg-teal-500" : mrrPct >= 70 ? "bg-amber-500" : "bg-red-500"}`}
                   style={{ width: `${Math.min(mrrPct, 100)}%` }}
                 />
               </div>
@@ -102,21 +102,21 @@ export default function Bookings({ data, periodLabel }: BookingsProps) {
             <p className="text-xs text-gray-500">Sum of deal amounts</p>
           )}
         </div>
-        <div className="rounded-xl border-l-4 border-violet-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-slate-300 bg-white px-4 py-3 shadow-sm">
           <div className="flex items-baseline justify-between">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">ACV Booked</p>
             {showQuota && acvQuota > 0 && (
-              <span className={`text-xs font-semibold ${acvPct >= 100 ? "text-emerald-600" : acvPct >= 70 ? "text-amber-600" : "text-red-500"}`}>
+              <span className={`text-xs font-semibold ${acvPct >= 100 ? "text-teal-700" : acvPct >= 70 ? "text-amber-700" : "text-red-600"}`}>
                 {acvPct}%
               </span>
             )}
           </div>
-          <p className="mt-1 text-2xl font-bold text-gray-900">{fmtMRR(totalACV)}</p>
+          <p className="mt-1 text-2xl font-bold text-slate-800">{fmtMRR(totalACV)}</p>
           {showQuota && acvQuota > 0 ? (
             <>
               <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
                 <div
-                  className={`h-full rounded-full ${acvPct >= 100 ? "bg-emerald-500" : acvPct >= 70 ? "bg-amber-400" : "bg-red-400"}`}
+                  className={`h-full rounded-full ${acvPct >= 100 ? "bg-teal-500" : acvPct >= 70 ? "bg-amber-500" : "bg-red-500"}`}
                   style={{ width: `${Math.min(acvPct, 100)}%` }}
                 />
               </div>

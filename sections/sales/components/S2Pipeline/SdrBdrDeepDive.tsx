@@ -17,8 +17,8 @@ import { applyDealTypeFilter, type DealTypeKey } from "@/sections/sales/componen
 import type { RepBreakdown } from "@/sections/sales/types";
 
 const ROLE_COLORS: Record<string, string> = {
-  SDR: "#6366f1",
-  BDR: "#8b5cf6",
+  SDR: "#6B8CAE",
+  BDR: "#8B7FA8",
 };
 
 const CustomTooltip = ({ active, payload, label }: any) => {
@@ -28,7 +28,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
-      <p className="text-indigo-600">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
+      <p className="text-slate-700">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
       <p className="text-gray-600">Deals: <span className="font-bold">{fmtNumber(deals)}</span></p>
     </div>
   );
@@ -94,7 +94,7 @@ export default function SdrBdrDeepDive({ data, selectedTypes }: { data: RepBreak
           <Tooltip content={<CustomTooltip />} />
           <Bar yAxisId="mrr" dataKey="mrr" name="MRR" radius={[4, 4, 0, 0]}>
             {sorted.map((rep) => (
-              <Cell key={rep.ownerId} fill={ROLE_COLORS[rep.role] ?? "#6366f1"} />
+              <Cell key={rep.ownerId} fill={ROLE_COLORS[rep.role] ?? "#6B8CAE"} />
             ))}
           </Bar>
           <Line yAxisId="deals" type="monotone" dataKey="deals" stroke="#94a3b8" strokeWidth={2} dot={{ r: 4, fill: "#94a3b8", strokeWidth: 0 }} activeDot={{ r: 5 }} />
@@ -125,7 +125,7 @@ export default function SdrBdrDeepDive({ data, selectedTypes }: { data: RepBreak
               key={k}
               onClick={() => setSortKey(k)}
               className={`rounded px-2 py-0.5 capitalize transition-colors ${
-                sortKey === k ? "bg-indigo-100 text-indigo-700 font-semibold" : "hover:bg-gray-100"
+                sortKey === k ? "bg-slate-100 text-slate-700 font-semibold" : "hover:bg-gray-100"
               }`}
             >
               {k === "mrr" ? "MRR" : k.charAt(0).toUpperCase() + k.slice(1)}
@@ -168,7 +168,7 @@ export default function SdrBdrDeepDive({ data, selectedTypes }: { data: RepBreak
                       </span>
                     </td>
                     <td className="px-4 py-2.5 text-right text-gray-600">{fmtNumber(rep.deals)}</td>
-                    <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">
+                    <td className="px-4 py-2.5 text-right font-semibold text-slate-700">
                       {fmtMRR(rep.mrr)}
                     </td>
                     <td className="px-4 py-2.5 text-right text-gray-500">{fmtMRR(avg)}</td>
@@ -195,7 +195,7 @@ export default function SdrBdrDeepDive({ data, selectedTypes }: { data: RepBreak
                 <td className="px-4 py-2.5 text-right text-xs font-semibold text-gray-700">
                   {fmtNumber(totalDeals)}
                 </td>
-                <td className="px-4 py-2.5 text-right text-xs font-bold text-indigo-600">
+                <td className="px-4 py-2.5 text-right text-xs font-bold text-slate-700">
                   {fmtMRR(totalMRR)}
                 </td>
                 <td className="px-4 py-2.5 text-right text-xs text-gray-500">

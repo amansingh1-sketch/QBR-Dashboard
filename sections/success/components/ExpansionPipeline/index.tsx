@@ -20,7 +20,7 @@ const COHORT_SUBS: Record<CohortKey, string> = {
   openIntoQ2: "closedate May 1 – Jul 31, 2026, dealstage ≠ closed",
 };
 
-const STAGE_COLORS = ["#6366f1", "#8b5cf6", "#06b6d4", "#f59e0b", "#10b981", "#ef4444", "#ec4899", "#14b8a6"];
+const STAGE_COLORS = ["#6B8CAE", "#8B7FA8", "#06b6d4", "#f59e0b", "#5B9B8E", "#ef4444", "#ec4899", "#14b8a6"];
 
 function CohortView({ cohort, label, sub, isClosed }: { cohort: PipelineCohort; label: string; sub: string; isClosed?: boolean }) {
   const stages = isClosed
@@ -66,9 +66,9 @@ function CohortView({ cohort, label, sub, isClosed }: { cohort: PipelineCohort; 
               <thead className="bg-gray-50">
                 <tr>
                   <th className="px-4 py-2 text-left font-medium text-gray-500">Stage</th>
-                  <th className="px-4 py-2 text-right font-medium text-gray-500">Deals</th>
-                  <th className="px-4 py-2 text-right font-medium text-gray-500">Amount (MRR)</th>
-                  <th className="px-4 py-2 text-right font-medium text-gray-500">% of Total</th>
+                  <th className="px-4 py-2 text-center font-medium text-gray-500">Deals</th>
+                  <th className="px-4 py-2 text-center font-medium text-gray-500">Amount (MRR)</th>
+                  <th className="px-4 py-2 text-center font-medium text-gray-500">% of Total</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,14 +82,14 @@ function CohortView({ cohort, label, sub, isClosed }: { cohort: PipelineCohort; 
                           <span className="font-medium text-gray-800">{row.stage}</span>
                         </div>
                       </td>
-                      <td className="px-4 py-2 text-right text-gray-700">{fmtNumber(row.deals)}</td>
-                      <td className="px-4 py-2 text-right font-semibold text-indigo-600">{fmtMRR(row.amount)}</td>
-                      <td className="px-4 py-2 text-right">
-                        <div className="flex items-center justify-end gap-2">
+                      <td className="px-4 py-2 text-center text-gray-700">{fmtNumber(row.deals)}</td>
+                      <td className="px-4 py-2 text-center font-semibold text-slate-700">{fmtMRR(row.amount)}</td>
+                      <td className="px-4 py-2 text-center">
+                        <div className="flex items-center justify-center gap-2">
                           <div className="h-1.5 w-14 overflow-hidden rounded-full bg-gray-100">
-                            <div className="h-full rounded-full bg-indigo-400" style={{ width: `${pct}%` }} />
+                            <div className="h-full rounded-full bg-slate-400" style={{ width: `${pct}%` }} />
                           </div>
-                          <span className="w-9 text-xs text-gray-500">{pct}%</span>
+                          <span className="w-9 text-sm text-gray-500">{pct}%</span>
                         </div>
                       </td>
                     </tr>

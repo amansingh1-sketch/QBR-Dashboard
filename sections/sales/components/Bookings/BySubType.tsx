@@ -5,9 +5,9 @@ import { fmtMRR, fmtNumber } from "@/lib/shared/format";
 import type { BookingsSubTypeRow } from "@/sections/sales/types";
 
 const TYPE_COLOR: Record<string, string> = {
-  Annual:    "#6366f1",
+  Annual:    "#6B8CAE",
   Monthly:   "#06b6d4",
-  Multiyear: "#10b981",
+  Multiyear: "#5B9B8E",
   Unknown:   "#cbd5e1",
 };
 
@@ -17,7 +17,7 @@ const CustomTooltip = ({ active, payload }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{type}</p>
-      <p className="text-indigo-600">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
+      <p className="text-slate-700">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
       <p className="text-gray-600">Deals: <span className="font-bold">{fmtNumber(deals)}</span></p>
       <p className="text-gray-600">Share: <span className="font-bold">{pct}%</span></p>
     </div>
@@ -80,7 +80,7 @@ export default function BySubType({ data }: { data: BookingsSubTypeRow[] }) {
                     </div>
                   </td>
                   <td className="px-4 py-2.5 text-right text-gray-600">{fmtNumber(row.deals)}</td>
-                  <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(row.mrr)}</td>
+                  <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(row.mrr)}</td>
                   <td className="px-4 py-2.5 text-right">
                     <div className="flex items-center justify-end gap-2">
                       <div className="h-1.5 w-20 overflow-hidden rounded-full bg-gray-100">

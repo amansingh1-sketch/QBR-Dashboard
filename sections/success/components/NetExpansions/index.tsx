@@ -75,9 +75,9 @@ function QuarterCard({ qt }: { qt: QuarterTarget }) {
         <thead>
           <tr className="border-b border-gray-100">
             <th className="px-4 py-2 text-left text-xs font-medium text-gray-400">Metric</th>
-            <th className="px-4 py-2 text-right text-xs font-medium text-gray-400">Actual</th>
-            <th className="px-4 py-2 text-right text-xs font-medium text-gray-400">Target</th>
-            <th className="px-4 py-2 text-right text-xs font-medium text-gray-400">vs Target</th>
+            <th className="px-4 py-2 text-center text-xs font-medium text-gray-400">Actual</th>
+            <th className="px-4 py-2 text-center text-xs font-medium text-gray-400">Target</th>
+            <th className="px-4 py-2 text-center text-xs font-medium text-gray-400">vs Target</th>
           </tr>
         </thead>
         <tbody>
@@ -98,13 +98,13 @@ function QuarterCard({ qt }: { qt: QuarterTarget }) {
                 <td className={`px-4 py-2.5 font-medium ${isNetRow ? "font-bold text-gray-800" : "text-gray-700"}`}>
                   {row.label}
                 </td>
-                <td className={`px-4 py-2.5 text-right font-semibold ${isGood ? "text-emerald-700" : "text-red-600"}`}>
+                <td className={`px-4 py-2.5 text-center font-semibold ${isGood ? "text-teal-800" : "text-red-600"}`}>
                   {fmtDollar(actual)}
                 </td>
-                <td className="px-4 py-2.5 text-right text-gray-500">
+                <td className="px-4 py-2.5 text-center text-gray-500">
                   {fmtDollar(target)}
                 </td>
-                <td className={`px-4 py-2.5 text-right text-xs font-semibold ${isGood ? "text-emerald-600" : "text-red-500"}`}>
+                <td className={`px-4 py-2.5 text-center font-semibold ${isGood ? "text-teal-700" : "text-red-600"}`}>
                   {fmtVariance(variance)}
                 </td>
               </tr>
@@ -184,7 +184,7 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
   if (!table) {
     return <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-400">{title}: no data</div>;
   }
-  const headerBg = accent === "blue" ? "bg-blue-50" : "bg-emerald-50";
+  const headerBg = accent === "blue" ? "bg-slate-50" : "bg-slate-50";
   return (
     <div className="overflow-hidden rounded-lg border border-gray-100">
       <div className={`px-4 py-2 text-sm font-bold text-gray-800 ${headerBg}`}>{title}</div>
@@ -193,7 +193,7 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
           <tr>
             <th className="px-4 py-2 text-left font-medium text-gray-500"></th>
             {table.months.map((m) => (
-              <th key={m} className="px-4 py-2 text-right font-medium text-gray-500">{m}</th>
+              <th key={m} className="px-4 py-2 text-center font-medium text-gray-500">{m}</th>
             ))}
           </tr>
         </thead>
@@ -215,7 +215,7 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
               <tr key={String(rd.key)} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                 <td className={`px-4 py-2 ${cls}`}>{rd.label}</td>
                 {vals.map((v, j) => (
-                  <td key={j} className={`px-4 py-2 text-right ${cls}`}>
+                  <td key={j} className={`px-4 py-2 text-center ${cls}`}>
                     {v == null ? "" : rd.isPct ? fmtPct(v) : fmtK(v)}
                   </td>
                 ))}

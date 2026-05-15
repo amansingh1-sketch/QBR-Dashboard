@@ -71,7 +71,7 @@ function buildWaterfall(table: MrrChangeTable, monthIdx: number): WaterfallStep[
 
 const STEP_COLOR = {
   anchor:   "#475569", // slate-600
-  positive: "#10b981", // emerald-500
+  positive: "#5B9B8E", // muted teal
   negative: "#ef4444", // red-500
 };
 
@@ -88,7 +88,7 @@ const WaterfallTooltip = ({ active, payload }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800">{d.name}</p>
-      <p className={d.kind === "negative" ? "text-red-600" : d.kind === "positive" ? "text-emerald-600" : "text-gray-700"}>
+      <p className={d.kind === "negative" ? "text-red-600" : d.kind === "positive" ? "text-teal-700" : "text-gray-700"}>
         {d.kind === "anchor" ? fmtMRR(d.signed) : fmtSigned(d.signed)}
       </p>
     </div>
@@ -115,7 +115,7 @@ function CompactTable({ table }: { table: MrrChangeTable }) {
           <tr>
             <th className="px-3 py-2 text-left font-medium text-gray-500"></th>
             {table.months.map((m) => (
-              <th key={m} className="px-3 py-2 text-right font-medium text-gray-500">{m}</th>
+              <th key={m} className="px-3 py-2 text-center font-medium text-gray-500">{m}</th>
             ))}
           </tr>
         </thead>
@@ -132,10 +132,10 @@ function CompactTable({ table }: { table: MrrChangeTable }) {
               <tr key={String(rd.key)} className={cls}>
                 <td className="px-3 py-2">{rd.label}</td>
                 {vals.map((v, j) => (
-                  <td key={j} className={`px-3 py-2 text-right ${
-                    rd.tone === "in"  ? "text-emerald-600" :
-                    rd.tone === "out" ? "text-red-500" :
-                    rd.isNet ? (Number(v ?? 0) >= 0 ? "text-emerald-600" : "text-red-500") : ""
+                  <td key={j} className={`px-3 py-2 text-center ${
+                    rd.tone === "in"  ? "text-teal-700" :
+                    rd.tone === "out" ? "text-red-600" :
+                    rd.isNet ? (Number(v ?? 0) >= 0 ? "text-teal-700" : "text-red-600") : ""
                   }`}>
                     {v == null ? "" : rd.tone || rd.isNet ? fmtSigned(Number(v)) : fmtMRR(Number(v))}
                   </td>

@@ -8,7 +8,7 @@ import { fmtMRR, fmtNumber } from "@/lib/shared/format";
 import type { ReasonRow } from "@/sections/sales/types";
 
 const COLORS = [
-  "#6366f1", "#8b5cf6", "#06b6d4", "#10b981",
+  "#6B8CAE", "#8B7FA8", "#06b6d4", "#5B9B8E",
   "#f59e0b", "#ef4444", "#ec4899", "#84cc16",
   "#f97316", "#14b8a6", "#a855f7", "#64748b",
 ];
@@ -19,7 +19,7 @@ const CustomTooltip = ({ active, payload }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{d?.reason}</p>
-      <p className="text-indigo-600">Deals: <span className="font-bold">{fmtNumber(d?.deals ?? 0)}</span> ({d?.pct}%)</p>
+      <p className="text-slate-700">Deals: <span className="font-bold">{fmtNumber(d?.deals ?? 0)}</span> ({d?.pct}%)</p>
       <p className="text-gray-600">MRR: <span className="font-bold">{fmtMRR(d?.mrr ?? 0)}</span> ({d?.mrrPct}%)</p>
     </div>
   );
@@ -94,7 +94,7 @@ export default function ReasonsChart({ data, accentColor }: Props) {
                     <span className="w-10 text-xs font-semibold text-gray-700">{row.pct}%</span>
                   </div>
                 </td>
-                <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(row.mrr)}</td>
+                <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(row.mrr)}</td>
                 <td className="px-4 py-2.5 text-right text-xs text-gray-500">{row.mrrPct}%</td>
               </tr>
             ))}

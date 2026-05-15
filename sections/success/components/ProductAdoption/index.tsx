@@ -14,7 +14,7 @@ const COHORT_LABELS: Record<Cohort, string> = {
 
 // Module-group color palette — each group gets its own tinted background to match the xlsx layout.
 const MODULE_STYLES: Record<string, { bg: string; label: string; left: string }> = {
-  "Voice Module":         { bg: "bg-emerald-50",  left: "border-l-4 border-emerald-300", label: "text-emerald-800" },
+  "Voice Module":         { bg: "bg-emerald-50",  left: "border-l-4 border-emerald-300", label: "text-teal-800" },
   "SMS Module":           { bg: "bg-orange-50",   left: "border-l-4 border-orange-300",  label: "text-orange-800" },
   "IVR Module":           { bg: "bg-sky-50",      left: "border-l-4 border-sky-300",     label: "text-sky-800" },
   "Sales Dialer Module":  { bg: "bg-fuchsia-50",  left: "border-l-4 border-fuchsia-300", label: "text-fuchsia-800" },
@@ -63,7 +63,7 @@ function CohortTable({
             <th className="px-3 py-2 text-left font-semibold text-gray-500" style={{ width: "20%" }}>Module</th>
             <th className="px-3 py-2 text-left font-semibold text-gray-500" style={{ width: "32%" }}>Metric</th>
             {months.map((m) => (
-              <th key={m} className="px-3 py-2 text-right font-semibold text-gray-500">{m}</th>
+              <th key={m} className="px-3 py-2 text-center font-semibold text-gray-500">{m}</th>
             ))}
           </tr>
         </thead>
@@ -73,7 +73,7 @@ function CohortTable({
               <td className="px-3 py-2 text-gray-700"></td>
               <td className="px-3 py-2 text-gray-900">{customerBase.metric}</td>
               {customerBase.values.map((v, j) => (
-                <td key={j} className="px-3 py-2 text-right text-gray-900">{v == null ? "—" : fmtNumber(v)}</td>
+                <td key={j} className="px-3 py-2 text-center text-gray-900">{v == null ? "—" : fmtNumber(v)}</td>
               ))}
             </tr>
           )}
@@ -86,7 +86,7 @@ function CohortTable({
                 </td>
                 <td className={`px-3 py-2 ${i === 0 ? "font-semibold text-gray-800" : "text-gray-700"}`}>{r.metric}</td>
                 {r.values.map((v, j) => (
-                  <td key={j} className={`px-3 py-2 text-right ${i === 0 ? "font-semibold text-gray-900" : "text-gray-700"}`}>
+                  <td key={j} className={`px-3 py-2 text-center ${i === 0 ? "font-semibold text-gray-900" : "text-gray-700"}`}>
                     {v == null ? "—" : fmtNumber(v)}
                   </td>
                 ))}

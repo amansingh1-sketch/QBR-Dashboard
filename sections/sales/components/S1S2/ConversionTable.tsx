@@ -58,16 +58,16 @@ export default function ConversionTable({ rows, showRole = false }: Props) {
                 <div className="flex items-center justify-end gap-2">
                   <div className="h-1.5 w-16 overflow-hidden rounded-full bg-gray-100">
                     <div
-                      className="h-full rounded-full bg-emerald-400"
+                      className="h-full rounded-full bg-teal-500"
                       style={{ width: `${row.conversionPct}%` }}
                     />
                   </div>
-                  <span className={`w-11 text-xs font-semibold ${row.conversionPct >= 60 ? "text-emerald-600" : row.conversionPct >= 40 ? "text-amber-600" : "text-red-500"}`}>
+                  <span className={`w-11 text-xs font-semibold ${row.conversionPct >= 60 ? "text-teal-700" : row.conversionPct >= 40 ? "text-amber-700" : "text-red-600"}`}>
                     {row.conversionPct}%
                   </span>
                 </div>
               </td>
-              <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(row.s2Mrr)}</td>
+              <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(row.s2Mrr)}</td>
             </tr>
           ))}
         </tbody>

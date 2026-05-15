@@ -10,8 +10,8 @@ import type { ACVAERow } from "@/sections/sales/types";
 type Cohort = "overall" | "100plus" | "100minus";
 
 const REGION_COLOR: Record<string, string> = {
-  NAMER: "#6366f1",
-  EMEA:  "#10b981",
+  NAMER: "#6B8CAE",
+  EMEA:  "#5B9B8E",
   APAC:  "#f59e0b",
 };
 
@@ -22,7 +22,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{d?.fullName ?? label}</p>
       <p className="text-xs text-gray-400 mb-1">{d?.region}</p>
-      <p className="text-indigo-600">Total ACV: <span className="font-bold">{fmtMRR(d?.totalACV ?? 0)}</span></p>
+      <p className="text-slate-700">Total ACV: <span className="font-bold">{fmtMRR(d?.totalACV ?? 0)}</span></p>
       <p className="text-gray-600">Avg ACV: <span className="font-bold">{fmtMRR(d?.avgACV ?? 0)}</span></p>
       <p className="text-gray-600">Deals: <span className="font-bold">{fmtNumber(d?.deals ?? 0)}</span></p>
     </div>
@@ -108,7 +108,7 @@ export default function ByAE({ data, cohort }: { data: ACVAERow[]; cohort: Cohor
                     </span>
                   </td>
                   <td className="px-4 py-2.5 text-right text-gray-600">{fmtNumber(row.deals)}</td>
-                  <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(row.totalACV)}</td>
+                  <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(row.totalACV)}</td>
                   <td className="px-4 py-2.5 text-right text-gray-600">{fmtMRR(row.avgACV)}</td>
                   <td className="px-4 py-2.5 text-right">
                     <div className="flex items-center justify-end gap-2">
