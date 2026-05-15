@@ -99,24 +99,24 @@ export default function WinRate({ data, periodLabel }: Props) {
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <div className="rounded-xl border-l-4 border-emerald-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-teal-300 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">S2 Win Rate</p>
-          <p className="mt-1 text-2xl font-bold text-emerald-600">{s2.overall.winRate}%</p>
+          <p className="mt-1 text-2xl font-bold text-teal-700">{s2.overall.winRate}%</p>
           <p className="text-xs text-gray-500">Cohorted on opp qualified date</p>
         </div>
-        <div className="rounded-xl border-l-4 border-indigo-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-slate-300 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Close Date Win Rate</p>
-          <p className="mt-1 text-2xl font-bold text-indigo-600">{closeDate.overall.winRate}%</p>
+          <p className="mt-1 text-2xl font-bold text-slate-700">{closeDate.overall.winRate}%</p>
           <p className="text-xs text-gray-500">Cohorted on close date</p>
         </div>
-        <div className="rounded-xl border-l-4 border-gray-300 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-gray-200 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">S2 Won MRR</p>
-          <p className="mt-1 text-2xl font-bold text-gray-900">{fmtMRR(s2.overall.wonMrr)}</p>
+          <p className="mt-1 text-2xl font-bold text-slate-800">{fmtMRR(s2.overall.wonMrr)}</p>
           <p className="text-xs text-gray-500">{fmtNumber(s2.overall.won)} deals won</p>
         </div>
-        <div className="rounded-xl border-l-4 border-violet-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-gray-200 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Close Date Won MRR</p>
-          <p className="mt-1 text-2xl font-bold text-gray-900">{fmtMRR(closeDate.overall.wonMrr)}</p>
+          <p className="mt-1 text-2xl font-bold text-slate-800">{fmtMRR(closeDate.overall.wonMrr)}</p>
           <p className="text-xs text-gray-500">{fmtNumber(closeDate.overall.won)} deals won</p>
         </div>
       </div>

@@ -14,8 +14,8 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
-      <p className="text-emerald-600">Won: <span className="font-bold">{fmtNumber(won)}</span></p>
-      <p className="text-red-400">Lost: <span className="font-bold">{fmtNumber(lost)}</span></p>
+      <p className="text-teal-700">Won: <span className="font-bold">{fmtNumber(won)}</span></p>
+      <p className="text-red-600">Lost: <span className="font-bold">{fmtNumber(lost)}</span></p>
       <p className="text-gray-700">Win rate: <span className="font-bold">{pct}%</span></p>
     </div>
   );
@@ -43,7 +43,7 @@ export default function OrgSizeBreakdown({ cohort, label }: Props) {
       <div className="grid grid-cols-3 gap-4 mb-6">
         <div className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Overall Win Rate</p>
-          <p className={`mt-1 text-3xl font-bold ${cohort.overall.winRate >= 50 ? "text-emerald-600" : cohort.overall.winRate >= 30 ? "text-amber-600" : "text-red-500"}`}>
+          <p className={`mt-1 text-3xl font-bold ${cohort.overall.winRate >= 50 ? "text-teal-700" : cohort.overall.winRate >= 30 ? "text-amber-700" : "text-red-600"}`}>
             {cohort.overall.winRate}%
           </p>
           <p className="text-xs text-gray-500 mt-0.5">{fmtNumber(cohort.overall.won)}W / {fmtNumber(cohort.overall.lost)}L of {fmtNumber(cohort.overall.total)}</p>
@@ -51,7 +51,7 @@ export default function OrgSizeBreakdown({ cohort, label }: Props) {
         {segments.map(({ key, label: seg, data }) => (
           <div key={key} className="rounded-xl bg-gray-50 border border-gray-100 px-4 py-3 text-center">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">{seg}</p>
-            <p className={`mt-1 text-2xl font-bold ${data.winRate >= 50 ? "text-emerald-600" : data.winRate >= 30 ? "text-amber-600" : "text-red-500"}`}>
+            <p className={`mt-1 text-2xl font-bold ${data.winRate >= 50 ? "text-teal-700" : data.winRate >= 30 ? "text-amber-700" : "text-red-600"}`}>
               {data.winRate}%
             </p>
             <p className="text-xs text-gray-500 mt-0.5">{fmtNumber(data.won)}W / {fmtNumber(data.lost)}L</p>
@@ -82,8 +82,8 @@ export default function OrgSizeBreakdown({ cohort, label }: Props) {
           <XAxis dataKey="segment" tick={{ fontSize: 13, fill: "#64748b", fontWeight: 600 }} />
           <YAxis tick={{ fontSize: 11, fill: "#64748b" }} width={40} />
           <Tooltip content={<CustomTooltip />} />
-          <Bar dataKey="won" stackId="a" fill="#34d399" radius={[0, 0, 0, 0]} />
-          <Bar dataKey="lost" stackId="a" fill="#fca5a5" radius={[4, 4, 0, 0]} />
+          <Bar dataKey="won" stackId="a" fill="#5B9B8E" radius={[0, 0, 0, 0]} />
+          <Bar dataKey="lost" stackId="a" fill="#E8A0A0" radius={[4, 4, 0, 0]} />
         </BarChart>
       </ResponsiveContainer>
 
@@ -108,20 +108,20 @@ export default function OrgSizeBreakdown({ cohort, label }: Props) {
             ].map(({ label: seg, data }, i) => (
               <tr key={seg} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                 <td className="px-4 py-2.5 font-medium text-gray-800">{seg}</td>
-                <td className="px-4 py-2.5 text-right text-emerald-600 font-semibold">{fmtNumber(data.won)}</td>
-                <td className="px-4 py-2.5 text-right text-red-400">{fmtNumber(data.lost)}</td>
+                <td className="px-4 py-2.5 text-right text-teal-700 font-semibold">{fmtNumber(data.won)}</td>
+                <td className="px-4 py-2.5 text-right text-red-600">{fmtNumber(data.lost)}</td>
                 <td className="px-4 py-2.5 text-right text-gray-600">{fmtNumber(data.total)}</td>
                 <td className="px-4 py-2.5 text-right">
                   <div className="flex items-center justify-end gap-2">
                     <div className="h-1.5 w-16 overflow-hidden rounded-full bg-gray-100">
-                      <div className="h-full rounded-full bg-emerald-400" style={{ width: `${data.winRate}%` }} />
+                      <div className="h-full rounded-full bg-teal-500" style={{ width: `${data.winRate}%` }} />
                     </div>
-                    <span className={`w-11 text-xs font-semibold ${data.winRate >= 50 ? "text-emerald-600" : data.winRate >= 30 ? "text-amber-600" : "text-red-500"}`}>
+                    <span className={`w-11 text-xs font-semibold ${data.winRate >= 50 ? "text-teal-700" : data.winRate >= 30 ? "text-amber-700" : "text-red-600"}`}>
                       {data.winRate}%
                     </span>
                   </div>
                 </td>
-                <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(data.wonMrr)}</td>
+                <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(data.wonMrr)}</td>
               </tr>
             ))}
           </tbody>

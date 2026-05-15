@@ -25,8 +25,8 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
       <p className="text-gray-500">S1 Deals: <span className="font-bold text-gray-700">{fmtNumber(s1)}</span></p>
-      <p className="text-indigo-600">S2 Deals: <span className="font-bold">{fmtNumber(s2)}</span></p>
-      <p className="text-emerald-600">Conversion: <span className="font-bold">{pct}%</span></p>
+      <p className="text-slate-700">S2 Deals: <span className="font-bold">{fmtNumber(s2)}</span></p>
+      <p className="text-teal-700">Conversion: <span className="font-bold">{pct}%</span></p>
     </div>
   );
 };
@@ -92,8 +92,8 @@ export default function ByAE({ data, selectedTypes }: { data: S1S2Row[]; selecte
             width={42}
           />
           <Tooltip content={<CustomTooltip />} />
-          <Bar yAxisId="deals" dataKey="s1Deals" fill="#6366f1" radius={[4, 4, 0, 0]} />
-          <Line yAxisId="pct" type="monotone" dataKey="convPct" stroke="#10b981" strokeWidth={2} dot={{ r: 4, fill: "#10b981", strokeWidth: 0 }} activeDot={{ r: 5 }} />
+          <Bar yAxisId="deals" dataKey="s1Deals" fill="#6B8CAE" radius={[4, 4, 0, 0]} />
+          <Line yAxisId="pct" type="monotone" dataKey="convPct" stroke="#5B9B8E" strokeWidth={2} dot={{ r: 4, fill: "#5B9B8E", strokeWidth: 0 }} activeDot={{ r: 5 }} />
         </ComposedChart>
       </ResponsiveContainer>
       <ConversionTable rows={filtered} showRole={false} />

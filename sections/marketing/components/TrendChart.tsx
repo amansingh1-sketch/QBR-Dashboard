@@ -19,7 +19,7 @@ import type { KpiTable } from "../types";
 const MONTH_KEYS = ["nov", "dec", "jan", "feb", "mar", "apr"] as const;
 const MONTH_LABELS = ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
 
-const COLORS = ["#6366f1", "#8b5cf6", "#06b6d4", "#f59e0b", "#10b981", "#ec4899", "#84cc16", "#f43f5e"];
+const COLORS = ["#6B8CAE", "#8B7FA8", "#06b6d4", "#f59e0b", "#5B9B8E", "#ec4899", "#84cc16", "#f43f5e"];
 
 interface Props {
   table: KpiTable;
@@ -133,7 +133,7 @@ export default function TrendChart({ table, variant = "line", format = "number" 
                 onClick={() => setActiveMetric(m)}
                 className={`rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${
                   activeMetric === m
-                    ? "border-indigo-200 bg-indigo-50 text-indigo-700"
+                    ? "border-slate-200 bg-slate-100 text-slate-700"
                     : "border-gray-200 bg-white text-gray-500 hover:text-gray-700"
                 }`}
               >

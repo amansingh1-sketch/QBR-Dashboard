@@ -8,7 +8,7 @@ import { fmtMRR, fmtNumber } from "@/lib/shared/format";
 import { applyDealTypeFilter, type DealTypeKey } from "@/sections/sales/components/DealTypeFilter";
 import type { BookingsRegionRow } from "@/sections/sales/types";
 
-const COLORS = ["#6366f1", "#8b5cf6", "#06b6d4", "#f59e0b", "#10b981"];
+const COLORS = ["#6B8CAE", "#8B7FA8", "#06b6d4", "#f59e0b", "#5B9B8E"];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null;
@@ -17,7 +17,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
-      <p className="text-indigo-600">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
+      <p className="text-slate-700">MRR: <span className="font-bold">{fmtMRR(mrr)}</span></p>
       <p className="text-gray-600">Deals: <span className="font-bold">{fmtNumber(deals)}</span></p>
     </div>
   );
@@ -69,7 +69,7 @@ export default function ByRegion({ data, selectedTypes }: { data: BookingsRegion
                 <tr key={row.region} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                   <td className="px-4 py-2 font-medium text-gray-800">{row.region}</td>
                   <td className="px-4 py-2 text-right text-gray-600">{fmtNumber(row.deals)}</td>
-                  <td className="px-4 py-2 text-right font-semibold text-indigo-600">{fmtMRR(row.mrr)}</td>
+                  <td className="px-4 py-2 text-right font-semibold text-slate-700">{fmtMRR(row.mrr)}</td>
                   <td className="px-4 py-2 text-right text-gray-600">
                     {fmtMRR(row.deals > 0 ? row.mrr / row.deals : 0)}
                   </td>

@@ -37,7 +37,7 @@ export default function RefreshButton({ onRefresh }: Props) {
         {state === "loading" ? "Refreshing…" : "Refresh from Sheet"}
       </button>
       {message && (
-        <span className={`text-xs ${state === "error" ? "text-red-500" : "text-emerald-600"}`}>
+        <span className={`text-xs ${state === "error" ? "text-red-600" : "text-teal-700"}`}>
           {message}
         </span>
       )}

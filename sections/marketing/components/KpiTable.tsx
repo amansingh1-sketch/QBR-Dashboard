@@ -55,7 +55,7 @@ export default function KpiTable({ table, format = "number" }: Props) {
               <th className="px-3 py-2 text-right font-medium text-gray-500">Nov</th>
               <th className="px-3 py-2 text-right font-medium text-gray-500">Dec</th>
               <th className="px-3 py-2 text-right font-medium text-gray-500">Jan</th>
-              <th className="px-3 py-2 text-right font-semibold text-indigo-600 bg-indigo-50/40">Q4 Total</th>
+              <th className="px-3 py-2 text-right font-semibold text-slate-700 bg-slate-100/40">Q4 Total</th>
               <th className="px-3 py-2 text-right font-medium text-gray-500">Feb</th>
               <th className="px-3 py-2 text-right font-medium text-gray-500">Mar</th>
               <th className="px-3 py-2 text-right font-medium text-gray-500">Apr</th>
@@ -80,7 +80,7 @@ export default function KpiTable({ table, format = "number" }: Props) {
                     <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.nov, format)}</td>
                     <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.dec, format)}</td>
                     <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.jan, format)}</td>
-                    <td className="px-3 py-1.5 text-right font-semibold text-indigo-700 bg-indigo-50/40">
+                    <td className="px-3 py-1.5 text-right font-semibold text-slate-700 bg-slate-100/40">
                       {fmt(row.q4Total, format)}
                     </td>
                     <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.feb, format)}</td>

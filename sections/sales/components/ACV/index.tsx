@@ -95,8 +95,8 @@ export default function ACV({ data, periodLabel }: ACVProps) {
       {/* Comparison cards – always visible */}
       {cohort === "overall" && (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 px-5 py-4">
-            <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600">100+ Org Size</p>
+          <div className="rounded-xl border border-slate-200 bg-slate-100/50 px-5 py-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-teal-700">100+ Org Size</p>
             <p className="mt-1 text-2xl font-bold text-gray-900">{fmtMRR(data["100plus"].avgACV)}</p>
             <p className="text-sm text-gray-600">
               avg ACV · {fmtNumber(data["100plus"].deals)} deals · {fmtMRR(data["100plus"].totalACV)} total

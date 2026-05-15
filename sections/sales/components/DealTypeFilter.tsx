@@ -47,7 +47,7 @@ export default function DealTypeFilter({ selected, onChange }: Props) {
           onClick={toggleAll}
           className={`rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${
             allSelected
-              ? "border-indigo-200 bg-indigo-50 text-indigo-700"
+              ? "border-slate-200 bg-slate-100 text-slate-700"
               : "border-gray-200 bg-white text-gray-400 hover:text-gray-600"
           }`}
         >
@@ -59,7 +59,7 @@ export default function DealTypeFilter({ selected, onChange }: Props) {
             onClick={() => toggle(key)}
             className={`rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${
               selected.has(key) && !allSelected
-                ? "border-indigo-200 bg-indigo-50 text-indigo-700"
+                ? "border-slate-200 bg-slate-100 text-slate-700"
                 : "border-gray-200 bg-white text-gray-500 hover:text-gray-700"
             }`}
           >

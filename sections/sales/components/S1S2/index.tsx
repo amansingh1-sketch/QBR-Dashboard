@@ -59,17 +59,17 @@ export default function S1S2({ data, periodLabel }: Props) {
           <p className="mt-1 text-2xl font-bold text-gray-900">{fmtNumber(s1Filtered.deals)}</p>
           <p className="text-xs text-gray-500">Created in period</p>
         </div>
-        <div className="rounded-xl border-l-4 border-indigo-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-slate-300 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">S2 Deals</p>
           <p className="mt-1 text-2xl font-bold text-gray-900">{fmtNumber(s2Filtered.deals)}</p>
           <p className="text-xs text-gray-500">Qualified from S1</p>
         </div>
-        <div className="rounded-xl border-l-4 border-emerald-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-teal-300 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">S1→S2%</p>
-          <p className="mt-1 text-2xl font-bold text-emerald-600">{conversionPct}%</p>
+          <p className="mt-1 text-2xl font-bold text-teal-700">{conversionPct}%</p>
           <p className="text-xs text-gray-500">Overall conversion</p>
         </div>
-        <div className="rounded-xl border-l-4 border-violet-500 bg-white px-4 py-3 shadow-sm">
+        <div className="rounded-xl border-l-4 border-slate-300 bg-white px-4 py-3 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">S2 MRR</p>
           <p className="mt-1 text-2xl font-bold text-gray-900">{fmtMRR(s2Filtered.mrr)}</p>
           <p className="text-xs text-gray-500">From {fmtMRR(s1Filtered.mrr)} S1</p>

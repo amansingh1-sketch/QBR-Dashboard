@@ -27,7 +27,7 @@ function fmt(value: number | null | undefined, format: Props["format"]): string 
 function bgFor(retentionPct: number | null): string {
   if (retentionPct == null) return "";
   if (retentionPct >= 100) return "bg-emerald-100 text-emerald-900";
-  if (retentionPct >= 90)  return "bg-emerald-50 text-emerald-800";
+  if (retentionPct >= 90)  return "bg-teal-50 text-teal-800";
   if (retentionPct >= 80)  return "bg-teal-50 text-teal-800";
   if (retentionPct >= 70)  return "bg-amber-50 text-amber-800";
   if (retentionPct >= 60)  return "bg-orange-50 text-orange-800";

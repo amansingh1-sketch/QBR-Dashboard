@@ -98,13 +98,13 @@ function QuarterCard({ qt }: { qt: QuarterTarget }) {
                 <td className={`px-4 py-2.5 font-medium ${isNetRow ? "font-bold text-gray-800" : "text-gray-700"}`}>
                   {row.label}
                 </td>
-                <td className={`px-4 py-2.5 text-right font-semibold ${isGood ? "text-emerald-700" : "text-red-600"}`}>
+                <td className={`px-4 py-2.5 text-right font-semibold ${isGood ? "text-teal-800" : "text-red-600"}`}>
                   {fmtDollar(actual)}
                 </td>
                 <td className="px-4 py-2.5 text-right text-gray-500">
                   {fmtDollar(target)}
                 </td>
-                <td className={`px-4 py-2.5 text-right text-xs font-semibold ${isGood ? "text-emerald-600" : "text-red-500"}`}>
+                <td className={`px-4 py-2.5 text-right text-xs font-semibold ${isGood ? "text-teal-700" : "text-red-600"}`}>
                   {fmtVariance(variance)}
                 </td>
               </tr>
@@ -184,7 +184,7 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
   if (!table) {
     return <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-400">{title}: no data</div>;
   }
-  const headerBg = accent === "blue" ? "bg-blue-50" : "bg-emerald-50";
+  const headerBg = accent === "blue" ? "bg-slate-50" : "bg-slate-50";
   return (
     <div className="overflow-hidden rounded-lg border border-gray-100">
       <div className={`px-4 py-2 text-sm font-bold text-gray-800 ${headerBg}`}>{title}</div>

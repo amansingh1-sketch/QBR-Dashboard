@@ -16,8 +16,8 @@ import { applyDealTypeFilter, type DealTypeKey } from "@/sections/sales/componen
 import type { RoleBreakdown } from "@/sections/sales/types";
 
 const ROLE_COLORS: Record<string, string> = {
-  SDR: "#6366f1",
-  BDR: "#8b5cf6",
+  SDR: "#6B8CAE",
+  BDR: "#8B7FA8",
   PS: "#06b6d4",
   AE: "#f59e0b",
 };
@@ -29,7 +29,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
-      <p style={{ color: ROLE_COLORS[label] ?? "#6366f1" }}>
+      <p style={{ color: ROLE_COLORS[label] ?? "#6B8CAE" }}>
         MRR: <span className="font-bold">{fmtMRR(mrr)}</span>
       </p>
       <p className="text-gray-600">
@@ -74,7 +74,7 @@ export default function ByRole({ data, selectedTypes }: { data: RoleBreakdown[];
           <Tooltip content={<CustomTooltip />} />
           <Bar yAxisId="mrr" dataKey="mrr" name="MRR" radius={[4, 4, 0, 0]}>
             {filtered.map((row) => (
-              <Cell key={row.role} fill={ROLE_COLORS[row.role] ?? "#6366f1"} />
+              <Cell key={row.role} fill={ROLE_COLORS[row.role] ?? "#6B8CAE"} />
             ))}
           </Bar>
           <Line yAxisId="deals" type="monotone" dataKey="deals" stroke="#94a3b8" strokeWidth={2} dot={{ r: 4, fill: "#94a3b8", strokeWidth: 0 }} activeDot={{ r: 5 }} />
@@ -102,14 +102,14 @@ export default function ByRole({ data, selectedTypes }: { data: RoleBreakdown[];
                     <div className="flex items-center gap-2">
                       <span
                         className="h-2.5 w-2.5 rounded-full flex-shrink-0"
-                        style={{ background: ROLE_COLORS[row.role] ?? "#6366f1" }}
+                        style={{ background: ROLE_COLORS[row.role] ?? "#6B8CAE" }}
                       />
                       <span className="font-medium text-gray-800">{row.role}</span>
                     </div>
                   </td>
                   <td className="px-4 py-2 text-right text-gray-600">{fmtNumber(row.deals)}</td>
-                  <td className="px-4 py-2 text-right font-semibold text-indigo-600">{fmtMRR(row.mrr)}</td>
-                  <td className="px-4 py-2 text-right font-semibold text-violet-600">{fmtMRR(row.mrr * 12)}</td>
+                  <td className="px-4 py-2 text-right font-semibold text-slate-700">{fmtMRR(row.mrr)}</td>
+                  <td className="px-4 py-2 text-right font-semibold text-slate-700">{fmtMRR(row.mrr * 12)}</td>
                   <td className="px-4 py-2 text-right">
                     <div className="flex items-center justify-end gap-2">
                       <div className="h-1.5 w-14 overflow-hidden rounded-full bg-gray-100">

@@ -20,7 +20,7 @@ const COHORT_SUBS: Record<CohortKey, string> = {
   openIntoQ2: "closedate May 1 – Jul 31, 2026, dealstage ≠ closed",
 };
 
-const STAGE_COLORS = ["#6366f1", "#8b5cf6", "#06b6d4", "#f59e0b", "#10b981", "#ef4444", "#ec4899", "#14b8a6"];
+const STAGE_COLORS = ["#6B8CAE", "#8B7FA8", "#06b6d4", "#f59e0b", "#5B9B8E", "#ef4444", "#ec4899", "#14b8a6"];
 
 function CohortView({ cohort, label, sub, isClosed }: { cohort: PipelineCohort; label: string; sub: string; isClosed?: boolean }) {
   const stages = isClosed
@@ -83,7 +83,7 @@ function CohortView({ cohort, label, sub, isClosed }: { cohort: PipelineCohort; 
                         </div>
                       </td>
                       <td className="px-4 py-2 text-right text-gray-700">{fmtNumber(row.deals)}</td>
-                      <td className="px-4 py-2 text-right font-semibold text-indigo-600">{fmtMRR(row.amount)}</td>
+                      <td className="px-4 py-2 text-right font-semibold text-slate-700">{fmtMRR(row.amount)}</td>
                       <td className="px-4 py-2 text-right">
                         <div className="flex items-center justify-end gap-2">
                           <div className="h-1.5 w-14 overflow-hidden rounded-full bg-gray-100">

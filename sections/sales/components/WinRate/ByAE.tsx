@@ -14,8 +14,8 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return (
     <div className="rounded-lg border border-gray-100 bg-white p-3 shadow-lg text-sm">
       <p className="font-semibold text-gray-800 mb-1">{label}</p>
-      <p className="text-emerald-600">Won: <span className="font-bold">{fmtNumber(won)}</span></p>
-      <p className="text-red-400">Lost: <span className="font-bold">{fmtNumber(lost)}</span></p>
+      <p className="text-teal-700">Won: <span className="font-bold">{fmtNumber(won)}</span></p>
+      <p className="text-red-600">Lost: <span className="font-bold">{fmtNumber(lost)}</span></p>
       <p className="text-gray-700">Win rate: <span className="font-bold">{pct}%</span></p>
     </div>
   );
@@ -64,8 +64,8 @@ export default function ByAE({ data, showS1Conv = false, showOpen = false }: { d
           <XAxis dataKey="name" tick={{ fontSize: 11, fill: "#64748b" }} angle={-35} textAnchor="end" interval={0} />
           <YAxis tick={{ fontSize: 11, fill: "#64748b" }} width={36} />
           <Tooltip content={<CustomTooltip />} />
-          <Bar dataKey="won" stackId="a" fill="#34d399" />
-          <Bar dataKey="lost" stackId="a" fill="#fca5a5" radius={[4, 4, 0, 0]} />
+          <Bar dataKey="won" stackId="a" fill="#5B9B8E" />
+          <Bar dataKey="lost" stackId="a" fill="#E8A0A0" radius={[4, 4, 0, 0]} />
         </BarChart>
       </ResponsiveContainer>
 
@@ -91,16 +91,16 @@ export default function ByAE({ data, showS1Conv = false, showOpen = false }: { d
               <tr key={row.ownerId} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                 <td className="px-4 py-2.5 text-xs text-gray-400">{i + 1}</td>
                 <td className="px-4 py-2.5 font-medium text-gray-800">{row.name}</td>
-                <td className="px-4 py-2.5 text-right text-emerald-600 font-semibold">{fmtNumber(row.won)}</td>
-                <td className="px-4 py-2.5 text-right text-red-400">{fmtNumber(row.lost)}</td>
+                <td className="px-4 py-2.5 text-right text-teal-700 font-semibold">{fmtNumber(row.won)}</td>
+                <td className="px-4 py-2.5 text-right text-red-600">{fmtNumber(row.lost)}</td>
                 {showOpen && <td className="px-4 py-2.5 text-right text-gray-500">{fmtNumber(row.open ?? 0)}</td>}
                 <td className="px-4 py-2.5 text-right text-gray-600">{fmtNumber(row.total)}</td>
                 <td className="px-4 py-2.5 text-right">
                   <div className="flex items-center justify-end gap-2">
                     <div className="h-1.5 w-16 overflow-hidden rounded-full bg-gray-100">
-                      <div className="h-full rounded-full bg-emerald-400" style={{ width: `${row.winRate}%` }} />
+                      <div className="h-full rounded-full bg-teal-500" style={{ width: `${row.winRate}%` }} />
                     </div>
-                    <span className={`w-11 text-xs font-semibold ${row.winRate >= 50 ? "text-emerald-600" : row.winRate >= 30 ? "text-amber-600" : "text-red-500"}`}>
+                    <span className={`w-11 text-xs font-semibold ${row.winRate >= 50 ? "text-teal-700" : row.winRate >= 30 ? "text-amber-700" : "text-red-600"}`}>
                       {row.winRate}%
                     </span>
                   </div>
@@ -108,7 +108,7 @@ export default function ByAE({ data, showS1Conv = false, showOpen = false }: { d
                 {showS1Conv && (
                   <td className="px-4 py-2.5 text-right">
                     {row.s1Deals !== undefined && row.s1Deals > 0 ? (
-                      <span className={`text-xs font-semibold ${(row.s1ToS2Pct ?? 0) >= 60 ? "text-emerald-600" : (row.s1ToS2Pct ?? 0) >= 40 ? "text-amber-600" : "text-red-500"}`}>
+                      <span className={`text-xs font-semibold ${(row.s1ToS2Pct ?? 0) >= 60 ? "text-teal-700" : (row.s1ToS2Pct ?? 0) >= 40 ? "text-amber-700" : "text-red-600"}`}>
                         {row.s1ToS2Pct}%
                         <span className="ml-1 text-gray-400 font-normal">({row.s1Deals})</span>
                       </span>
@@ -117,7 +117,7 @@ export default function ByAE({ data, showS1Conv = false, showOpen = false }: { d
                     )}
                   </td>
                 )}
-                <td className="px-4 py-2.5 text-right font-semibold text-indigo-600">{fmtMRR(row.wonMrr)}</td>
+                <td className="px-4 py-2.5 text-right font-semibold text-slate-700">{fmtMRR(row.wonMrr)}</td>
               </tr>
             ))}
           </tbody>

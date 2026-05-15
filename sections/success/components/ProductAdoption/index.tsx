@@ -14,7 +14,7 @@ const COHORT_LABELS: Record<Cohort, string> = {
 
 // Module-group color palette — each group gets its own tinted background to match the xlsx layout.
 const MODULE_STYLES: Record<string, { bg: string; label: string; left: string }> = {
-  "Voice Module":         { bg: "bg-emerald-50",  left: "border-l-4 border-emerald-300", label: "text-emerald-800" },
+  "Voice Module":         { bg: "bg-emerald-50",  left: "border-l-4 border-emerald-300", label: "text-teal-800" },
   "SMS Module":           { bg: "bg-orange-50",   left: "border-l-4 border-orange-300",  label: "text-orange-800" },
   "IVR Module":           { bg: "bg-sky-50",      left: "border-l-4 border-sky-300",     label: "text-sky-800" },
   "Sales Dialer Module":  { bg: "bg-fuchsia-50",  left: "border-l-4 border-fuchsia-300", label: "text-fuchsia-800" },
