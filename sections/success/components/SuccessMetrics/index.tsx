@@ -108,9 +108,9 @@ export default function SuccessMetrics({ data }: Props) {
             </BarChart>
           </ResponsiveContainer>
           <div className="mt-3 flex flex-wrap gap-4 text-xs text-gray-600">
-            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-slate-500" />Plan Upgrades</div>
-            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-teal-500" />Monthly→Annual</div>
-            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm bg-indigo-300" />AIVA Activations</div>
+            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm" style={{ background: "#6B8CAE" }} />Plan Upgrades</div>
+            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm" style={{ background: "#5B9B8E" }} />Monthly→Annual</div>
+            <div className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-sm" style={{ background: "#8B7FA8" }} />AIVA Activations</div>
           </div>
         </div>
       )}
