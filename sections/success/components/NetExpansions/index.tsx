@@ -4,7 +4,6 @@ import { useState } from "react";
 import type { MrrChangeData, MrrChangeSegment, MrrChangeTable } from "../../types";
 
 type Segment = "total" | "scaled" | "strategic";
-type Cohort = "existing_customers" | "new_customers";
 
 const SEGMENT_LABELS: Record<Segment, string> = {
   total: "Total",
@@ -14,34 +13,75 @@ const SEGMENT_LABELS: Record<Segment, string> = {
 
 // ─────────────────────── Targets & Attainment ───────────────────────
 // Expansion = Expansion + Reactivation (per business definition)
-// Source: QBR spreadsheet targets
+// Source: QBR spreadsheet targets (Q1/Q2 FY2026 columns from planning sheet)
 
-interface QuarterTarget {
-  label: string;
-  isQTD?: boolean;
-  actuals: { expansion: number; downgrade: number; churn: number; net_new_mrr: number };
-  targets: { expansion: number; downgrade: number; churn: number; net_new_mrr: number };
+interface SegmentTarget {
+  expansion: number;
+  downgrade: number;
+  churn: number;
+  net_new_mrr: number;
 }
 
-const TARGETS: QuarterTarget[] = [
-  {
-    label: "Q1 FY2026",
-    actuals:  { expansion: 296306,  downgrade: -127132, churn: -191901, net_new_mrr: -22726 },
-    targets:  { expansion: 406911,  downgrade: -184974, churn: -234598, net_new_mrr: -12661 },
-  },
-  {
-    label: "Q2 FY2026",
-    isQTD: true,
-    actuals:  { expansion: 58276,   downgrade: -37989,  churn: -33331,  net_new_mrr: -13044 },
-    targets:  { expansion: 475533,  downgrade: -200611, churn: -254012, net_new_mrr:  20910 },
-  },
-];
+interface QuarterTargetDef {
+  label: string;
+  isQTD?: boolean;
+  targets: SegmentTarget;
+}
 
-const TARGET_ROWS: { key: keyof QuarterTarget["actuals"]; label: string; higherIsBetter: boolean }[] = [
-  { key: "expansion",    label: "Expansion (incl. Reactivation)", higherIsBetter: true  },
-  { key: "downgrade",    label: "Downgrade",                       higherIsBetter: false },
-  { key: "churn",        label: "Churn",                           higherIsBetter: false },
-  { key: "net_new_mrr",  label: "Net New MRR",                     higherIsBetter: true  },
+const QUARTER_TARGETS: Record<Segment, QuarterTargetDef[]> = {
+  total: [
+    {
+      label: "Q1 FY2026",
+      targets: { expansion: 406911, downgrade: -184973, churn: -234598, net_new_mrr: -12660 },
+    },
+    {
+      label: "Q2 FY2026",
+      isQTD: true,
+      targets: { expansion: 475534, downgrade: -200610, churn: -254012, net_new_mrr: 20912 },
+    },
+  ],
+  scaled: [
+    {
+      label: "Q1 FY2026",
+      targets: { expansion: 79919, downgrade: -41616, churn: -107878, net_new_mrr: -69575 },
+    },
+    {
+      label: "Q2 FY2026",
+      isQTD: true,
+      targets: { expansion: 116163, downgrade: -59657, churn: -134724, net_new_mrr: -78219 },
+    },
+  ],
+  strategic: [
+    {
+      label: "Q1 FY2026",
+      targets: { expansion: 326992, downgrade: -143357, churn: -126720, net_new_mrr: 56915 },
+    },
+    {
+      label: "Q2 FY2026",
+      isQTD: true,
+      targets: { expansion: 359371, downgrade: -140953, churn: -119288, net_new_mrr: 99130 },
+    },
+  ],
+};
+
+function computeActuals(seg: MrrChangeSegment): SegmentTarget {
+  const table = seg.total;
+  if (!table) return { expansion: 0, downgrade: 0, churn: 0, net_new_mrr: 0 };
+  const sumArr = (arr: (number | null)[] | undefined) =>
+    (arr ?? []).reduce((s: number, v) => s + (Number(v) || 0), 0);
+  return {
+    expansion: sumArr(table.expansion) + sumArr(table.reactivation),
+    downgrade: sumArr(table.downgrade),
+    churn: sumArr(table.churn),
+    net_new_mrr: sumArr(table.net_expansions),
+  };
+}
+
+const TARGET_ROWS: { key: keyof SegmentTarget; label: string }[] = [
+  { key: "expansion",   label: "Expansion (incl. Reactivation)" },
+  { key: "downgrade",   label: "Downgrade"                      },
+  { key: "churn",       label: "Churn"                          },
+  { key: "net_new_mrr", label: "Net New MRR"                    },
 ];
 
 function fmtDollar(n: number): string {
@@ -58,8 +98,7 @@ function fmtVariance(v: number): string {
   return `${sign}${fmtDollar(v)}`;
 }
 
-
-function QuarterCard({ qt }: { qt: QuarterTarget }) {
+function QuarterCard({ qt, actuals }: { qt: QuarterTargetDef; actuals: SegmentTarget }) {
   return (
     <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
       <div className="flex items-center justify-between border-b border-gray-100 bg-gray-50 px-4 py-2.5">
@@ -70,7 +109,6 @@ function QuarterCard({ qt }: { qt: QuarterTarget }) {
           </span>
         )}
       </div>
-
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-gray-100">
@@ -82,12 +120,11 @@ function QuarterCard({ qt }: { qt: QuarterTarget }) {
         </thead>
         <tbody>
           {TARGET_ROWS.map((row, i) => {
-            const actual   = qt.actuals[row.key];
+            const actual   = actuals[row.key];
             const target   = qt.targets[row.key];
             const variance = actual - target;
             const isGood   = variance >= 0;
             const isNetRow = row.key === "net_new_mrr";
-
             return (
               <tr
                 key={row.key}
@@ -116,34 +153,57 @@ function QuarterCard({ qt }: { qt: QuarterTarget }) {
   );
 }
 
-function TargetsAttainment({ isQ2 }: { isQ2: boolean }) {
-  const qt = isQ2 ? TARGETS[1] : TARGETS[0];
+function TargetsAttainment({
+  data, isQ2, segment, onSegmentChange,
+}: {
+  data: MrrChangeData;
+  isQ2: boolean;
+  segment: Segment;
+  onSegmentChange: (s: Segment) => void;
+}) {
+  const quarterIdx = isQ2 ? 1 : 0;
+  const qt = QUARTER_TARGETS[segment][quarterIdx];
+  const actuals = computeActuals(data[segment]);
+
   return (
     <div className="space-y-3">
       <div>
         <h3 className="text-sm font-bold text-gray-700">Targets & Attainment</h3>
-        <p className="text-xs text-gray-400">Expansion includes Reactivation.</p>
+        <p className="text-xs text-gray-400">Expansion includes Reactivation. Actuals = New + Existing (total cohort).</p>
       </div>
-      <QuarterCard qt={qt} />
+      <div className="inline-flex rounded-lg bg-gray-100 p-1">
+        {(Object.keys(SEGMENT_LABELS) as Segment[]).map((s) => (
+          <button
+            key={s}
+            onClick={() => onSegmentChange(s)}
+            className={`rounded-md px-3 py-1.5 text-sm font-semibold transition-colors ${
+              segment === s ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"
+            }`}
+          >
+            {SEGMENT_LABELS[s]}
+          </button>
+        ))}
+      </div>
+      <QuarterCard qt={qt} actuals={actuals} />
     </div>
   );
 }
 
-// ─────────────────────── P&L table (unchanged) ───────────────────────
+// ─────────────────────── P&L table ───────────────────────
 
 const ROW_DEFS: { key: keyof MrrChangeTable; label: string; isPct?: boolean; isNet?: boolean; isHeader?: boolean }[] = [
-  { key: "starting_mrr", label: "Starting MRR", isHeader: true },
-  { key: "new", label: "New" },
-  { key: "expansion", label: "Expansion" },
-  { key: "downgrade", label: "Downgrade" },
-  { key: "churn", label: "Churn" },
-  { key: "reactivation", label: "Reactivation" },
-  { key: "closing_mrr", label: "Closing MRR", isHeader: true },
-  { key: "net_expansions", label: "Net Expansions", isNet: true },
-  { key: "net_expansion_pct", label: "Net Expansion as % of start", isPct: true },
-  { key: "expansion_pct", label: "Expansion as % of start", isPct: true },
-  { key: "downgrade_pct", label: "Downgrade as % of start", isPct: true },
-  { key: "churn_pct", label: "Churn as % of start", isPct: true },
+  { key: "starting_mrr",      label: "Starting MRR",                    isHeader: true },
+  { key: "new",               label: "New"                                              },
+  { key: "expansion",         label: "Expansion"                                        },
+  { key: "downgrade",         label: "Downgrade"                                        },
+  { key: "churn",             label: "Churn"                                            },
+  { key: "reactivation",      label: "Reactivation"                                     },
+  { key: "closing_mrr",       label: "Closing MRR",                     isHeader: true },
+  { key: "net_expansions",    label: "Net Expansions",                   isNet:   true  },
+  { key: "net_expansion_pct", label: "Net Expansion as % of start",      isPct:   true  },
+  { key: "expansion_pct",     label: "Expansion as % of start",          isPct:   true  },
+  { key: "downgrade_pct",     label: "Downgrade as % of start",          isPct:   true  },
+  { key: "churn_pct",         label: "Churn as % of start",              isPct:   true  },
 ];
 
 function fmtK(n: number): string {
@@ -160,9 +220,9 @@ function fmtPct(v: number | null | undefined) {
 
 const PCT_NUMERATOR: Partial<Record<keyof MrrChangeTable, keyof MrrChangeTable>> = {
   net_expansion_pct: "net_expansions",
-  expansion_pct: "expansion",
-  downgrade_pct: "downgrade",
-  churn_pct: "churn",
+  expansion_pct:     "expansion",
+  downgrade_pct:     "downgrade",
+  churn_pct:         "churn",
 };
 
 function derivePctValues(table: MrrChangeTable, key: keyof MrrChangeTable): (number | null)[] {
@@ -180,14 +240,17 @@ function derivePctValues(table: MrrChangeTable, key: keyof MrrChangeTable): (num
   });
 }
 
-function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; title: string; accent: "blue" | "green" }) {
+function PnLTable({ table, title }: { table: MrrChangeTable | null; title: string }) {
   if (!table) {
     return <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-400">{title}: no data</div>;
   }
-  const headerBg = accent === "blue" ? "bg-slate-50" : "bg-slate-50";
+  const showTotal = table.months.length > 1;
+  const sumVals = (vals: (number | null)[]) =>
+    vals.reduce((s: number, v) => s + (Number(v) || 0), 0);
+
   return (
     <div className="overflow-hidden rounded-lg border border-gray-100">
-      <div className={`px-4 py-2 text-sm font-bold text-gray-800 ${headerBg}`}>{title}</div>
+      <div className="px-4 py-2 text-sm font-bold text-gray-800 bg-slate-50">{title}</div>
       <table className="w-full text-sm">
         <thead className="bg-gray-50">
           <tr>
@@ -195,6 +258,11 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
             {table.months.map((m) => (
               <th key={m} className="px-4 py-2 text-center font-medium text-gray-500">{m}</th>
             ))}
+            {showTotal && (
+              <th className="px-4 py-2 text-center font-semibold text-gray-700 bg-gray-100/80">
+                {table.months.length === 3 ? "Q Total" : "Period Total"}
+              </th>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -211,6 +279,7 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
                 : rd.isPct
                   ? "italic text-gray-500"
                   : "text-gray-600";
+            const total = !rd.isPct && !rd.isHeader ? sumVals(vals) : null;
             return (
               <tr key={String(rd.key)} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                 <td className={`px-4 py-2 ${cls}`}>{rd.label}</td>
@@ -219,6 +288,11 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
                     {v == null ? "" : rd.isPct ? fmtPct(v) : fmtK(v)}
                   </td>
                 ))}
+                {showTotal && (
+                  <td className={`px-4 py-2 text-center bg-gray-100/50 ${cls}`}>
+                    {total != null ? fmtK(total) : ""}
+                  </td>
+                )}
               </tr>
             );
           })}
@@ -259,30 +333,16 @@ export default function NetExpansions({ data }: Props) {
         <p className="text-sm text-gray-500">MRR change by month — {periodLabel}.</p>
       </div>
 
-      {/* Targets & Attainment — quarter-matched */}
-      <TargetsAttainment isQ2={isQ2} />
+      {/* Targets & Attainment — single segment switcher drives both this and the P&L tables */}
+      <TargetsAttainment data={data} isQ2={isQ2} segment={segment} onSegmentChange={setSegment} />
 
       <hr className="border-gray-200" />
 
-      {/* Segment switcher */}
-      <div className="inline-flex rounded-lg bg-gray-100 p-1">
-        {(Object.keys(SEGMENT_LABELS) as Segment[]).map((s) => (
-          <button
-            key={s}
-            onClick={() => setSegment(s)}
-            className={`rounded-md px-4 py-1.5 text-sm font-semibold transition-colors ${
-              segment === s ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"
-            }`}
-          >
-            {SEGMENT_LABELS[s]}
-          </button>
-        ))}
-      </div>
-
+      {/* P&L tables — Total first, then New, then Existing */}
       <div className="space-y-5">
-        <PnLTable table={seg.existing_customers} title="Existing customers post Feb 2026" accent="green" />
-        <PnLTable table={seg.new_customers} title="New customers post Feb 2026" accent="blue" />
-        <PnLTable table={seg.total} title="Total" accent="green" />
+        <PnLTable table={seg.total}               title="Total"                             />
+        <PnLTable table={seg.new_customers}       title="New customers post Feb 2026"       />
+        <PnLTable table={seg.existing_customers}  title="Existing customers post Feb 2026"  />
       </div>
     </section>
   );
