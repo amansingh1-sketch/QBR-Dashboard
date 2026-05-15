@@ -8,9 +8,9 @@ interface StatCardProps {
 }
 
 const accentMap = {
-  indigo: "border-slate-300",
-  emerald: "border-teal-300",
-  violet: "border-slate-300",
+  indigo:  "border-[#6B8CAE]",
+  emerald: "border-[#5B9B8E]",
+  violet:  "border-[#8B7FA8]",
 };
 
 export default function StatCard({ label, value, sub, accent = "indigo" }: StatCardProps) {
