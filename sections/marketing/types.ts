@@ -45,11 +45,10 @@ export interface ProductData {
 
 export interface GrowthData {
   periodLabel: string;
+  overallMetrics: KpiTable;
   websiteEngagement: KpiTable;
   plg: KpiTable;
   slg: KpiTable;
-  aiSdr: KpiTable;
-  customPricing: KpiTable;
   cpl: KpiTable;
   cac: KpiTable;
 }

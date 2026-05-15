@@ -1,12 +1,12 @@
 // Tab metadata for the Customer Success section.
 
 export const SUCCESS_TABS = [
+  { id: "nrr-deepdive",          label: "NRR Deepdive" },
   { id: "net-expansions",        label: "Net Expansions" },
   { id: "success-metrics",       label: "Success Metrics" },
   { id: "product-adoption",      label: "Product Adoption" },
   { id: "expansion-pipeline",    label: "Expansion Pipeline" },
   { id: "aiva-pipeline",         label: "AIVA Expansion Pipeline" },
-  { id: "nrr-deepdive",          label: "NRR Deepdive" },
 ] as const;
 
 export type SuccessTabId = (typeof SUCCESS_TABS)[number]["id"];

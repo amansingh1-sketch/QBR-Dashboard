@@ -9,11 +9,10 @@ import type { GrowthData, AdSpendsData, KpiTable as KpiTableData } from "../type
 
 const SUB_TABS = [
   { id: "ad-spends", label: "Ad Spends" },
+  { id: "overall",   label: "Overall Metrics" },
   { id: "web",       label: "Website Engagement" },
   { id: "plg",       label: "PLG (Signups)" },
   { id: "slg",       label: "SLG (Demos)" },
-  { id: "ai-sdr",    label: "AI SDR" },
-  { id: "pricing",   label: "Custom Pricing" },
   { id: "cpl",       label: "CPL" },
   { id: "cac",       label: "CAC" },
 ] as const;
@@ -91,11 +90,10 @@ export default function Growth({ data, adSpendsData }: Props) {
   }
 
   const table =
+    activeSub === "overall" ? data.overallMetrics :
     activeSub === "web"     ? data.websiteEngagement :
     activeSub === "plg"     ? data.plg :
     activeSub === "slg"     ? data.slg :
-    activeSub === "ai-sdr"  ? data.aiSdr :
-    activeSub === "pricing" ? data.customPricing :
     activeSub === "cpl"     ? data.cpl :
                               data.cac;
 

@@ -211,45 +211,12 @@
         "mar": 26.48,
         "apr": 27.71,
         "q1Total": 26.61
-      },
-      {
-        "metric": "Onboarding Completion Rate",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
-      },
-      {
-        "metric": "Trial to Conversion Rate",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
       }
     ]
   },
   "sales": {
     "title": "Sales",
     "rows": [
-      {
-        "metric": "Seller Confidence Survey",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
-      },
       {
         "metric": "Deal Velocity",
         "nov": 13,
@@ -282,17 +249,6 @@
         "mar": 4560,
         "apr": 6000,
         "q1Total": 5544
-      },
-      {
-        "metric": "AIVA Attach Rate",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
       }
     ]
   }

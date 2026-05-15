@@ -36,11 +36,10 @@ export async function getProductData(startDate: string, endDate: string): Promis
 export async function getGrowthData(startDate: string, endDate: string): Promise<GrowthData> {
   return growthMap[`${startDate}__${endDate}`] ?? {
     periodLabel: "",
+    overallMetrics: { ...emptyTable, title: "Overall Metrics (Total)" },
     websiteEngagement: { ...emptyTable, title: "Website Engagement (Overall)" },
     plg: { ...emptyTable, title: "PLG (SignUps)" },
     slg: { ...emptyTable, title: "SLG (Demos)" },
-    aiSdr: { ...emptyTable, title: "AI SDR" },
-    customPricing: { ...emptyTable, title: "Custom Pricing / Get a Quote" },
     cpl: { ...emptyTable, title: "Efficiency & Economics — CPL" },
     cac: { ...emptyTable, title: "Efficiency & Economics — CAC" },
   };
