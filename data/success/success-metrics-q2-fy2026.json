@@ -1,0 +1,29 @@
+{
+  "total": {
+    "months": ["2026-05-01"],
+    "plan_upgrades":    [40],
+    "plan_downgrades":  [30],
+    "m2a":              [16],
+    "a2m":              [ 8],
+    "aiva_activations":   [5],
+    "aiva_deactivations": [12]
+  },
+  "scaled": {
+    "months": ["2026-05-01"],
+    "plan_upgrades":    [28],
+    "plan_downgrades":  [18],
+    "m2a":              [14],
+    "a2m":              [ 6],
+    "aiva_activations":   [3],
+    "aiva_deactivations": [8]
+  },
+  "strategic": {
+    "months": ["2026-05-01"],
+    "plan_upgrades":    [10],
+    "plan_downgrades":  [10],
+    "m2a":              [ 2],
+    "a2m":              [ 2],
+    "aiva_activations":   [0],
+    "aiva_deactivations": [4]
+  }
+}

@@ -113,8 +113,8 @@ function ThreeMonth({ data }: { data: NrrDeepdiveData["threeMonth"] }) {
         </div>
 
         <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <StatCard label="Avg 3-Month NRR" value={fmtPct(avgNrr)} sub="May 25 → Jan 26 cohorts" accent="indigo" />
-          <StatCard label="Avg 3-Month Logo Retention" value={fmtPct(avgLogo)} sub="May 25 → Jan 26 cohorts" accent="emerald" />
+          <StatCard label="Avg 3-Month NRR" value={fmtPct(avgNrr)} sub={`${data.nrrTrend[0]?.cohort} → ${data.nrrTrend[data.nrrTrend.length - 1]?.cohort} cohorts`} accent="indigo" />
+          <StatCard label="Avg 3-Month Logo Retention" value={fmtPct(avgLogo)} sub={`${data.logoTrend[0]?.cohort} → ${data.logoTrend[data.logoTrend.length - 1]?.cohort} cohorts`} accent="emerald" />
         </div>
 
         <TrendChart

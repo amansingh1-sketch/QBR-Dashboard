@@ -9,15 +9,24 @@ import type {
 } from "./types";
 
 import mrrChangeQ1 from "../../data/success/mrr-change-q1-fy2026.json";
+import mrrChangeQ2 from "../../data/success/mrr-change-q2-fy2026.json";
 import successMetricsQ1 from "../../data/success/success-metrics-q1-fy2026.json";
+import successMetricsQ2 from "../../data/success/success-metrics-q2-fy2026.json";
 import productAdoptionQ1 from "../../data/success/product-adoption-q1-fy2026.json";
 import expansionPipelineQ1 from "../../data/success/expansion-pipeline-q1-fy2026.json";
 import nrrDeepdive from "../../data/success/nrr-deepdive.json";
 
 const Q1_KEY = "2026-02-01__2026-04-30";
+const Q2_KEY = "2026-05-01__2026-07-31";
 
-const mrrChangeMap: Record<string, MrrChangeData> = { [Q1_KEY]: mrrChangeQ1 as unknown as MrrChangeData };
-const successMetricsMap: Record<string, SuccessMetricsData> = { [Q1_KEY]: successMetricsQ1 as unknown as SuccessMetricsData };
+const mrrChangeMap: Record<string, MrrChangeData> = {
+  [Q1_KEY]: mrrChangeQ1 as unknown as MrrChangeData,
+  [Q2_KEY]: mrrChangeQ2 as unknown as MrrChangeData,
+};
+const successMetricsMap: Record<string, SuccessMetricsData> = {
+  [Q1_KEY]: successMetricsQ1 as unknown as SuccessMetricsData,
+  [Q2_KEY]: successMetricsQ2 as unknown as SuccessMetricsData,
+};
 const productAdoptionMap: Record<string, ProductAdoptionData> = { [Q1_KEY]: productAdoptionQ1 as unknown as ProductAdoptionData };
 const expansionPipelineMap: Record<string, ExpansionPipelineData> = { [Q1_KEY]: expansionPipelineQ1 as unknown as ExpansionPipelineData };
 
@@ -31,8 +40,11 @@ export async function getMrrChangeData(startDate: string, endDate: string): Prom
   return mrrChangeMap[`${startDate}__${endDate}`] ?? emptyMrrData;
 }
 
+const emptyMetricsTable = { months: [], plan_upgrades: [], plan_downgrades: [], m2a: [], a2m: [], aiva_activations: [], aiva_deactivations: [] };
+const emptySuccessMetrics: SuccessMetricsData = { total: emptyMetricsTable, scaled: emptyMetricsTable, strategic: emptyMetricsTable };
+
 export async function getSuccessMetricsData(startDate: string, endDate: string): Promise<SuccessMetricsData> {
-  return successMetricsMap[`${startDate}__${endDate}`] ?? { months: [], plan_upgrades: [], m2a: [], a2m: [], aiva_activations: [], aiva_deactivations: [] };
+  return successMetricsMap[`${startDate}__${endDate}`] ?? emptySuccessMetrics;
 }
 
 export async function getProductAdoptionData(startDate: string, endDate: string): Promise<ProductAdoptionData> {

@@ -18,8 +18,7 @@ export default function QuarterPicker({ current }: QuarterPickerProps) {
     router.push(`?${params.toString()}`);
   }
 
-  // Only Q1 has data right now; future quarters are disabled until data lands.
-  const AVAILABLE_QUARTERS = new Set<1 | 2 | 3 | 4>([1]);
+  const AVAILABLE_QUARTERS = new Set<1 | 2 | 3 | 4>([1, 2]);
 
   const quarters: { q: 1 | 2 | 3 | 4; label: string }[] = [
     { q: 1, label: "Q1" },
