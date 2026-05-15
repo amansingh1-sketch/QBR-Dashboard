@@ -598,6 +598,24 @@
     "subtitle": "M3 ÷ M0 per cohort. Source: License Cohort Analysis. Cohorts from May 25 onwards; current date May 2026.",
     "nrrTrend": [
       {
+        "cohort": "Feb 25",
+        "pct": 92.77,
+        "numerator": 77000,
+        "denominator": 83000
+      },
+      {
+        "cohort": "Mar 25",
+        "pct": 76.56,
+        "numerator": 49000,
+        "denominator": 64000
+      },
+      {
+        "cohort": "Apr 25",
+        "pct": 83.75,
+        "numerator": 67000,
+        "denominator": 80000
+      },
+      {
         "cohort": "May 25",
         "pct": 88.46,
         "numerator": 69000,
@@ -653,6 +671,24 @@
       }
     ],
     "logoTrend": [
+      {
+        "cohort": "Feb 25",
+        "pct": 66.48,
+        "numerator": 238,
+        "denominator": 358
+      },
+      {
+        "cohort": "Mar 25",
+        "pct": 63.75,
+        "numerator": 262,
+        "denominator": 411
+      },
+      {
+        "cohort": "Apr 25",
+        "pct": 70.65,
+        "numerator": 260,
+        "denominator": 368
+      },
       {
         "cohort": "May 25",
         "pct": 65.04,

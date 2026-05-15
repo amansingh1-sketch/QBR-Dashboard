@@ -12,6 +12,125 @@ const SEGMENT_LABELS: Record<Segment, string> = {
   strategic: "Strategic",
 };
 
+// ─────────────────────── Targets & Attainment ───────────────────────
+// Expansion = Expansion + Reactivation (per business definition)
+// Source: QBR spreadsheet targets
+
+interface QuarterTarget {
+  label: string;
+  isQTD?: boolean;
+  actuals: { expansion: number; downgrade: number; churn: number; net_new_mrr: number };
+  targets: { expansion: number; downgrade: number; churn: number; net_new_mrr: number };
+}
+
+const TARGETS: QuarterTarget[] = [
+  {
+    label: "Q1 FY2026",
+    actuals:  { expansion: 296306,  downgrade: -127132, churn: -191901, net_new_mrr: -22726 },
+    targets:  { expansion: 406911,  downgrade: -184974, churn: -234598, net_new_mrr: -12661 },
+  },
+  {
+    label: "Q2 FY2026",
+    isQTD: true,
+    actuals:  { expansion: 58276,   downgrade: -37989,  churn: -33331,  net_new_mrr: -13044 },
+    targets:  { expansion: 475533,  downgrade: -200611, churn: -254012, net_new_mrr:  20910 },
+  },
+];
+
+const TARGET_ROWS: { key: keyof QuarterTarget["actuals"]; label: string; higherIsBetter: boolean }[] = [
+  { key: "expansion",    label: "Expansion (incl. Reactivation)", higherIsBetter: true  },
+  { key: "downgrade",    label: "Downgrade",                       higherIsBetter: false },
+  { key: "churn",        label: "Churn",                           higherIsBetter: false },
+  { key: "net_new_mrr",  label: "Net New MRR",                     higherIsBetter: true  },
+];
+
+function fmtDollar(n: number): string {
+  if (!isFinite(n)) return "$0";
+  const sign = n < 0 ? "-" : "";
+  const abs = Math.abs(n);
+  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(1)}M`;
+  if (abs >= 1_000)     return `${sign}$${(abs / 1_000).toFixed(1)}K`;
+  return `${sign}$${abs}`;
+}
+
+function fmtVariance(v: number): string {
+  const sign = v >= 0 ? "+" : "";
+  return `${sign}${fmtDollar(v)}`;
+}
+
+
+function QuarterCard({ qt }: { qt: QuarterTarget }) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+      <div className="flex items-center justify-between border-b border-gray-100 bg-gray-50 px-4 py-2.5">
+        <span className="text-sm font-bold text-gray-800">{qt.label}</span>
+        {qt.isQTD && (
+          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-700">
+            QTD — targets are full-quarter
+          </span>
+        )}
+      </div>
+
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b border-gray-100">
+            <th className="px-4 py-2 text-left text-xs font-medium text-gray-400">Metric</th>
+            <th className="px-4 py-2 text-right text-xs font-medium text-gray-400">Actual</th>
+            <th className="px-4 py-2 text-right text-xs font-medium text-gray-400">Target</th>
+            <th className="px-4 py-2 text-right text-xs font-medium text-gray-400">vs Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          {TARGET_ROWS.map((row, i) => {
+            const actual   = qt.actuals[row.key];
+            const target   = qt.targets[row.key];
+            const variance = actual - target;
+            const isGood   = variance >= 0;
+            const isNetRow = row.key === "net_new_mrr";
+
+            return (
+              <tr
+                key={row.key}
+                className={`border-b border-gray-50 last:border-0 ${
+                  isNetRow ? "bg-gray-50" : i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
+                }`}
+              >
+                <td className={`px-4 py-2.5 font-medium ${isNetRow ? "font-bold text-gray-800" : "text-gray-700"}`}>
+                  {row.label}
+                </td>
+                <td className={`px-4 py-2.5 text-right font-semibold ${isGood ? "text-emerald-700" : "text-red-600"}`}>
+                  {fmtDollar(actual)}
+                </td>
+                <td className="px-4 py-2.5 text-right text-gray-500">
+                  {fmtDollar(target)}
+                </td>
+                <td className={`px-4 py-2.5 text-right text-xs font-semibold ${isGood ? "text-emerald-600" : "text-red-500"}`}>
+                  {fmtVariance(variance)}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function TargetsAttainment({ isQ2 }: { isQ2: boolean }) {
+  const qt = isQ2 ? TARGETS[1] : TARGETS[0];
+  return (
+    <div className="space-y-3">
+      <div>
+        <h3 className="text-sm font-bold text-gray-700">Targets & Attainment</h3>
+        <p className="text-xs text-gray-400">Expansion includes Reactivation.</p>
+      </div>
+      <QuarterCard qt={qt} />
+    </div>
+  );
+}
+
+// ─────────────────────── P&L table (unchanged) ───────────────────────
+
 const ROW_DEFS: { key: keyof MrrChangeTable; label: string; isPct?: boolean; isNet?: boolean; isHeader?: boolean }[] = [
   { key: "starting_mrr", label: "Starting MRR", isHeader: true },
   { key: "new", label: "New" },
@@ -39,8 +158,6 @@ function fmtPct(v: number | null | undefined) {
   return (v * 100).toFixed(1) + "%";
 }
 
-// For % rows, the xlsx only stores a value for the first month. Derive across all months
-// from the underlying numerator (expansion/downgrade/churn/net_expansions) ÷ starting_mrr.
 const PCT_NUMERATOR: Partial<Record<keyof MrrChangeTable, keyof MrrChangeTable>> = {
   net_expansion_pct: "net_expansions",
   expansion_pct: "expansion",
@@ -55,7 +172,7 @@ function derivePctValues(table: MrrChangeTable, key: keyof MrrChangeTable): (num
   const num = (table[numKey] as (number | null)[] | undefined) ?? [];
   const den = (table.starting_mrr ?? []) as (number | null)[];
   return table.months.map((_, i) => {
-    if (stored[i] != null) return stored[i]; // honor the value provided in the xlsx
+    if (stored[i] != null) return stored[i];
     const n = num[i];
     const d = den[i];
     if (n == null || d == null || d === 0) return null;
@@ -111,20 +228,41 @@ function PnLTable({ table, title, accent }: { table: MrrChangeTable | null; titl
   );
 }
 
+// ─────────────────────── Main component ───────────────────────
+
 interface Props {
   data: MrrChangeData;
+}
+
+function getPeriodLabel(data: MrrChangeData): string {
+  const months = data.total?.total?.months ?? data.total?.existing_customers?.months ?? [];
+  if (months.length === 1) return `${months[0]} (MTD)`;
+  if (months.length > 1) return `${months[0]} – ${months[months.length - 1]}`;
+  return "MRR change by month";
+}
+
+function isQ2Data(data: MrrChangeData): boolean {
+  const months = data.total?.total?.months ?? data.total?.existing_customers?.months ?? [];
+  return months.some((m) => m.includes("May"));
 }
 
 export default function NetExpansions({ data }: Props) {
   const [segment, setSegment] = useState<Segment>("total");
   const seg: MrrChangeSegment = data[segment];
+  const periodLabel = getPeriodLabel(data);
+  const isQ2 = isQ2Data(data);
 
   return (
-    <section className="space-y-5">
+    <section className="space-y-6">
       <div>
         <h2 className="text-lg font-bold text-gray-900">Net Expansions</h2>
-        <p className="text-sm text-gray-500">MRR change by month — Q1 FY2026 (Feb–Apr 2026).</p>
+        <p className="text-sm text-gray-500">MRR change by month — {periodLabel}.</p>
       </div>
+
+      {/* Targets & Attainment — quarter-matched */}
+      <TargetsAttainment isQ2={isQ2} />
+
+      <hr className="border-gray-200" />
 
       {/* Segment switcher */}
       <div className="inline-flex rounded-lg bg-gray-100 p-1">

@@ -31,13 +31,20 @@ export interface MrrChangeData {
 }
 
 // ---------- 2. Success Metrics (Customer Movements) ----------
-export interface SuccessMetricsData {
+export interface SuccessMetricsTable {
   months: string[]; // ["2026-02-01", "2026-03-01", "2026-04-01"]
   plan_upgrades: number[];
-  m2a: number[];
-  a2m: number[];
+  plan_downgrades: number[];
+  m2a: number[];   // Monthly→Annual
+  a2m: number[];   // Annual→Monthly
   aiva_activations: number[];
   aiva_deactivations: number[];
+}
+
+export interface SuccessMetricsData {
+  total: SuccessMetricsTable;
+  scaled: SuccessMetricsTable;
+  strategic: SuccessMetricsTable;
 }
 
 // ---------- 3. Product Adoption ----------

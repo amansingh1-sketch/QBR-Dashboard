@@ -1,0 +1,140 @@
+{
+  "total": {
+    "new_customers": {
+      "months": ["May 2026"],
+      "starting_mrr": [263441],
+      "new": [37621],
+      "expansion": [16308],
+      "downgrade": [-4050],
+      "churn": [-15085],
+      "reactivation": [null],
+      "closing_mrr": [298235],
+      "net_expansions": [-2828],
+      "net_expansion_pct": [null],
+      "expansion_pct": [null],
+      "downgrade_pct": [null],
+      "churn_pct": [null]
+    },
+    "existing_customers": {
+      "months": ["May 2026"],
+      "starting_mrr": [2469582],
+      "expansion": [40897],
+      "downgrade": [-33939],
+      "churn": [-18246],
+      "reactivation": [1137],
+      "closing_mrr": [2459431],
+      "net_expansions": [-10151],
+      "net_expansion_pct": [null],
+      "expansion_pct": [null],
+      "downgrade_pct": [null],
+      "churn_pct": [null]
+    },
+    "total": {
+      "months": ["May 2026"],
+      "starting_mrr": [2733023],
+      "new": [37621],
+      "expansion": [57205],
+      "downgrade": [-37989],
+      "churn": [-33331],
+      "reactivation": [1137],
+      "closing_mrr": [2757666],
+      "net_expansions": [-12978],
+      "net_expansion_pct": [null],
+      "expansion_pct": [null],
+      "downgrade_pct": [null],
+      "churn_pct": [null]
+    }
+  },
+  "scaled": {
+    "new_customers": {
+      "months": ["May 2026"],
+      "starting_mrr": [179274],
+      "new": [20970],
+      "expansion": [9359],
+      "downgrade": [-2598],
+      "churn": [-9529],
+      "reactivation": [null],
+      "closing_mrr": [197475],
+      "net_expansions": [-2768],
+      "net_expansion_pct": [-0.015],
+      "expansion_pct": [0.052],
+      "downgrade_pct": [-0.014],
+      "churn_pct": [-0.053]
+    },
+    "existing_customers": {
+      "months": ["May 2026"],
+      "starting_mrr": [584451],
+      "expansion": [7937],
+      "downgrade": [-4924],
+      "churn": [-7483],
+      "reactivation": [708],
+      "closing_mrr": [580689],
+      "net_expansions": [-3762],
+      "net_expansion_pct": [-0.006],
+      "expansion_pct": [0.015],
+      "downgrade_pct": [-0.008],
+      "churn_pct": [-0.013]
+    },
+    "total": {
+      "months": ["May 2026"],
+      "starting_mrr": [763725],
+      "new": [20970],
+      "expansion": [17296],
+      "downgrade": [-7523],
+      "churn": [-17012],
+      "reactivation": [708],
+      "closing_mrr": [778164],
+      "net_expansions": [-6531],
+      "net_expansion_pct": [-0.009],
+      "expansion_pct": [0.024],
+      "downgrade_pct": [-0.010],
+      "churn_pct": [-0.022]
+    }
+  },
+  "strategic": {
+    "new_customers": {
+      "months": ["May 2026"],
+      "starting_mrr": [80193],
+      "new": [2053],
+      "expansion": [5747],
+      "downgrade": [-1104],
+      "churn": [-660],
+      "reactivation": [null],
+      "closing_mrr": [86229],
+      "net_expansions": [3983],
+      "net_expansion_pct": [0.05],
+      "expansion_pct": [0.072],
+      "downgrade_pct": [-0.014],
+      "churn_pct": [-0.008]
+    },
+    "existing_customers": {
+      "months": ["May 2026"],
+      "starting_mrr": [1884598],
+      "expansion": [28707],
+      "downgrade": [-24900],
+      "churn": [-9330],
+      "reactivation": [84],
+      "closing_mrr": [1879159],
+      "net_expansions": [-5439],
+      "net_expansion_pct": [-0.003],
+      "expansion_pct": [0.015],
+      "downgrade_pct": [-0.013],
+      "churn_pct": [-0.005]
+    },
+    "total": {
+      "months": ["May 2026"],
+      "starting_mrr": [1964791],
+      "new": [2053],
+      "expansion": [34454],
+      "downgrade": [-26004],
+      "churn": [-9990],
+      "reactivation": [84],
+      "closing_mrr": [1965388],
+      "net_expansions": [-1456],
+      "net_expansion_pct": [-0.001],
+      "expansion_pct": [0.018],
+      "downgrade_pct": [-0.013],
+      "churn_pct": [-0.005]
+    }
+  }
+}
