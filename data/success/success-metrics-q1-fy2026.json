@@ -1,29 +1,29 @@
 {
   "total": {
     "months": ["2026-02-01", "2026-03-01", "2026-04-01"],
-    "plan_upgrades":    [72, 60, 78],
-    "plan_downgrades":  [44, 43, 47],
-    "m2a":              [28, 23, 33],
-    "a2m":              [14, 24, 16],
-    "aiva_activations":   [36, 56, 33],
-    "aiva_deactivations": [31, 31, 16]
+    "plan_upgrades":    [32, 20, 40],
+    "plan_downgrades":  [21, 19, 22],
+    "m2a":              [14,  9, 16],
+    "a2m":              [ 7, 11,  8],
+    "aiva_activations":   [17, 25, 16],
+    "aiva_deactivations": [14, 13,  8]
   },
   "scaled": {
     "months": ["2026-02-01", "2026-03-01", "2026-04-01"],
-    "plan_upgrades":    [46, 53, 57],
-    "plan_downgrades":  [29, 33, 37],
-    "m2a":              [18, 15, 22],
-    "a2m":              [2,  12,  8],
-    "aiva_activations":   [27, 27, 18],
-    "aiva_deactivations": [12, 10,  8]
+    "plan_upgrades":    [19, 17, 30],
+    "plan_downgrades":  [14, 14, 17],
+    "m2a":              [ 9,  6, 11],
+    "a2m":              [ 1,  5,  4],
+    "aiva_activations":   [13, 12,  9],
+    "aiva_deactivations": [ 5,  4,  4]
   },
   "strategic": {
     "months": ["2026-02-01", "2026-03-01", "2026-04-01"],
-    "plan_upgrades":    [26,  7, 21],
-    "plan_downgrades":  [15, 10, 10],
-    "m2a":              [10,  8, 11],
-    "a2m":              [12, 12,  8],
-    "aiva_activations":   [ 9, 29, 15],
-    "aiva_deactivations": [19, 21,  8]
+    "plan_upgrades":    [13,  3, 10],
+    "plan_downgrades":  [ 7,  5,  5],
+    "m2a":              [ 5,  3,  5],
+    "a2m":              [ 6,  6,  4],
+    "aiva_activations":   [ 4, 13,  7],
+    "aiva_deactivations": [ 9,  9,  4]
   }
 }
