@@ -40,16 +40,16 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 const ChartLegend = () => (
   <div className="flex justify-end gap-5 pb-2 text-xs text-gray-600">
     <div className="flex items-center gap-1.5">
-      <span className="h-3 w-3 rounded-sm bg-slate-500" />
+      <span className="h-3 w-3 rounded-sm" style={{ background: "#6B8CAE" }} />
       SDR
     </div>
     <div className="flex items-center gap-1.5">
-      <span className="h-3 w-3 rounded-sm bg-indigo-300" />
+      <span className="h-3 w-3 rounded-sm" style={{ background: "#8B7FA8" }} />
       BDR
     </div>
     <div className="flex items-center gap-1.5">
-      <span className="inline-block h-0.5 w-4 rounded bg-emerald-400" style={{ verticalAlign: "middle" }} />
-      <span className="inline-block h-2 w-2 -ml-1.5 rounded-full bg-emerald-400" style={{ verticalAlign: "middle" }} />
+      <span className="inline-block h-0.5 w-4 rounded" style={{ background: "#5B9B8E", verticalAlign: "middle" }} />
+      <span className="inline-block h-2 w-2 -ml-1.5 rounded-full" style={{ background: "#5B9B8E", verticalAlign: "middle" }} />
       {" "}Conversion %
     </div>
   </div>
