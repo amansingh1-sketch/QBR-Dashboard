@@ -45,13 +45,13 @@ export default function CohortMatrix({ matrix, format, startUnit }: Props) {
         <h4 className="text-sm font-semibold text-gray-900">{matrix.title}</h4>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full text-xs">
+        <table className="w-full text-sm">
           <thead className="bg-gray-50">
             <tr>
               <th className="sticky left-0 z-10 bg-gray-50 px-3 py-2 text-left font-medium text-gray-500">Month</th>
-              <th className="px-3 py-2 text-right font-medium text-gray-500">Start</th>
+              <th className="px-3 py-2 text-center font-medium text-gray-500">Start</th>
               {matrix.monthHeaders.map((h) => (
-                <th key={h} className="px-3 py-2 text-right font-medium text-gray-500">{h}</th>
+                <th key={h} className="px-3 py-2 text-center font-medium text-gray-500">{h}</th>
               ))}
             </tr>
           </thead>
@@ -61,7 +61,7 @@ export default function CohortMatrix({ matrix, format, startUnit }: Props) {
               return (
                 <tr key={row.cohort} className="border-t border-gray-50">
                   <td className="sticky left-0 z-10 bg-white px-3 py-1.5 font-medium text-gray-700">{row.cohort}</td>
-                  <td className="px-3 py-1.5 text-right text-gray-500">
+                  <td className="px-3 py-1.5 text-center text-gray-500">
                     {startVal != null ? fmt(startVal, startFormat) : ""}
                   </td>
                   {matrix.monthHeaders.map((_, i) => {
@@ -77,7 +77,7 @@ export default function CohortMatrix({ matrix, format, startUnit }: Props) {
                     return (
                       <td
                         key={i}
-                        className={`px-3 py-1.5 text-right ${v == null ? "text-gray-300" : bgFor(retention)}`}
+                        className={`px-3 py-1.5 text-center ${v == null ? "text-gray-300" : bgFor(retention)}`}
                       >
                         {fmt(v, format)}
                       </td>

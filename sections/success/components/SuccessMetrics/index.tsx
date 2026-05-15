@@ -122,9 +122,9 @@ export default function SuccessMetrics({ data }: Props) {
             <tr>
               <th className="px-4 py-2 text-left font-medium text-gray-500">Metric</th>
               {t.months.map((m) => (
-                <th key={m} className="px-4 py-2 text-right font-medium text-gray-500">{fmtLabel(m)}</th>
+                <th key={m} className="px-4 py-2 text-center font-medium text-gray-500">{fmtLabel(m)}</th>
               ))}
-              <th className="px-4 py-2 text-right font-medium text-gray-500">{isMTD ? "MTD Total" : "Period Total"}</th>
+              <th className="px-4 py-2 text-center font-medium text-gray-500">{isMTD ? "MTD Total" : "Period Total"}</th>
             </tr>
           </thead>
           <tbody>
@@ -135,9 +135,9 @@ export default function SuccessMetrics({ data }: Props) {
                 <tr key={rd.key} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                   <td className="px-4 py-2 font-medium text-gray-800">{rd.label}</td>
                   {vals.map((v, j) => (
-                    <td key={j} className="px-4 py-2 text-right text-gray-600">{fmtNumber(v ?? 0)}</td>
+                    <td key={j} className="px-4 py-2 text-center text-gray-600">{fmtNumber(v ?? 0)}</td>
                   ))}
-                  <td className="px-4 py-2 text-right font-semibold text-slate-700">{fmtNumber(total)}</td>
+                  <td className="px-4 py-2 text-center font-semibold text-slate-700">{fmtNumber(total)}</td>
                 </tr>
               );
             })}

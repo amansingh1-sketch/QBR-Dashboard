@@ -76,7 +76,7 @@ function Existing12m({ data }: { data: NrrDeepdiveData["existing12m"] }) {
             <h3 className="text-base font-semibold text-gray-900">{data.title}</h3>
             <p className="mt-0.5 text-xs text-gray-500">{data.subtitle}</p>
           </div>
-          <span className="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
             Avg {fmtPct(a)}
           </span>
         </div>
@@ -149,7 +149,7 @@ function NewCustomers12m({ data }: { data: NrrDeepdiveData["newCustomers12m"] })
             <h3 className="text-base font-semibold text-gray-900">{data.title}</h3>
             <p className="mt-0.5 text-xs text-gray-500">{data.subtitle}</p>
           </div>
-          <span className="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
             Avg {fmtPct(a)}
           </span>
         </div>

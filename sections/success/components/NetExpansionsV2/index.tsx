@@ -115,7 +115,7 @@ function CompactTable({ table }: { table: MrrChangeTable }) {
           <tr>
             <th className="px-3 py-2 text-left font-medium text-gray-500"></th>
             {table.months.map((m) => (
-              <th key={m} className="px-3 py-2 text-right font-medium text-gray-500">{m}</th>
+              <th key={m} className="px-3 py-2 text-center font-medium text-gray-500">{m}</th>
             ))}
           </tr>
         </thead>
@@ -132,7 +132,7 @@ function CompactTable({ table }: { table: MrrChangeTable }) {
               <tr key={String(rd.key)} className={cls}>
                 <td className="px-3 py-2">{rd.label}</td>
                 {vals.map((v, j) => (
-                  <td key={j} className={`px-3 py-2 text-right ${
+                  <td key={j} className={`px-3 py-2 text-center ${
                     rd.tone === "in"  ? "text-teal-700" :
                     rd.tone === "out" ? "text-red-600" :
                     rd.isNet ? (Number(v ?? 0) >= 0 ? "text-teal-700" : "text-red-600") : ""
