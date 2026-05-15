@@ -43,7 +43,7 @@ export default function QuarterPicker({ current }: QuarterPickerProps) {
               aria-disabled={!isAvailable}
               className={`rounded-md px-3 py-1.5 text-sm font-semibold transition-colors ${
                 isCurrent
-                  ? "bg-violet-500 text-white shadow-sm"
+                  ? "bg-teal-500 text-white shadow-sm"
                   : isAvailable
                     ? "text-gray-500 hover:text-gray-700"
                     : "cursor-not-allowed text-gray-300"
@@ -56,7 +56,7 @@ export default function QuarterPicker({ current }: QuarterPickerProps) {
       </div>
 
       {/* Locked fiscal year */}
-      <span className="rounded-md bg-violet-50 px-3 py-1.5 text-sm font-bold text-violet-700">
+      <span className="rounded-md bg-teal-50 px-3 py-1.5 text-sm font-bold text-teal-700">
         FY{current.year + 1}
       </span>
 

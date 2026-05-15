@@ -1229,25 +1229,25 @@
       },
       {
         "metric": "Paid",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
+        "nov": 505,
+        "dec": 672,
+        "jan": 448,
+        "q4Total": 529,
+        "feb": 450,
+        "mar": 593,
+        "apr": 581,
+        "q1Total": 541
       },
       {
         "metric": "Blended",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
+        "nov": 104,
+        "dec": 140,
+        "jan": 104,
+        "q4Total": 114,
+        "feb": 122,
+        "mar": 147,
+        "apr": 138,
+        "q1Total": 136
       }
     ]
   },
@@ -1255,48 +1255,48 @@
     "title": "Efficiency & Economics — CAC",
     "rows": [
       {
-        "metric": "# of Leads",
-        "nov": 4674,
-        "dec": 3727,
-        "jan": 4737,
-        "q4Total": 13138,
-        "feb": 4417,
-        "mar": 5149,
-        "apr": 5355,
-        "q1Total": 14921
-      },
-      {
         "metric": "Paid CAC",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
+        "nov": 6987,
+        "dec": 9646,
+        "jan": 4759,
+        "q4Total": 6637,
+        "feb": 6025,
+        "mar": 7049,
+        "apr": 7766,
+        "q1Total": 6937
       },
       {
         "metric": "Paid + Direct CAC",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
+        "nov": 2320,
+        "dec": 3051,
+        "jan": 1837,
+        "q4Total": 2319,
+        "feb": 1961,
+        "mar": 2226,
+        "apr": 2656,
+        "q1Total": 2267
       },
       {
         "metric": "Paid + Direct + SEO CAC",
-        "nov": 0,
-        "dec": 0,
-        "jan": 0,
-        "q4Total": 0,
-        "feb": 0,
-        "mar": 0,
-        "apr": 0,
-        "q1Total": 0
+        "nov": 1950,
+        "dec": 2600,
+        "jan": 1546,
+        "q4Total": 1957,
+        "feb": 1755,
+        "mar": 1967,
+        "apr": 2275,
+        "q1Total": 1993
+      },
+      {
+        "metric": "Total",
+        "nov": 1912,
+        "dec": 2534,
+        "jan": 1512,
+        "q4Total": 1914,
+        "feb": 1750,
+        "mar": 1937,
+        "apr": 2261,
+        "q1Total": 1975
       }
     ]
   }

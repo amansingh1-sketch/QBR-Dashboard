@@ -19,7 +19,7 @@ import type { KpiTable } from "../types";
 const MONTH_KEYS = ["nov", "dec", "jan", "feb", "mar", "apr"] as const;
 const MONTH_LABELS = ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
 
-const COLORS = ["#6B8CAE", "#8B7FA8", "#06b6d4", "#f59e0b", "#5B9B8E", "#ec4899", "#84cc16", "#f43f5e"];
+const COLORS = ["#4f46e5", "#0d9488", "#7c3aed", "#ea580c", "#2563eb", "#db2777", "#059669", "#64748b"];
 
 interface Props {
   table: KpiTable;
