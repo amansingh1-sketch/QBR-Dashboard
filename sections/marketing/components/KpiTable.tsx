@@ -10,6 +10,8 @@ interface Props {
   table: KpiTableData;
   /** Format hint — "number" (default), "currency" for USD values, or "raw" for percentages already formatted. */
   format?: "number" | "currency";
+  /** Per-row override: return "currency" or "number" for a given metric name. Falls back to `format`. */
+  rowFormat?: (metric: string) => "number" | "currency";
 }
 
 function fmt(value: Cell, format: "number" | "currency"): string {
@@ -22,7 +24,7 @@ function fmt(value: Cell, format: "number" | "currency"): string {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
-export default function KpiTable({ table, format = "number" }: Props) {
+export default function KpiTable({ table, format = "number", rowFormat }: Props) {
   const hasGroup = table.rows.some((r) => r.group !== undefined);
 
   // Group rows by their `group` value so we can visually segment platforms/pages/channels.
@@ -66,6 +68,7 @@ export default function KpiTable({ table, format = "number" }: Props) {
             {groups.map((g, gi) => (
               g.rows.map((row, ri) => {
                 const isFirstOfGroup = ri === 0;
+                const cellFmt = rowFormat?.(row.metric) ?? format;
                 return (
                   <tr
                     key={`${gi}-${ri}`}
@@ -77,17 +80,17 @@ export default function KpiTable({ table, format = "number" }: Props) {
                       </td>
                     )}
                     <td className="px-3 py-1.5 text-gray-800">{row.metric}</td>
-                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.nov, format)}</td>
-                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.dec, format)}</td>
-                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.jan, format)}</td>
+                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.nov, cellFmt)}</td>
+                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.dec, cellFmt)}</td>
+                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.jan, cellFmt)}</td>
                     <td className="px-3 py-1.5 text-right font-semibold text-slate-700 bg-slate-100/40">
-                      {fmt(row.q4Total, format)}
+                      {fmt(row.q4Total, cellFmt)}
                     </td>
-                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.feb, format)}</td>
-                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.mar, format)}</td>
-                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.apr, format)}</td>
+                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.feb, cellFmt)}</td>
+                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.mar, cellFmt)}</td>
+                    <td className="px-3 py-1.5 text-right text-gray-600">{fmt(row.apr, cellFmt)}</td>
                     <td className="px-3 py-1.5 text-right font-semibold text-violet-700 bg-violet-50/40">
-                      {fmt(row.q1Total, format)}
+                      {fmt(row.q1Total, cellFmt)}
                     </td>
                   </tr>
                 );

@@ -26,6 +26,8 @@ interface Props {
   /** "line" for trends, "bar" for spend/discrete. */
   variant?: "line" | "bar";
   format?: "number" | "currency";
+  /** Per-metric tooltip format override. Falls back to `format`. */
+  rowFormat?: (metric: string) => "number" | "currency";
 }
 
 function fmtAxis(value: number, format: "number" | "currency"): string {
@@ -42,7 +44,7 @@ function fmtTooltip(value: number, format: "number" | "currency"): string {
   return value.toLocaleString("en-US");
 }
 
-export default function TrendChart({ table, variant = "line", format = "number" }: Props) {
+export default function TrendChart({ table, variant = "line", format = "number", rowFormat }: Props) {
   const hasGroup = table.rows.some((r) => r.group !== undefined);
   const metrics = Array.from(new Set(table.rows.map((r) => r.metric)));
   const groups = hasGroup ? Array.from(new Set(table.rows.map((r) => r.group!))) : null;
@@ -88,7 +90,7 @@ export default function TrendChart({ table, variant = "line", format = "number" 
           <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
           <XAxis dataKey="month" tick={{ fontSize: 12, fill: "#64748b" }} />
           <YAxis tick={{ fontSize: 11, fill: "#64748b" }} tickFormatter={(v) => fmtAxis(v, format)} width={56} />
-          <Tooltip formatter={(v) => fmtTooltip(Number(v), format)} />
+          <Tooltip formatter={(v, name) => fmtTooltip(Number(v), rowFormat?.(String(name)) ?? format)} />
           <Legend wrapperStyle={{ fontSize: "12px" }} />
           <ReferenceLine x="Jan" stroke="#94a3b8" strokeDasharray="6 3" strokeWidth={1.5} label={{ value: "Q4 → Q1", position: "insideTopRight", fill: "#334155", fontSize: 11, fontWeight: 600 }} />
           {seriesKeys.map((k, i) => (
@@ -102,7 +104,7 @@ export default function TrendChart({ table, variant = "line", format = "number" 
         <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
         <XAxis dataKey="month" tick={{ fontSize: 12, fill: "#64748b" }} />
         <YAxis tick={{ fontSize: 11, fill: "#64748b" }} tickFormatter={(v) => fmtAxis(v, format)} width={56} />
-        <Tooltip formatter={(v) => fmtTooltip(Number(v), format)} />
+        <Tooltip formatter={(v, name) => fmtTooltip(Number(v), rowFormat?.(String(name)) ?? format)} />
         <Legend wrapperStyle={{ fontSize: "12px" }} />
         <ReferenceLine x="Jan" stroke="#94a3b8" strokeDasharray="6 3" strokeWidth={1.5} label={{ value: "Q4 → Q1", position: "insideTopRight", fill: "#334155", fontSize: 11, fontWeight: 600 }} />
         {seriesKeys.map((k, i) => (

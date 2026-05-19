@@ -99,6 +99,11 @@ export default function Growth({ data, adSpendsData }: Props) {
 
   const format = activeSub === "cpl" || activeSub === "cac" ? "currency" : "number";
 
+  const rowFormat =
+    activeSub === "cpl"     ? (m: string) => (m === "# of Leads" ? "number" : "currency") as "number" | "currency" :
+    activeSub === "overall" ? (m: string) => (m === "MRR" ? "currency" : "number") as "number" | "currency" :
+    undefined;
+
   return (
     <section className="space-y-5">
       <div>
@@ -110,8 +115,8 @@ export default function Growth({ data, adSpendsData }: Props) {
 
       <SubTabs tabs={SUB_TABS} activeId={activeSub} onChange={setActiveSub} />
 
-      <TrendChart table={table} variant="line" format={format} />
-      <KpiTable table={table} format={format} />
+      <TrendChart table={table} variant="line" format={format} rowFormat={rowFormat} />
+      <KpiTable table={table} format={format} rowFormat={rowFormat} />
     </section>
   );
 }
