@@ -163,39 +163,6 @@
     "title": "Efficiency & Economics — CAC",
     "rows": [
       {
-        "metric": "Paid CAC",
-        "nov": 6987,
-        "dec": 9646,
-        "jan": 4759,
-        "q4Total": 6637,
-        "feb": 6025,
-        "mar": 7049,
-        "apr": 7766,
-        "q1Total": 6937
-      },
-      {
-        "metric": "Paid + Direct CAC",
-        "nov": 2311,
-        "dec": 3036,
-        "jan": 1824,
-        "q4Total": 2307,
-        "feb": 1935,
-        "mar": 2200,
-        "apr": 2627,
-        "q1Total": 2239
-      },
-      {
-        "metric": "Paid + Direct + SEO CAC",
-        "nov": 1944,
-        "dec": 2589,
-        "jan": 1537,
-        "q4Total": 1949,
-        "feb": 1734,
-        "mar": 1947,
-        "apr": 2254,
-        "q1Total": 1972
-      },
-      {
         "metric": "Total",
         "nov": 1906,
         "dec": 2523,
